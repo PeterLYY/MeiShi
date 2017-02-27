@@ -1,0 +1,686 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CC08254670F75783DF9B0547 /* libPods-MeiShi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BF884C49A4046B82A0B784C /* libPods-MeiShi.a */; };
+		E73AFA6F1E52952E00730DAC /* MSCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E73AFA651E52952E00730DAC /* MSCacheManager.m */; };
+		E73AFA701E52952E00730DAC /* MSNetworkingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E73AFA691E52952E00730DAC /* MSNetworkingManager.m */; };
+		E73AFA711E52952E00730DAC /* MSRefreshManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E73AFA6B1E52952E00730DAC /* MSRefreshManager.m */; };
+		E73AFA721E52952E00730DAC /* MSUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = E73AFA6D1E52952E00730DAC /* MSUtils.m */; };
+		E73AFA871E52953800730DAC /* MSBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E73AFA761E52953800730DAC /* MSBaseViewController.m */; };
+		E73AFA881E52953800730DAC /* MSNavgationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E73AFA781E52953800730DAC /* MSNavgationController.m */; };
+		E73AFA891E52953800730DAC /* MSTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = E73AFA7A1E52953800730DAC /* MSTabBarController.m */; };
+		E73AFA8A1E52953800730DAC /* MSTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E73AFA7C1E52953800730DAC /* MSTableViewController.m */; };
+		E73AFA8B1E52953800730DAC /* MSDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E73AFA7E1E52953800730DAC /* MSDiscoverViewController.m */; };
+		E73AFA8C1E52953800730DAC /* MSMyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E73AFA801E52953800730DAC /* MSMyViewController.m */; };
+		E73AFA8D1E52953800730DAC /* MSRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E73AFA821E52953800730DAC /* MSRecommendViewController.m */; };
+		E73AFA8E1E52953800730DAC /* MSShopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E73AFA841E52953800730DAC /* MSShopViewController.m */; };
+		E73AFA8F1E52953800730DAC /* MSTopicsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E73AFA861E52953800730DAC /* MSTopicsViewController.m */; };
+		E73AFA951E5295D100730DAC /* MSViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E73AFA941E5295D100730DAC /* MSViewModel.m */; };
+		E73AFA981E52965F00730DAC /* MSTableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E73AFA971E52965F00730DAC /* MSTableViewModel.m */; };
+		E73AFA9E1E5296B200730DAC /* MSRecommendViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E73AFA9D1E5296B200730DAC /* MSRecommendViewModel.m */; };
+		E73AFAA11E5296C100730DAC /* MSDiscoverViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E73AFAA01E5296C100730DAC /* MSDiscoverViewModel.m */; };
+		E73AFAA41E5296D000730DAC /* MSMyViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E73AFAA31E5296D000730DAC /* MSMyViewModel.m */; };
+		E73AFAA71E5296DE00730DAC /* MSShopViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E73AFAA61E5296DE00730DAC /* MSShopViewModel.m */; };
+		E73AFAAA1E5296F100730DAC /* MSTopicsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E73AFAA91E5296F100730DAC /* MSTopicsViewModel.m */; };
+		E73AFAB11E52B05700730DAC /* MSGuidePageView.m in Sources */ = {isa = PBXBuildFile; fileRef = E73AFAB01E52B05700730DAC /* MSGuidePageView.m */; };
+		E73AFAB41E52DE1100730DAC /* MSLaunchAdView.m in Sources */ = {isa = PBXBuildFile; fileRef = E73AFAB31E52DE1100730DAC /* MSLaunchAdView.m */; };
+		E73AFAB71E52EDE800730DAC /* MSAdButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E73AFAB61E52EDE800730DAC /* MSAdButton.m */; };
+		E77AA7151E5AE95C00A85B84 /* MSTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E77AA7141E5AE95C00A85B84 /* MSTableViewCell.m */; };
+		E77AA7181E5AE99500A85B84 /* MSRecommendTopBannerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E77AA7171E5AE99500A85B84 /* MSRecommendTopBannerCell.m */; };
+		E78E77D21E4C6439009A93F1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E78E77D11E4C6439009A93F1 /* main.m */; };
+		E78E77D51E4C6439009A93F1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E78E77D41E4C6439009A93F1 /* AppDelegate.m */; };
+		E78E77DD1E4C6439009A93F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E78E77DC1E4C6439009A93F1 /* Assets.xcassets */; };
+		E79131191E5D528E0025B704 /* refreshpotgif@2x.gif in Resources */ = {isa = PBXBuildFile; fileRef = E79131181E5D528E0025B704 /* refreshpotgif@2x.gif */; };
+		E791311C1E5D7F500025B704 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = E791311B1E5D7F500025B704 /* UIColor+Hex.m */; };
+		E7D8EE701E543EC800053B7A /* MSRecommendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7D8EE6F1E543EC800053B7A /* MSRecommendViewController.xib */; };
+		E7D8EE7A1E5563AC00053B7A /* MSHeaderHideButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E7D8EE791E5563AC00053B7A /* MSHeaderHideButton.m */; };
+		E7D8EE7D1E55679E00053B7A /* MSHeaderHideView.m in Sources */ = {isa = PBXBuildFile; fileRef = E7D8EE7C1E55679E00053B7A /* MSHeaderHideView.m */; };
+		E7D8EE801E55862C00053B7A /* MSSeachView.m in Sources */ = {isa = PBXBuildFile; fileRef = E7D8EE7F1E55862C00053B7A /* MSSeachView.m */; };
+		E7D8EE841E56E93400053B7A /* MSNavItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = E7D8EE831E56E93400053B7A /* MSNavItemView.m */; };
+		E7D8EE871E5AB39C00053B7A /* MSCommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7D8EE861E5AB39C00053B7A /* MSCommendViewController.m */; };
+		E7D8EE8A1E5AB48100053B7A /* MSSmartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7D8EE891E5AB48100053B7A /* MSSmartViewController.m */; };
+		E7D8EE8D1E5AB4A200053B7A /* MSThreeMealsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7D8EE8C1E5AB4A200053B7A /* MSThreeMealsViewController.m */; };
+		E7D8EE901E5AB4BE00053B7A /* MSRecipeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7D8EE8F1E5AB4BE00053B7A /* MSRecipeViewController.m */; };
+		E7E235771E53003A0033AAAC /* MSWebAdvViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E235761E53003A0033AAAC /* MSWebAdvViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1660F545133960A530C55366 /* Pods-MeiShi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeiShi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MeiShi/Pods-MeiShi.debug.xcconfig"; sourceTree = "<group>"; };
+		2734FFBC2355F4ED23FBF854 /* Pods-MeiShi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeiShi.release.xcconfig"; path = "Pods/Target Support Files/Pods-MeiShi/Pods-MeiShi.release.xcconfig"; sourceTree = "<group>"; };
+		8BF884C49A4046B82A0B784C /* libPods-MeiShi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MeiShi.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E73AFA641E52952E00730DAC /* MSCacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCacheManager.h; sourceTree = "<group>"; };
+		E73AFA651E52952E00730DAC /* MSCacheManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSCacheManager.m; sourceTree = "<group>"; };
+		E73AFA661E52952E00730DAC /* MSCommonApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCommonApi.h; sourceTree = "<group>"; };
+		E73AFA671E52952E00730DAC /* MSDefaultDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSDefaultDefine.h; sourceTree = "<group>"; };
+		E73AFA681E52952E00730DAC /* MSNetworkingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSNetworkingManager.h; sourceTree = "<group>"; };
+		E73AFA691E52952E00730DAC /* MSNetworkingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSNetworkingManager.m; sourceTree = "<group>"; };
+		E73AFA6A1E52952E00730DAC /* MSRefreshManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSRefreshManager.h; sourceTree = "<group>"; };
+		E73AFA6B1E52952E00730DAC /* MSRefreshManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSRefreshManager.m; sourceTree = "<group>"; };
+		E73AFA6C1E52952E00730DAC /* MSUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSUtils.h; sourceTree = "<group>"; };
+		E73AFA6D1E52952E00730DAC /* MSUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSUtils.m; sourceTree = "<group>"; };
+		E73AFA751E52953800730DAC /* MSBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSBaseViewController.h; sourceTree = "<group>"; };
+		E73AFA761E52953800730DAC /* MSBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSBaseViewController.m; sourceTree = "<group>"; };
+		E73AFA771E52953800730DAC /* MSNavgationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSNavgationController.h; sourceTree = "<group>"; };
+		E73AFA781E52953800730DAC /* MSNavgationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSNavgationController.m; sourceTree = "<group>"; };
+		E73AFA791E52953800730DAC /* MSTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSTabBarController.h; sourceTree = "<group>"; };
+		E73AFA7A1E52953800730DAC /* MSTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSTabBarController.m; sourceTree = "<group>"; };
+		E73AFA7B1E52953800730DAC /* MSTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSTableViewController.h; sourceTree = "<group>"; };
+		E73AFA7C1E52953800730DAC /* MSTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSTableViewController.m; sourceTree = "<group>"; };
+		E73AFA7D1E52953800730DAC /* MSDiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSDiscoverViewController.h; sourceTree = "<group>"; };
+		E73AFA7E1E52953800730DAC /* MSDiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSDiscoverViewController.m; sourceTree = "<group>"; };
+		E73AFA7F1E52953800730DAC /* MSMyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSMyViewController.h; sourceTree = "<group>"; };
+		E73AFA801E52953800730DAC /* MSMyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSMyViewController.m; sourceTree = "<group>"; };
+		E73AFA811E52953800730DAC /* MSRecommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSRecommendViewController.h; sourceTree = "<group>"; };
+		E73AFA821E52953800730DAC /* MSRecommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSRecommendViewController.m; sourceTree = "<group>"; };
+		E73AFA831E52953800730DAC /* MSShopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSShopViewController.h; sourceTree = "<group>"; };
+		E73AFA841E52953800730DAC /* MSShopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSShopViewController.m; sourceTree = "<group>"; };
+		E73AFA851E52953800730DAC /* MSTopicsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSTopicsViewController.h; sourceTree = "<group>"; };
+		E73AFA861E52953800730DAC /* MSTopicsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSTopicsViewController.m; sourceTree = "<group>"; };
+		E73AFA931E5295D100730DAC /* MSViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSViewModel.h; sourceTree = "<group>"; };
+		E73AFA941E5295D100730DAC /* MSViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSViewModel.m; sourceTree = "<group>"; };
+		E73AFA961E52965F00730DAC /* MSTableViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSTableViewModel.h; sourceTree = "<group>"; };
+		E73AFA971E52965F00730DAC /* MSTableViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSTableViewModel.m; sourceTree = "<group>"; };
+		E73AFA9C1E5296B200730DAC /* MSRecommendViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSRecommendViewModel.h; sourceTree = "<group>"; };
+		E73AFA9D1E5296B200730DAC /* MSRecommendViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSRecommendViewModel.m; sourceTree = "<group>"; };
+		E73AFA9F1E5296C100730DAC /* MSDiscoverViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSDiscoverViewModel.h; sourceTree = "<group>"; };
+		E73AFAA01E5296C100730DAC /* MSDiscoverViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSDiscoverViewModel.m; sourceTree = "<group>"; };
+		E73AFAA21E5296D000730DAC /* MSMyViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSMyViewModel.h; sourceTree = "<group>"; };
+		E73AFAA31E5296D000730DAC /* MSMyViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSMyViewModel.m; sourceTree = "<group>"; };
+		E73AFAA51E5296DE00730DAC /* MSShopViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSShopViewModel.h; sourceTree = "<group>"; };
+		E73AFAA61E5296DE00730DAC /* MSShopViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSShopViewModel.m; sourceTree = "<group>"; };
+		E73AFAA81E5296F100730DAC /* MSTopicsViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSTopicsViewModel.h; sourceTree = "<group>"; };
+		E73AFAA91E5296F100730DAC /* MSTopicsViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSTopicsViewModel.m; sourceTree = "<group>"; };
+		E73AFAAF1E52B05700730DAC /* MSGuidePageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSGuidePageView.h; sourceTree = "<group>"; };
+		E73AFAB01E52B05700730DAC /* MSGuidePageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSGuidePageView.m; sourceTree = "<group>"; };
+		E73AFAB21E52DE1100730DAC /* MSLaunchAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSLaunchAdView.h; sourceTree = "<group>"; };
+		E73AFAB31E52DE1100730DAC /* MSLaunchAdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSLaunchAdView.m; sourceTree = "<group>"; };
+		E73AFAB51E52EDE800730DAC /* MSAdButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSAdButton.h; sourceTree = "<group>"; };
+		E73AFAB61E52EDE800730DAC /* MSAdButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSAdButton.m; sourceTree = "<group>"; };
+		E77AA7131E5AE95C00A85B84 /* MSTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSTableViewCell.h; sourceTree = "<group>"; };
+		E77AA7141E5AE95C00A85B84 /* MSTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSTableViewCell.m; sourceTree = "<group>"; };
+		E77AA7161E5AE99500A85B84 /* MSRecommendTopBannerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSRecommendTopBannerCell.h; sourceTree = "<group>"; };
+		E77AA7171E5AE99500A85B84 /* MSRecommendTopBannerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSRecommendTopBannerCell.m; sourceTree = "<group>"; };
+		E78E77CD1E4C6439009A93F1 /* MeiShi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeiShi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E78E77D11E4C6439009A93F1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E78E77D31E4C6439009A93F1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E78E77D41E4C6439009A93F1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E78E77DC1E4C6439009A93F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E78E77E11E4C6439009A93F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E78E77EE1E4C67BF009A93F1 /* MeiShi-PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MeiShi-PrefixHeader.pch"; sourceTree = "<group>"; };
+		E79131181E5D528E0025B704 /* refreshpotgif@2x.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "refreshpotgif@2x.gif"; sourceTree = "<group>"; };
+		E791311A1E5D7F500025B704 /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
+		E791311B1E5D7F500025B704 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
+		E7D8EE6F1E543EC800053B7A /* MSRecommendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSRecommendViewController.xib; sourceTree = "<group>"; };
+		E7D8EE781E5563AC00053B7A /* MSHeaderHideButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSHeaderHideButton.h; sourceTree = "<group>"; };
+		E7D8EE791E5563AC00053B7A /* MSHeaderHideButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSHeaderHideButton.m; sourceTree = "<group>"; };
+		E7D8EE7B1E55679E00053B7A /* MSHeaderHideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSHeaderHideView.h; sourceTree = "<group>"; };
+		E7D8EE7C1E55679E00053B7A /* MSHeaderHideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSHeaderHideView.m; sourceTree = "<group>"; };
+		E7D8EE7E1E55862C00053B7A /* MSSeachView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSSeachView.h; sourceTree = "<group>"; };
+		E7D8EE7F1E55862C00053B7A /* MSSeachView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSSeachView.m; sourceTree = "<group>"; };
+		E7D8EE821E56E93400053B7A /* MSNavItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSNavItemView.h; sourceTree = "<group>"; };
+		E7D8EE831E56E93400053B7A /* MSNavItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSNavItemView.m; sourceTree = "<group>"; };
+		E7D8EE851E5AB39B00053B7A /* MSCommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCommendViewController.h; sourceTree = "<group>"; };
+		E7D8EE861E5AB39C00053B7A /* MSCommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSCommendViewController.m; sourceTree = "<group>"; };
+		E7D8EE881E5AB48100053B7A /* MSSmartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSSmartViewController.h; sourceTree = "<group>"; };
+		E7D8EE891E5AB48100053B7A /* MSSmartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSSmartViewController.m; sourceTree = "<group>"; };
+		E7D8EE8B1E5AB4A200053B7A /* MSThreeMealsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSThreeMealsViewController.h; sourceTree = "<group>"; };
+		E7D8EE8C1E5AB4A200053B7A /* MSThreeMealsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSThreeMealsViewController.m; sourceTree = "<group>"; };
+		E7D8EE8E1E5AB4BE00053B7A /* MSRecipeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSRecipeViewController.h; sourceTree = "<group>"; };
+		E7D8EE8F1E5AB4BE00053B7A /* MSRecipeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSRecipeViewController.m; sourceTree = "<group>"; };
+		E7E235751E53003A0033AAAC /* MSWebAdvViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSWebAdvViewController.h; sourceTree = "<group>"; };
+		E7E235761E53003A0033AAAC /* MSWebAdvViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSWebAdvViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E78E77CA1E4C6439009A93F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC08254670F75783DF9B0547 /* libPods-MeiShi.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2A3472C6D6DFD0F24C51298C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1660F545133960A530C55366 /* Pods-MeiShi.debug.xcconfig */,
+				2734FFBC2355F4ED23FBF854 /* Pods-MeiShi.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C93C29ECC703F66A266CC018 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8BF884C49A4046B82A0B784C /* libPods-MeiShi.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E73AFA611E52952E00730DAC /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				E73AFA621E52952E00730DAC /* Category */,
+				E73AFA631E52952E00730DAC /* Tool */,
+				E73AFA6E1E52952E00730DAC /* Vendor */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		E73AFA621E52952E00730DAC /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				E791311A1E5D7F500025B704 /* UIColor+Hex.h */,
+				E791311B1E5D7F500025B704 /* UIColor+Hex.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		E73AFA631E52952E00730DAC /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				E73AFA641E52952E00730DAC /* MSCacheManager.h */,
+				E73AFA651E52952E00730DAC /* MSCacheManager.m */,
+				E73AFA661E52952E00730DAC /* MSCommonApi.h */,
+				E73AFA671E52952E00730DAC /* MSDefaultDefine.h */,
+				E73AFA681E52952E00730DAC /* MSNetworkingManager.h */,
+				E73AFA691E52952E00730DAC /* MSNetworkingManager.m */,
+				E73AFA6A1E52952E00730DAC /* MSRefreshManager.h */,
+				E73AFA6B1E52952E00730DAC /* MSRefreshManager.m */,
+				E73AFA6C1E52952E00730DAC /* MSUtils.h */,
+				E73AFA6D1E52952E00730DAC /* MSUtils.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		E73AFA6E1E52952E00730DAC /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		E73AFA731E52953800730DAC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E73AFA741E52953800730DAC /* Base */,
+				E7D8EE741E555DAB00053B7A /* Recommend */,
+				E73AFA7D1E52953800730DAC /* MSDiscoverViewController.h */,
+				E73AFA7E1E52953800730DAC /* MSDiscoverViewController.m */,
+				E73AFA7F1E52953800730DAC /* MSMyViewController.h */,
+				E73AFA801E52953800730DAC /* MSMyViewController.m */,
+				E73AFA831E52953800730DAC /* MSShopViewController.h */,
+				E73AFA841E52953800730DAC /* MSShopViewController.m */,
+				E73AFA851E52953800730DAC /* MSTopicsViewController.h */,
+				E73AFA861E52953800730DAC /* MSTopicsViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E73AFA741E52953800730DAC /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				E73AFA751E52953800730DAC /* MSBaseViewController.h */,
+				E73AFA761E52953800730DAC /* MSBaseViewController.m */,
+				E73AFA771E52953800730DAC /* MSNavgationController.h */,
+				E73AFA781E52953800730DAC /* MSNavgationController.m */,
+				E73AFA791E52953800730DAC /* MSTabBarController.h */,
+				E73AFA7A1E52953800730DAC /* MSTabBarController.m */,
+				E73AFA7B1E52953800730DAC /* MSTableViewController.h */,
+				E73AFA7C1E52953800730DAC /* MSTableViewController.m */,
+				E7E235751E53003A0033AAAC /* MSWebAdvViewController.h */,
+				E7E235761E53003A0033AAAC /* MSWebAdvViewController.m */,
+				E77AA7131E5AE95C00A85B84 /* MSTableViewCell.h */,
+				E77AA7141E5AE95C00A85B84 /* MSTableViewCell.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		E73AFA901E52953F00730DAC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E73AFA911E52953F00730DAC /* Base */,
+				E73AFA9C1E5296B200730DAC /* MSRecommendViewModel.h */,
+				E73AFA9D1E5296B200730DAC /* MSRecommendViewModel.m */,
+				E73AFA9F1E5296C100730DAC /* MSDiscoverViewModel.h */,
+				E73AFAA01E5296C100730DAC /* MSDiscoverViewModel.m */,
+				E73AFAA21E5296D000730DAC /* MSMyViewModel.h */,
+				E73AFAA31E5296D000730DAC /* MSMyViewModel.m */,
+				E73AFAA51E5296DE00730DAC /* MSShopViewModel.h */,
+				E73AFAA61E5296DE00730DAC /* MSShopViewModel.m */,
+				E73AFAA81E5296F100730DAC /* MSTopicsViewModel.h */,
+				E73AFAA91E5296F100730DAC /* MSTopicsViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E73AFA911E52953F00730DAC /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				E73AFA931E5295D100730DAC /* MSViewModel.h */,
+				E73AFA941E5295D100730DAC /* MSViewModel.m */,
+				E73AFA961E52965F00730DAC /* MSTableViewModel.h */,
+				E73AFA971E52965F00730DAC /* MSTableViewModel.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		E73AFA921E52954D00730DAC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E73AFAAB1E52A6A000730DAC /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				E78E77D31E4C6439009A93F1 /* AppDelegate.h */,
+				E78E77D41E4C6439009A93F1 /* AppDelegate.m */,
+				E73AFAAF1E52B05700730DAC /* MSGuidePageView.h */,
+				E73AFAB01E52B05700730DAC /* MSGuidePageView.m */,
+				E73AFAB21E52DE1100730DAC /* MSLaunchAdView.h */,
+				E73AFAB31E52DE1100730DAC /* MSLaunchAdView.m */,
+				E73AFAB51E52EDE800730DAC /* MSAdButton.h */,
+				E73AFAB61E52EDE800730DAC /* MSAdButton.m */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		E78E77C41E4C6439009A93F1 = {
+			isa = PBXGroup;
+			children = (
+				E78E77CF1E4C6439009A93F1 /* MeiShi */,
+				E78E77CE1E4C6439009A93F1 /* Products */,
+				2A3472C6D6DFD0F24C51298C /* Pods */,
+				C93C29ECC703F66A266CC018 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E78E77CE1E4C6439009A93F1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E78E77CD1E4C6439009A93F1 /* MeiShi.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E78E77CF1E4C6439009A93F1 /* MeiShi */ = {
+			isa = PBXGroup;
+			children = (
+				E73AFAAB1E52A6A000730DAC /* Application */,
+				E73AFA611E52952E00730DAC /* Other */,
+				E73AFA731E52953800730DAC /* View */,
+				E73AFA901E52953F00730DAC /* ViewModel */,
+				E73AFA921E52954D00730DAC /* Model */,
+				E78E77D01E4C6439009A93F1 /* Supporting Files */,
+			);
+			path = MeiShi;
+			sourceTree = "<group>";
+		};
+		E78E77D01E4C6439009A93F1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E78E77DC1E4C6439009A93F1 /* Assets.xcassets */,
+				E79131181E5D528E0025B704 /* refreshpotgif@2x.gif */,
+				E78E77E11E4C6439009A93F1 /* Info.plist */,
+				E78E77D11E4C6439009A93F1 /* main.m */,
+				E78E77EE1E4C67BF009A93F1 /* MeiShi-PrefixHeader.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E7D8EE741E555DAB00053B7A /* Recommend */ = {
+			isa = PBXGroup;
+			children = (
+				E73AFA811E52953800730DAC /* MSRecommendViewController.h */,
+				E73AFA821E52953800730DAC /* MSRecommendViewController.m */,
+				E7D8EE851E5AB39B00053B7A /* MSCommendViewController.h */,
+				E7D8EE861E5AB39C00053B7A /* MSCommendViewController.m */,
+				E7D8EE881E5AB48100053B7A /* MSSmartViewController.h */,
+				E7D8EE891E5AB48100053B7A /* MSSmartViewController.m */,
+				E7D8EE8B1E5AB4A200053B7A /* MSThreeMealsViewController.h */,
+				E7D8EE8C1E5AB4A200053B7A /* MSThreeMealsViewController.m */,
+				E7D8EE8E1E5AB4BE00053B7A /* MSRecipeViewController.h */,
+				E7D8EE8F1E5AB4BE00053B7A /* MSRecipeViewController.m */,
+				E7D8EE811E56E89800053B7A /* View */,
+			);
+			name = Recommend;
+			sourceTree = "<group>";
+		};
+		E7D8EE811E56E89800053B7A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E7D8EE6F1E543EC800053B7A /* MSRecommendViewController.xib */,
+				E7D8EE821E56E93400053B7A /* MSNavItemView.h */,
+				E7D8EE831E56E93400053B7A /* MSNavItemView.m */,
+				E7D8EE7B1E55679E00053B7A /* MSHeaderHideView.h */,
+				E7D8EE7C1E55679E00053B7A /* MSHeaderHideView.m */,
+				E7D8EE781E5563AC00053B7A /* MSHeaderHideButton.h */,
+				E7D8EE791E5563AC00053B7A /* MSHeaderHideButton.m */,
+				E7D8EE7E1E55862C00053B7A /* MSSeachView.h */,
+				E7D8EE7F1E55862C00053B7A /* MSSeachView.m */,
+				E77AA7161E5AE99500A85B84 /* MSRecommendTopBannerCell.h */,
+				E77AA7171E5AE99500A85B84 /* MSRecommendTopBannerCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E78E77CC1E4C6439009A93F1 /* MeiShi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E78E77E41E4C6439009A93F1 /* Build configuration list for PBXNativeTarget "MeiShi" */;
+			buildPhases = (
+				0EBB46D0369E7D6C36AD2C11 /* [CP] Check Pods Manifest.lock */,
+				E78E77C91E4C6439009A93F1 /* Sources */,
+				E78E77CA1E4C6439009A93F1 /* Frameworks */,
+				E78E77CB1E4C6439009A93F1 /* Resources */,
+				131273C79E11E716548C4F58 /* [CP] Embed Pods Frameworks */,
+				5340F994FBDFF5D887CC07F3 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MeiShi;
+			productName = MeiShi;
+			productReference = E78E77CD1E4C6439009A93F1 /* MeiShi.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E78E77C51E4C6439009A93F1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MS;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = PeterLee;
+				TargetAttributes = {
+					E78E77CC1E4C6439009A93F1 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = E78E77C81E4C6439009A93F1 /* Build configuration list for PBXProject "MeiShi" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E78E77C41E4C6439009A93F1;
+			productRefGroup = E78E77CE1E4C6439009A93F1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E78E77CC1E4C6439009A93F1 /* MeiShi */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E78E77CB1E4C6439009A93F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E78E77DD1E4C6439009A93F1 /* Assets.xcassets in Resources */,
+				E79131191E5D528E0025B704 /* refreshpotgif@2x.gif in Resources */,
+				E7D8EE701E543EC800053B7A /* MSRecommendViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0EBB46D0369E7D6C36AD2C11 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		131273C79E11E716548C4F58 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MeiShi/Pods-MeiShi-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5340F994FBDFF5D887CC07F3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MeiShi/Pods-MeiShi-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E78E77C91E4C6439009A93F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E73AFA8B1E52953800730DAC /* MSDiscoverViewController.m in Sources */,
+				E78E77D51E4C6439009A93F1 /* AppDelegate.m in Sources */,
+				E791311C1E5D7F500025B704 /* UIColor+Hex.m in Sources */,
+				E73AFAB11E52B05700730DAC /* MSGuidePageView.m in Sources */,
+				E73AFA8D1E52953800730DAC /* MSRecommendViewController.m in Sources */,
+				E73AFA871E52953800730DAC /* MSBaseViewController.m in Sources */,
+				E73AFA951E5295D100730DAC /* MSViewModel.m in Sources */,
+				E73AFAB41E52DE1100730DAC /* MSLaunchAdView.m in Sources */,
+				E7D8EE7D1E55679E00053B7A /* MSHeaderHideView.m in Sources */,
+				E73AFA8E1E52953800730DAC /* MSShopViewController.m in Sources */,
+				E73AFA721E52952E00730DAC /* MSUtils.m in Sources */,
+				E73AFA9E1E5296B200730DAC /* MSRecommendViewModel.m in Sources */,
+				E7D8EE841E56E93400053B7A /* MSNavItemView.m in Sources */,
+				E7D8EE901E5AB4BE00053B7A /* MSRecipeViewController.m in Sources */,
+				E7D8EE7A1E5563AC00053B7A /* MSHeaderHideButton.m in Sources */,
+				E73AFAA41E5296D000730DAC /* MSMyViewModel.m in Sources */,
+				E73AFAA71E5296DE00730DAC /* MSShopViewModel.m in Sources */,
+				E7D8EE8D1E5AB4A200053B7A /* MSThreeMealsViewController.m in Sources */,
+				E73AFA6F1E52952E00730DAC /* MSCacheManager.m in Sources */,
+				E7E235771E53003A0033AAAC /* MSWebAdvViewController.m in Sources */,
+				E78E77D21E4C6439009A93F1 /* main.m in Sources */,
+				E7D8EE871E5AB39C00053B7A /* MSCommendViewController.m in Sources */,
+				E73AFA8A1E52953800730DAC /* MSTableViewController.m in Sources */,
+				E73AFAB71E52EDE800730DAC /* MSAdButton.m in Sources */,
+				E73AFA981E52965F00730DAC /* MSTableViewModel.m in Sources */,
+				E77AA7181E5AE99500A85B84 /* MSRecommendTopBannerCell.m in Sources */,
+				E73AFAAA1E5296F100730DAC /* MSTopicsViewModel.m in Sources */,
+				E77AA7151E5AE95C00A85B84 /* MSTableViewCell.m in Sources */,
+				E73AFAA11E5296C100730DAC /* MSDiscoverViewModel.m in Sources */,
+				E7D8EE8A1E5AB48100053B7A /* MSSmartViewController.m in Sources */,
+				E73AFA881E52953800730DAC /* MSNavgationController.m in Sources */,
+				E73AFA8C1E52953800730DAC /* MSMyViewController.m in Sources */,
+				E73AFA8F1E52953800730DAC /* MSTopicsViewController.m in Sources */,
+				E73AFA891E52953800730DAC /* MSTabBarController.m in Sources */,
+				E7D8EE801E55862C00053B7A /* MSSeachView.m in Sources */,
+				E73AFA711E52952E00730DAC /* MSRefreshManager.m in Sources */,
+				E73AFA701E52952E00730DAC /* MSNetworkingManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		E78E77E21E4C6439009A93F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E78E77E31E4C6439009A93F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E78E77E51E4C6439009A93F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1660F545133960A530C55366 /* Pods-MeiShi.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PREFIX_HEADER = "${SRCROOT}/MeiShi/MeiShi-PrefixHeader.pch";
+				INFOPLIST_FILE = MeiShi/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.peterlyy.MeiShi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E78E77E61E4C6439009A93F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2734FFBC2355F4ED23FBF854 /* Pods-MeiShi.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PREFIX_HEADER = "${SRCROOT}/MeiShi/MeiShi-PrefixHeader.pch";
+				INFOPLIST_FILE = MeiShi/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.peterlyy.MeiShi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E78E77C81E4C6439009A93F1 /* Build configuration list for PBXProject "MeiShi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E78E77E21E4C6439009A93F1 /* Debug */,
+				E78E77E31E4C6439009A93F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E78E77E41E4C6439009A93F1 /* Build configuration list for PBXNativeTarget "MeiShi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E78E77E51E4C6439009A93F1 /* Debug */,
+				E78E77E61E4C6439009A93F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E78E77C51E4C6439009A93F1 /* Project object */;
+}

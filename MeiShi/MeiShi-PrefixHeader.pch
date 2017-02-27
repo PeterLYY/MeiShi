@@ -1,0 +1,26 @@
+//
+//  MeiShi-PrefixHeader.pch
+//  MeiShi
+//
+//  Created by PeterLee on 2017/2/9.
+//  Copyright © 2017年 PeterLee. All rights reserved.
+//
+
+#ifndef MeiShi_PrefixHeader_pch
+#define MeiShi_PrefixHeader_pch
+
+#import "MSDefaultDefine.h"
+#import "MSCommonApi.h"
+#import "MSCacheManager.h"
+#import "MSNetworkingManager.h"
+#import "UIColor+Hex.h"
+
+#import "Masonry.h"
+#import "ReactiveObjC.h"
+#import "UIImageView+WebCache.h"
+#import "MBProgressHUD.h"
+#import "XMLReader.h"
+
+
+
+#endif /* MeiShi_PrefixHeader_pch */
