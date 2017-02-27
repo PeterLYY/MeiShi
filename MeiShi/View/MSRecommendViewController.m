@@ -16,6 +16,7 @@
 #import "MSSmartViewController.h"
 #import "MSThreeMealsViewController.h"
 #import "MSRecipeViewController.h"
+#import "MSRecommendScrollView.h"
 
 @interface MSRecommendViewController () <UITextFieldDelegate, UIScrollViewDelegate>
 
@@ -26,7 +27,7 @@
 @property (strong, nonatomic) IBOutlet UIButton *showButton;
 @property (strong, nonatomic) IBOutlet UITextField *searchText;
 @property (strong, nonatomic) IBOutlet MSNavItemView *navItemView;
-@property (strong, nonatomic) IBOutlet UIScrollView *recommendScrollView;
+@property (strong, nonatomic) IBOutlet MSRecommendScrollView *recommendScrollView;
 
 @property (strong, nonatomic) IBOutlet NSLayoutConstraint *headerImageViewHeight;
 @property (strong, nonatomic) IBOutlet NSLayoutConstraint *helloMsgHeight;
@@ -225,6 +226,7 @@
 - (void)setupRecommendScrollView {
     self.recommendScrollView.delegate = self;
     self.recommendScrollView.backgroundColor = [UIColor whiteColor];
+    self.recommendScrollView.bounces = NO;
     self.recommendScrollView.pagingEnabled = YES;
     self.recommendScrollView.showsVerticalScrollIndicator = NO;
     self.recommendScrollView.showsHorizontalScrollIndicator = NO;

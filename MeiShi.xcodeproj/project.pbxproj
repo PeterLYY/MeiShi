@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		CC08254670F75783DF9B0547 /* libPods-MeiShi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BF884C49A4046B82A0B784C /* libPods-MeiShi.a */; };
+		E726055C1E63FCB8008F6F10 /* MSScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = E726055B1E63FCB8008F6F10 /* MSScrollView.m */; };
+		E726055F1E640693008F6F10 /* MSRecommendTopBanner.m in Sources */ = {isa = PBXBuildFile; fileRef = E726055E1E640693008F6F10 /* MSRecommendTopBanner.m */; };
+		E72605621E64071B008F6F10 /* MSRecommendScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = E72605611E64071B008F6F10 /* MSRecommendScrollView.m */; };
 		E73AFA6F1E52952E00730DAC /* MSCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E73AFA651E52952E00730DAC /* MSCacheManager.m */; };
 		E73AFA701E52952E00730DAC /* MSNetworkingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E73AFA691E52952E00730DAC /* MSNetworkingManager.m */; };
 		E73AFA711E52952E00730DAC /* MSRefreshManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E73AFA6B1E52952E00730DAC /* MSRefreshManager.m */; };
@@ -54,6 +57,12 @@
 		1660F545133960A530C55366 /* Pods-MeiShi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeiShi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MeiShi/Pods-MeiShi.debug.xcconfig"; sourceTree = "<group>"; };
 		2734FFBC2355F4ED23FBF854 /* Pods-MeiShi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeiShi.release.xcconfig"; path = "Pods/Target Support Files/Pods-MeiShi/Pods-MeiShi.release.xcconfig"; sourceTree = "<group>"; };
 		8BF884C49A4046B82A0B784C /* libPods-MeiShi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MeiShi.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E726055A1E63FCB8008F6F10 /* MSScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSScrollView.h; sourceTree = "<group>"; };
+		E726055B1E63FCB8008F6F10 /* MSScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSScrollView.m; sourceTree = "<group>"; };
+		E726055D1E640693008F6F10 /* MSRecommendTopBanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSRecommendTopBanner.h; sourceTree = "<group>"; };
+		E726055E1E640693008F6F10 /* MSRecommendTopBanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSRecommendTopBanner.m; sourceTree = "<group>"; };
+		E72605601E64071B008F6F10 /* MSRecommendScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSRecommendScrollView.h; sourceTree = "<group>"; };
+		E72605611E64071B008F6F10 /* MSRecommendScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSRecommendScrollView.m; sourceTree = "<group>"; };
 		E73AFA641E52952E00730DAC /* MSCacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCacheManager.h; sourceTree = "<group>"; };
 		E73AFA651E52952E00730DAC /* MSCacheManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSCacheManager.m; sourceTree = "<group>"; };
 		E73AFA661E52952E00730DAC /* MSCommonApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCommonApi.h; sourceTree = "<group>"; };
@@ -241,6 +250,8 @@
 				E7E235761E53003A0033AAAC /* MSWebAdvViewController.m */,
 				E77AA7131E5AE95C00A85B84 /* MSTableViewCell.h */,
 				E77AA7141E5AE95C00A85B84 /* MSTableViewCell.m */,
+				E726055A1E63FCB8008F6F10 /* MSScrollView.h */,
+				E726055B1E63FCB8008F6F10 /* MSScrollView.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -361,6 +372,8 @@
 			isa = PBXGroup;
 			children = (
 				E7D8EE6F1E543EC800053B7A /* MSRecommendViewController.xib */,
+				E72605601E64071B008F6F10 /* MSRecommendScrollView.h */,
+				E72605611E64071B008F6F10 /* MSRecommendScrollView.m */,
 				E7D8EE821E56E93400053B7A /* MSNavItemView.h */,
 				E7D8EE831E56E93400053B7A /* MSNavItemView.m */,
 				E7D8EE7B1E55679E00053B7A /* MSHeaderHideView.h */,
@@ -371,6 +384,8 @@
 				E7D8EE7F1E55862C00053B7A /* MSSeachView.m */,
 				E77AA7161E5AE99500A85B84 /* MSRecommendTopBannerCell.h */,
 				E77AA7171E5AE99500A85B84 /* MSRecommendTopBannerCell.m */,
+				E726055D1E640693008F6F10 /* MSRecommendTopBanner.h */,
+				E726055E1E640693008F6F10 /* MSRecommendTopBanner.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -507,10 +522,12 @@
 				E73AFA951E5295D100730DAC /* MSViewModel.m in Sources */,
 				E73AFAB41E52DE1100730DAC /* MSLaunchAdView.m in Sources */,
 				E7D8EE7D1E55679E00053B7A /* MSHeaderHideView.m in Sources */,
+				E726055C1E63FCB8008F6F10 /* MSScrollView.m in Sources */,
 				E73AFA8E1E52953800730DAC /* MSShopViewController.m in Sources */,
 				E73AFA721E52952E00730DAC /* MSUtils.m in Sources */,
 				E73AFA9E1E5296B200730DAC /* MSRecommendViewModel.m in Sources */,
 				E7D8EE841E56E93400053B7A /* MSNavItemView.m in Sources */,
+				E72605621E64071B008F6F10 /* MSRecommendScrollView.m in Sources */,
 				E7D8EE901E5AB4BE00053B7A /* MSRecipeViewController.m in Sources */,
 				E7D8EE7A1E5563AC00053B7A /* MSHeaderHideButton.m in Sources */,
 				E73AFAA41E5296D000730DAC /* MSMyViewModel.m in Sources */,
@@ -531,6 +548,7 @@
 				E73AFA881E52953800730DAC /* MSNavgationController.m in Sources */,
 				E73AFA8C1E52953800730DAC /* MSMyViewController.m in Sources */,
 				E73AFA8F1E52953800730DAC /* MSTopicsViewController.m in Sources */,
+				E726055F1E640693008F6F10 /* MSRecommendTopBanner.m in Sources */,
 				E73AFA891E52953800730DAC /* MSTabBarController.m in Sources */,
 				E7D8EE801E55862C00053B7A /* MSSeachView.m in Sources */,
 				E73AFA711E52952E00730DAC /* MSRefreshManager.m in Sources */,

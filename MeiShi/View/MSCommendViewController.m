@@ -561,13 +561,17 @@
                         }];
                         
                         UILabel *titleLabel =(UILabel *)[imageView.subviews objectAtIndex:0];
-                        NSString *title = [[[groups objectAtIndex:idx] objectForKey:@"title"] objectForKey:@"text"];
+                        NSString *title = [[[groups objectAtIndex:idx] objectForKey:@"title"] objectForKey:@"text"] ;
                         titleLabel.text = title;
                         titleLabel.backgroundColor = [UIColor colorWithHexString:hexString alpha:0.8];
+                        CGFloat titleWidth = [title sizeWithAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:14]}].width+20;
+                        if (titleWidth > kScreenWidth-30) {
+                            titleWidth = kScreenWidth-30;
+                        }
                         [titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
                             make.left.mas_equalTo(imageView.mas_left).offset(10);
                             make.bottom.mas_equalTo(imageView.mas_bottom).offset(-15);
-                            make.width.mas_equalTo(@150);
+                            make.width.mas_equalTo(@(titleWidth));
                             make.height.mas_equalTo(@30);
                         }];
                     }else{
@@ -680,6 +684,8 @@
         [parentVC animationHeaderView];
     }
 }
+
+
 
 
 

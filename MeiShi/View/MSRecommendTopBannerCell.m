@@ -7,10 +7,11 @@
 //
 
 #import "MSRecommendTopBannerCell.h"
+#import "MSRecommendTopBanner.h"
 
 @interface MSRecommendTopBannerCell()
 
-@property (nonatomic, strong) UIScrollView *scrollView;
+@property (nonatomic, strong) MSRecommendTopBanner *scrollView;
 @property (nonatomic, strong) UIView *progressView;
 
 @end
@@ -39,9 +40,9 @@
     }
 }
 
-- (UIScrollView *)scrollView {
+- (MSRecommendTopBanner *)scrollView {
     if (_scrollView == nil) {
-        UIScrollView *scrollView = [[UIScrollView alloc] init];
+        MSRecommendTopBanner *scrollView = [[MSRecommendTopBanner alloc] init];
         scrollView.pagingEnabled = YES;
         scrollView.showsVerticalScrollIndicator = NO;
         scrollView.showsHorizontalScrollIndicator = NO;
