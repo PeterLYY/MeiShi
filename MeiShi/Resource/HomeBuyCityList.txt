@@ -1,0 +1,2748 @@
+{
+"cityv": "",
+"city_all": [
+{
+"region_code": "110100",
+"region": "北京市",
+"parent_code": "110000",
+"r_type": "2",
+"old_city_id": "0",
+"pinyin": "B"
+},
+{
+"region_code": "120100",
+"region": "天津市",
+"parent_code": "120000",
+"r_type": "2",
+"old_city_id": "0",
+"pinyin": "T"
+},
+{
+"region_code": "130100",
+"region": "石家庄市",
+"parent_code": "130000",
+"r_type": "2",
+"old_city_id": "1095",
+"pinyin": "S"
+},
+{
+"region_code": "130200",
+"region": "唐山市",
+"parent_code": "130000",
+"r_type": "2",
+"old_city_id": "1096",
+"pinyin": "T"
+},
+{
+"region_code": "130300",
+"region": "秦皇岛市",
+"parent_code": "130000",
+"r_type": "2",
+"old_city_id": "1097",
+"pinyin": "Q"
+},
+{
+"region_code": "130400",
+"region": "邯郸市",
+"parent_code": "130000",
+"r_type": "2",
+"old_city_id": "1098",
+"pinyin": "H"
+},
+{
+"region_code": "130500",
+"region": "邢台市",
+"parent_code": "130000",
+"r_type": "2",
+"old_city_id": "1099",
+"pinyin": "X"
+},
+{
+"region_code": "130600",
+"region": "保定市",
+"parent_code": "130000",
+"r_type": "2",
+"old_city_id": "1100",
+"pinyin": "B"
+},
+{
+"region_code": "130700",
+"region": "张家口市",
+"parent_code": "130000",
+"r_type": "2",
+"old_city_id": "1101",
+"pinyin": "Z"
+},
+{
+"region_code": "130800",
+"region": "承德市",
+"parent_code": "130000",
+"r_type": "2",
+"old_city_id": "1102",
+"pinyin": "C"
+},
+{
+"region_code": "130900",
+"region": "沧州市",
+"parent_code": "130000",
+"r_type": "2",
+"old_city_id": "1103",
+"pinyin": "C"
+},
+{
+"region_code": "131000",
+"region": "廊坊市",
+"parent_code": "130000",
+"r_type": "2",
+"old_city_id": "1104",
+"pinyin": "L"
+},
+{
+"region_code": "131100",
+"region": "衡水市",
+"parent_code": "130000",
+"r_type": "2",
+"old_city_id": "1105",
+"pinyin": "H"
+},
+{
+"region_code": "140100",
+"region": "太原市",
+"parent_code": "140000",
+"r_type": "2",
+"old_city_id": "1106",
+"pinyin": "T"
+},
+{
+"region_code": "140200",
+"region": "大同市",
+"parent_code": "140000",
+"r_type": "2",
+"old_city_id": "1107",
+"pinyin": "D"
+},
+{
+"region_code": "140300",
+"region": "阳泉市",
+"parent_code": "140000",
+"r_type": "2",
+"old_city_id": "1108",
+"pinyin": "Y"
+},
+{
+"region_code": "140400",
+"region": "长治市",
+"parent_code": "140000",
+"r_type": "2",
+"old_city_id": "1109",
+"pinyin": "C"
+},
+{
+"region_code": "140500",
+"region": "晋城市",
+"parent_code": "140000",
+"r_type": "2",
+"old_city_id": "1110",
+"pinyin": "J"
+},
+{
+"region_code": "140600",
+"region": "朔州市",
+"parent_code": "140000",
+"r_type": "2",
+"old_city_id": "1111",
+"pinyin": "S"
+},
+{
+"region_code": "140700",
+"region": "晋中市",
+"parent_code": "140000",
+"r_type": "2",
+"old_city_id": "1112",
+"pinyin": "J"
+},
+{
+"region_code": "140800",
+"region": "运城市",
+"parent_code": "140000",
+"r_type": "2",
+"old_city_id": "1113",
+"pinyin": "Y"
+},
+{
+"region_code": "140900",
+"region": "忻州市",
+"parent_code": "140000",
+"r_type": "2",
+"old_city_id": "1114",
+"pinyin": "X"
+},
+{
+"region_code": "141000",
+"region": "临汾市",
+"parent_code": "140000",
+"r_type": "2",
+"old_city_id": "1115",
+"pinyin": "L"
+},
+{
+"region_code": "141100",
+"region": "吕梁市",
+"parent_code": "140000",
+"r_type": "2",
+"old_city_id": "1116",
+"pinyin": "L"
+},
+{
+"region_code": "150100",
+"region": "呼和浩特市",
+"parent_code": "150000",
+"r_type": "2",
+"old_city_id": "1117",
+"pinyin": "H"
+},
+{
+"region_code": "150200",
+"region": "包头市",
+"parent_code": "150000",
+"r_type": "2",
+"old_city_id": "1118",
+"pinyin": "B"
+},
+{
+"region_code": "150300",
+"region": "乌海市",
+"parent_code": "150000",
+"r_type": "2",
+"old_city_id": "1119",
+"pinyin": "W"
+},
+{
+"region_code": "150400",
+"region": "赤峰市",
+"parent_code": "150000",
+"r_type": "2",
+"old_city_id": "1120",
+"pinyin": "C"
+},
+{
+"region_code": "150500",
+"region": "通辽市",
+"parent_code": "150000",
+"r_type": "2",
+"old_city_id": "1121",
+"pinyin": "T"
+},
+{
+"region_code": "150600",
+"region": "鄂尔多斯市",
+"parent_code": "150000",
+"r_type": "2",
+"old_city_id": "1122",
+"pinyin": "E"
+},
+{
+"region_code": "150700",
+"region": "呼伦贝尔市",
+"parent_code": "150000",
+"r_type": "2",
+"old_city_id": "1123",
+"pinyin": "H"
+},
+{
+"region_code": "150800",
+"region": "巴彦淖尔市",
+"parent_code": "150000",
+"r_type": "2",
+"old_city_id": "1126",
+"pinyin": "B"
+},
+{
+"region_code": "150900",
+"region": "乌兰察布市",
+"parent_code": "150000",
+"r_type": "2",
+"old_city_id": "1124",
+"pinyin": "W"
+},
+{
+"region_code": "152200",
+"region": "兴安盟",
+"parent_code": "150000",
+"r_type": "2",
+"old_city_id": "1128",
+"pinyin": "X"
+},
+{
+"region_code": "152500",
+"region": "锡林郭勒盟",
+"parent_code": "150000",
+"r_type": "2",
+"old_city_id": "1125",
+"pinyin": "X"
+},
+{
+"region_code": "152900",
+"region": "阿拉善盟",
+"parent_code": "150000",
+"r_type": "2",
+"old_city_id": "1127",
+"pinyin": "A"
+},
+{
+"region_code": "210100",
+"region": "沈阳市",
+"parent_code": "210000",
+"r_type": "2",
+"old_city_id": "1129",
+"pinyin": "S"
+},
+{
+"region_code": "210200",
+"region": "大连市",
+"parent_code": "210000",
+"r_type": "2",
+"old_city_id": "1130",
+"pinyin": "D"
+},
+{
+"region_code": "210300",
+"region": "鞍山市",
+"parent_code": "210000",
+"r_type": "2",
+"old_city_id": "1131",
+"pinyin": "A"
+},
+{
+"region_code": "210400",
+"region": "抚顺市",
+"parent_code": "210000",
+"r_type": "2",
+"old_city_id": "1132",
+"pinyin": "F"
+},
+{
+"region_code": "210500",
+"region": "本溪市",
+"parent_code": "210000",
+"r_type": "2",
+"old_city_id": "1133",
+"pinyin": "B"
+},
+{
+"region_code": "210600",
+"region": "丹东市",
+"parent_code": "210000",
+"r_type": "2",
+"old_city_id": "1134",
+"pinyin": "D"
+},
+{
+"region_code": "210700",
+"region": "锦州市",
+"parent_code": "210000",
+"r_type": "2",
+"old_city_id": "1135",
+"pinyin": "J"
+},
+{
+"region_code": "210800",
+"region": "营口市",
+"parent_code": "210000",
+"r_type": "2",
+"old_city_id": "1137",
+"pinyin": "Y"
+},
+{
+"region_code": "210900",
+"region": "阜新市",
+"parent_code": "210000",
+"r_type": "2",
+"old_city_id": "1139",
+"pinyin": "F"
+},
+{
+"region_code": "211000",
+"region": "辽阳市",
+"parent_code": "210000",
+"r_type": "2",
+"old_city_id": "1140",
+"pinyin": "L"
+},
+{
+"region_code": "211100",
+"region": "盘锦市",
+"parent_code": "210000",
+"r_type": "2",
+"old_city_id": "1138",
+"pinyin": "P"
+},
+{
+"region_code": "211200",
+"region": "铁岭市",
+"parent_code": "210000",
+"r_type": "2",
+"old_city_id": "1141",
+"pinyin": "T"
+},
+{
+"region_code": "211300",
+"region": "朝阳市",
+"parent_code": "210000",
+"r_type": "2",
+"old_city_id": "1142",
+"pinyin": "C"
+},
+{
+"region_code": "211400",
+"region": "葫芦岛市",
+"parent_code": "210000",
+"r_type": "2",
+"old_city_id": "1136",
+"pinyin": "H"
+},
+{
+"region_code": "220100",
+"region": "长春市",
+"parent_code": "220000",
+"r_type": "2",
+"old_city_id": "1143",
+"pinyin": "C"
+},
+{
+"region_code": "220200",
+"region": "吉林市",
+"parent_code": "220000",
+"r_type": "2",
+"old_city_id": "1144",
+"pinyin": "J"
+},
+{
+"region_code": "220300",
+"region": "四平市",
+"parent_code": "220000",
+"r_type": "2",
+"old_city_id": "1145",
+"pinyin": "S"
+},
+{
+"region_code": "220400",
+"region": "辽源市",
+"parent_code": "220000",
+"r_type": "2",
+"old_city_id": "1146",
+"pinyin": "L"
+},
+{
+"region_code": "220500",
+"region": "通化市",
+"parent_code": "220000",
+"r_type": "2",
+"old_city_id": "1147",
+"pinyin": "T"
+},
+{
+"region_code": "220600",
+"region": "白山市",
+"parent_code": "220000",
+"r_type": "2",
+"old_city_id": "1148",
+"pinyin": "B"
+},
+{
+"region_code": "220700",
+"region": "松原市",
+"parent_code": "220000",
+"r_type": "2",
+"old_city_id": "1149",
+"pinyin": "S"
+},
+{
+"region_code": "220800",
+"region": "白城市",
+"parent_code": "220000",
+"r_type": "2",
+"old_city_id": "1150",
+"pinyin": "B"
+},
+{
+"region_code": "222400",
+"region": "延边朝鲜族自治州",
+"parent_code": "220000",
+"r_type": "2",
+"old_city_id": "1151",
+"pinyin": "Y"
+},
+{
+"region_code": "230100",
+"region": "哈尔滨市",
+"parent_code": "230000",
+"r_type": "2",
+"old_city_id": "1152",
+"pinyin": "H"
+},
+{
+"region_code": "230200",
+"region": "齐齐哈尔市",
+"parent_code": "230000",
+"r_type": "2",
+"old_city_id": "1153",
+"pinyin": "Q"
+},
+{
+"region_code": "230300",
+"region": "鸡西市",
+"parent_code": "230000",
+"r_type": "2",
+"old_city_id": "1156",
+"pinyin": "J"
+},
+{
+"region_code": "230400",
+"region": "鹤岗市",
+"parent_code": "230000",
+"r_type": "2",
+"old_city_id": "1154",
+"pinyin": "H"
+},
+{
+"region_code": "230500",
+"region": "双鸭山市",
+"parent_code": "230000",
+"r_type": "2",
+"old_city_id": "1155",
+"pinyin": "S"
+},
+{
+"region_code": "230600",
+"region": "大庆市",
+"parent_code": "230000",
+"r_type": "2",
+"old_city_id": "1157",
+"pinyin": "D"
+},
+{
+"region_code": "230700",
+"region": "伊春市",
+"parent_code": "230000",
+"r_type": "2",
+"old_city_id": "1158",
+"pinyin": "Y"
+},
+{
+"region_code": "230800",
+"region": "佳木斯市",
+"parent_code": "230000",
+"r_type": "2",
+"old_city_id": "1160",
+"pinyin": "J"
+},
+{
+"region_code": "230900",
+"region": "七台河市",
+"parent_code": "230000",
+"r_type": "2",
+"old_city_id": "1161",
+"pinyin": "Q"
+},
+{
+"region_code": "231000",
+"region": "牡丹江市",
+"parent_code": "230000",
+"r_type": "2",
+"old_city_id": "1159",
+"pinyin": "M"
+},
+{
+"region_code": "231100",
+"region": "黑河市",
+"parent_code": "230000",
+"r_type": "2",
+"old_city_id": "1162",
+"pinyin": "H"
+},
+{
+"region_code": "231200",
+"region": "绥化市",
+"parent_code": "230000",
+"r_type": "2",
+"old_city_id": "1163",
+"pinyin": "S"
+},
+{
+"region_code": "232700",
+"region": "大兴安岭地区",
+"parent_code": "230000",
+"r_type": "2",
+"old_city_id": "1164",
+"pinyin": "D"
+},
+{
+"region_code": "310100",
+"region": "上海市",
+"parent_code": "310000",
+"r_type": "2",
+"old_city_id": "0",
+"pinyin": "S"
+},
+{
+"region_code": "320100",
+"region": "南京市",
+"parent_code": "320000",
+"r_type": "2",
+"old_city_id": "1165",
+"pinyin": "N"
+},
+{
+"region_code": "320200",
+"region": "无锡市",
+"parent_code": "320000",
+"r_type": "2",
+"old_city_id": "1166",
+"pinyin": "W"
+},
+{
+"region_code": "320300",
+"region": "徐州市",
+"parent_code": "320000",
+"r_type": "2",
+"old_city_id": "1167",
+"pinyin": "X"
+},
+{
+"region_code": "320400",
+"region": "常州市",
+"parent_code": "320000",
+"r_type": "2",
+"old_city_id": "1168",
+"pinyin": "C"
+},
+{
+"region_code": "320500",
+"region": "苏州市",
+"parent_code": "320000",
+"r_type": "2",
+"old_city_id": "1169",
+"pinyin": "S"
+},
+{
+"region_code": "320600",
+"region": "南通市",
+"parent_code": "320000",
+"r_type": "2",
+"old_city_id": "1170",
+"pinyin": "N"
+},
+{
+"region_code": "320700",
+"region": "连云港市",
+"parent_code": "320000",
+"r_type": "2",
+"old_city_id": "1171",
+"pinyin": "L"
+},
+{
+"region_code": "320800",
+"region": "淮安市",
+"parent_code": "320000",
+"r_type": "2",
+"old_city_id": "1172",
+"pinyin": "H"
+},
+{
+"region_code": "320900",
+"region": "盐城市",
+"parent_code": "320000",
+"r_type": "2",
+"old_city_id": "1173",
+"pinyin": "Y"
+},
+{
+"region_code": "321000",
+"region": "扬州市",
+"parent_code": "320000",
+"r_type": "2",
+"old_city_id": "1174",
+"pinyin": "Y"
+},
+{
+"region_code": "321100",
+"region": "镇江市",
+"parent_code": "320000",
+"r_type": "2",
+"old_city_id": "1175",
+"pinyin": "Z"
+},
+{
+"region_code": "321200",
+"region": "泰州市",
+"parent_code": "320000",
+"r_type": "2",
+"old_city_id": "1176",
+"pinyin": "T"
+},
+{
+"region_code": "321300",
+"region": "宿迁市",
+"parent_code": "320000",
+"r_type": "2",
+"old_city_id": "1177",
+"pinyin": "S"
+},
+{
+"region_code": "330100",
+"region": "杭州市",
+"parent_code": "330000",
+"r_type": "2",
+"old_city_id": "1178",
+"pinyin": "H"
+},
+{
+"region_code": "330200",
+"region": "宁波市",
+"parent_code": "330000",
+"r_type": "2",
+"old_city_id": "1179",
+"pinyin": "N"
+},
+{
+"region_code": "330300",
+"region": "温州市",
+"parent_code": "330000",
+"r_type": "2",
+"old_city_id": "1180",
+"pinyin": "W"
+},
+{
+"region_code": "330400",
+"region": "嘉兴市",
+"parent_code": "330000",
+"r_type": "2",
+"old_city_id": "1181",
+"pinyin": "J"
+},
+{
+"region_code": "330500",
+"region": "湖州市",
+"parent_code": "330000",
+"r_type": "2",
+"old_city_id": "1182",
+"pinyin": "H"
+},
+{
+"region_code": "330600",
+"region": "绍兴市",
+"parent_code": "330000",
+"r_type": "2",
+"old_city_id": "1183",
+"pinyin": "S"
+},
+{
+"region_code": "330700",
+"region": "金华市",
+"parent_code": "330000",
+"r_type": "2",
+"old_city_id": "1184",
+"pinyin": "J"
+},
+{
+"region_code": "330800",
+"region": "衢州市",
+"parent_code": "330000",
+"r_type": "2",
+"old_city_id": "1185",
+"pinyin": "Z"
+},
+{
+"region_code": "330900",
+"region": "舟山市",
+"parent_code": "330000",
+"r_type": "2",
+"old_city_id": "1186",
+"pinyin": "Z"
+},
+{
+"region_code": "331000",
+"region": "台州市",
+"parent_code": "330000",
+"r_type": "2",
+"old_city_id": "1187",
+"pinyin": "T"
+},
+{
+"region_code": "331100",
+"region": "丽水市",
+"parent_code": "330000",
+"r_type": "2",
+"old_city_id": "1188",
+"pinyin": "L"
+},
+{
+"region_code": "340100",
+"region": "合肥市",
+"parent_code": "340000",
+"r_type": "2",
+"old_city_id": "1189",
+"pinyin": "H"
+},
+{
+"region_code": "340200",
+"region": "芜湖市",
+"parent_code": "340000",
+"r_type": "2",
+"old_city_id": "1190",
+"pinyin": "W"
+},
+{
+"region_code": "340300",
+"region": "蚌埠市",
+"parent_code": "340000",
+"r_type": "2",
+"old_city_id": "1191",
+"pinyin": "B"
+},
+{
+"region_code": "340400",
+"region": "淮南市",
+"parent_code": "340000",
+"r_type": "2",
+"old_city_id": "1192",
+"pinyin": "H"
+},
+{
+"region_code": "340500",
+"region": "马鞍山市",
+"parent_code": "340000",
+"r_type": "2",
+"old_city_id": "1193",
+"pinyin": "M"
+},
+{
+"region_code": "340600",
+"region": "淮北市",
+"parent_code": "340000",
+"r_type": "2",
+"old_city_id": "1194",
+"pinyin": "H"
+},
+{
+"region_code": "340700",
+"region": "铜陵市",
+"parent_code": "340000",
+"r_type": "2",
+"old_city_id": "1195",
+"pinyin": "T"
+},
+{
+"region_code": "340800",
+"region": "安庆市",
+"parent_code": "340000",
+"r_type": "2",
+"old_city_id": "1196",
+"pinyin": "A"
+},
+{
+"region_code": "341000",
+"region": "黄山市",
+"parent_code": "340000",
+"r_type": "2",
+"old_city_id": "1197",
+"pinyin": "H"
+},
+{
+"region_code": "341100",
+"region": "滁州市",
+"parent_code": "340000",
+"r_type": "2",
+"old_city_id": "1198",
+"pinyin": "C"
+},
+{
+"region_code": "341200",
+"region": "阜阳市",
+"parent_code": "340000",
+"r_type": "2",
+"old_city_id": "1199",
+"pinyin": "F"
+},
+{
+"region_code": "341300",
+"region": "宿州市",
+"parent_code": "340000",
+"r_type": "2",
+"old_city_id": "1200",
+"pinyin": "S"
+},
+{
+"region_code": "341500",
+"region": "六安市",
+"parent_code": "340000",
+"r_type": "2",
+"old_city_id": "1202",
+"pinyin": "L"
+},
+{
+"region_code": "341600",
+"region": "亳州市",
+"parent_code": "340000",
+"r_type": "2",
+"old_city_id": "1203",
+"pinyin": "Z"
+},
+{
+"region_code": "341700",
+"region": "池州市",
+"parent_code": "340000",
+"r_type": "2",
+"old_city_id": "1204",
+"pinyin": "C"
+},
+{
+"region_code": "341800",
+"region": "宣城市",
+"parent_code": "340000",
+"r_type": "2",
+"old_city_id": "1205",
+"pinyin": "X"
+},
+{
+"region_code": "350100",
+"region": "福州市",
+"parent_code": "350000",
+"r_type": "2",
+"old_city_id": "1206",
+"pinyin": "F"
+},
+{
+"region_code": "350200",
+"region": "厦门市",
+"parent_code": "350000",
+"r_type": "2",
+"old_city_id": "1207",
+"pinyin": "X"
+},
+{
+"region_code": "350300",
+"region": "莆田市",
+"parent_code": "350000",
+"r_type": "2",
+"old_city_id": "1208",
+"pinyin": "P"
+},
+{
+"region_code": "350400",
+"region": "三明市",
+"parent_code": "350000",
+"r_type": "2",
+"old_city_id": "1209",
+"pinyin": "S"
+},
+{
+"region_code": "350500",
+"region": "泉州市",
+"parent_code": "350000",
+"r_type": "2",
+"old_city_id": "1210",
+"pinyin": "Q"
+},
+{
+"region_code": "350600",
+"region": "漳州市",
+"parent_code": "350000",
+"r_type": "2",
+"old_city_id": "1211",
+"pinyin": "Z"
+},
+{
+"region_code": "350700",
+"region": "南平市",
+"parent_code": "350000",
+"r_type": "2",
+"old_city_id": "1212",
+"pinyin": "N"
+},
+{
+"region_code": "350800",
+"region": "龙岩市",
+"parent_code": "350000",
+"r_type": "2",
+"old_city_id": "1213",
+"pinyin": "L"
+},
+{
+"region_code": "350900",
+"region": "宁德市",
+"parent_code": "350000",
+"r_type": "2",
+"old_city_id": "1214",
+"pinyin": "N"
+},
+{
+"region_code": "360100",
+"region": "南昌市",
+"parent_code": "360000",
+"r_type": "2",
+"old_city_id": "1215",
+"pinyin": "N"
+},
+{
+"region_code": "360200",
+"region": "景德镇市",
+"parent_code": "360000",
+"r_type": "2",
+"old_city_id": "1216",
+"pinyin": "J"
+},
+{
+"region_code": "360300",
+"region": "萍乡市",
+"parent_code": "360000",
+"r_type": "2",
+"old_city_id": "1217",
+"pinyin": "P"
+},
+{
+"region_code": "360400",
+"region": "九江市",
+"parent_code": "360000",
+"r_type": "2",
+"old_city_id": "1219",
+"pinyin": "J"
+},
+{
+"region_code": "360500",
+"region": "新余市",
+"parent_code": "360000",
+"r_type": "2",
+"old_city_id": "1218",
+"pinyin": "X"
+},
+{
+"region_code": "360700",
+"region": "赣州市",
+"parent_code": "360000",
+"r_type": "2",
+"old_city_id": "1221",
+"pinyin": "G"
+},
+{
+"region_code": "360800",
+"region": "吉安市",
+"parent_code": "360000",
+"r_type": "2",
+"old_city_id": "1222",
+"pinyin": "J"
+},
+{
+"region_code": "360900",
+"region": "宜春市",
+"parent_code": "360000",
+"r_type": "2",
+"old_city_id": "1223",
+"pinyin": "Y"
+},
+{
+"region_code": "361000",
+"region": "抚州市",
+"parent_code": "360000",
+"r_type": "2",
+"old_city_id": "1224",
+"pinyin": "F"
+},
+{
+"region_code": "361100",
+"region": "上饶市",
+"parent_code": "360000",
+"r_type": "2",
+"old_city_id": "1225",
+"pinyin": "S"
+},
+{
+"region_code": "370100",
+"region": "济南市",
+"parent_code": "370000",
+"r_type": "2",
+"old_city_id": "1226",
+"pinyin": "J"
+},
+{
+"region_code": "370200",
+"region": "青岛市",
+"parent_code": "370000",
+"r_type": "2",
+"old_city_id": "1227",
+"pinyin": "Q"
+},
+{
+"region_code": "370300",
+"region": "淄博市",
+"parent_code": "370000",
+"r_type": "2",
+"old_city_id": "1228",
+"pinyin": "Z"
+},
+{
+"region_code": "370400",
+"region": "枣庄市",
+"parent_code": "370000",
+"r_type": "2",
+"old_city_id": "1229",
+"pinyin": "Z"
+},
+{
+"region_code": "370500",
+"region": "东营市",
+"parent_code": "370000",
+"r_type": "2",
+"old_city_id": "1230",
+"pinyin": "D"
+},
+{
+"region_code": "370600",
+"region": "烟台市",
+"parent_code": "370000",
+"r_type": "2",
+"old_city_id": "1232",
+"pinyin": "Y"
+},
+{
+"region_code": "370700",
+"region": "潍坊市",
+"parent_code": "370000",
+"r_type": "2",
+"old_city_id": "1231",
+"pinyin": "W"
+},
+{
+"region_code": "370800",
+"region": "济宁市",
+"parent_code": "370000",
+"r_type": "2",
+"old_city_id": "1234",
+"pinyin": "J"
+},
+{
+"region_code": "370900",
+"region": "泰安市",
+"parent_code": "370000",
+"r_type": "2",
+"old_city_id": "1235",
+"pinyin": "T"
+},
+{
+"region_code": "371000",
+"region": "威海市",
+"parent_code": "370000",
+"r_type": "2",
+"old_city_id": "1233",
+"pinyin": "W"
+},
+{
+"region_code": "371100",
+"region": "日照市",
+"parent_code": "370000",
+"r_type": "2",
+"old_city_id": "1236",
+"pinyin": "R"
+},
+{
+"region_code": "371200",
+"region": "莱芜市",
+"parent_code": "370000",
+"r_type": "2",
+"old_city_id": "1237",
+"pinyin": "L"
+},
+{
+"region_code": "371300",
+"region": "临沂市",
+"parent_code": "370000",
+"r_type": "2",
+"old_city_id": "1239",
+"pinyin": "L"
+},
+{
+"region_code": "371400",
+"region": "德州市",
+"parent_code": "370000",
+"r_type": "2",
+"old_city_id": "1238",
+"pinyin": "D"
+},
+{
+"region_code": "371500",
+"region": "聊城市",
+"parent_code": "370000",
+"r_type": "2",
+"old_city_id": "1240",
+"pinyin": "L"
+},
+{
+"region_code": "371600",
+"region": "滨州市",
+"parent_code": "370000",
+"r_type": "2",
+"old_city_id": "1241",
+"pinyin": "B"
+},
+{
+"region_code": "371700",
+"region": "菏泽市",
+"parent_code": "370000",
+"r_type": "2",
+"old_city_id": "1242",
+"pinyin": "H"
+},
+{
+"region_code": "410100",
+"region": "郑州市",
+"parent_code": "410000",
+"r_type": "2",
+"old_city_id": "1243",
+"pinyin": "Z"
+},
+{
+"region_code": "410200",
+"region": "开封市",
+"parent_code": "410000",
+"r_type": "2",
+"old_city_id": "1244",
+"pinyin": "K"
+},
+{
+"region_code": "410300",
+"region": "洛阳市",
+"parent_code": "410000",
+"r_type": "2",
+"old_city_id": "1245",
+"pinyin": "L"
+},
+{
+"region_code": "410400",
+"region": "平顶山市",
+"parent_code": "410000",
+"r_type": "2",
+"old_city_id": "1246",
+"pinyin": "P"
+},
+{
+"region_code": "410500",
+"region": "安阳市",
+"parent_code": "410000",
+"r_type": "2",
+"old_city_id": "1250",
+"pinyin": "A"
+},
+{
+"region_code": "410600",
+"region": "鹤壁市",
+"parent_code": "410000",
+"r_type": "2",
+"old_city_id": "1248",
+"pinyin": "H"
+},
+{
+"region_code": "410700",
+"region": "新乡市",
+"parent_code": "410000",
+"r_type": "2",
+"old_city_id": "1249",
+"pinyin": "X"
+},
+{
+"region_code": "410800",
+"region": "焦作市",
+"parent_code": "410000",
+"r_type": "2",
+"old_city_id": "1247",
+"pinyin": "J"
+},
+{
+"region_code": "410900",
+"region": "濮阳市",
+"parent_code": "410000",
+"r_type": "2",
+"old_city_id": "1251",
+"pinyin": "Y"
+},
+{
+"region_code": "411000",
+"region": "许昌市",
+"parent_code": "410000",
+"r_type": "2",
+"old_city_id": "1252",
+"pinyin": "X"
+},
+{
+"region_code": "411100",
+"region": "漯河市",
+"parent_code": "410000",
+"r_type": "2",
+"old_city_id": "1253",
+"pinyin": "H"
+},
+{
+"region_code": "411200",
+"region": "三门峡市",
+"parent_code": "410000",
+"r_type": "2",
+"old_city_id": "1254",
+"pinyin": "S"
+},
+{
+"region_code": "411300",
+"region": "南阳市",
+"parent_code": "410000",
+"r_type": "2",
+"old_city_id": "1255",
+"pinyin": "N"
+},
+{
+"region_code": "411400",
+"region": "商丘市",
+"parent_code": "410000",
+"r_type": "2",
+"old_city_id": "1256",
+"pinyin": "S"
+},
+{
+"region_code": "411500",
+"region": "信阳市",
+"parent_code": "410000",
+"r_type": "2",
+"old_city_id": "1257",
+"pinyin": "X"
+},
+{
+"region_code": "411600",
+"region": "周口市",
+"parent_code": "410000",
+"r_type": "2",
+"old_city_id": "1258",
+"pinyin": "Z"
+},
+{
+"region_code": "411700",
+"region": "驻马店市",
+"parent_code": "410000",
+"r_type": "2",
+"old_city_id": "1259",
+"pinyin": "Z"
+},
+{
+"region_code": "419000",
+"region": "济源市",
+"parent_code": "410000",
+"r_type": "2",
+"old_city_id": "1260",
+"pinyin": "J"
+},
+{
+"region_code": "420100",
+"region": "武汉市",
+"parent_code": "420000",
+"r_type": "2",
+"old_city_id": "1261",
+"pinyin": "W"
+},
+{
+"region_code": "420200",
+"region": "黄石市",
+"parent_code": "420000",
+"r_type": "2",
+"old_city_id": "1262",
+"pinyin": "H"
+},
+{
+"region_code": "420300",
+"region": "十堰市",
+"parent_code": "420000",
+"r_type": "2",
+"old_city_id": "1264",
+"pinyin": "S"
+},
+{
+"region_code": "420500",
+"region": "宜昌市",
+"parent_code": "420000",
+"r_type": "2",
+"old_city_id": "1266",
+"pinyin": "Y"
+},
+{
+"region_code": "420600",
+"region": "襄阳市",
+"parent_code": "420000",
+"r_type": "2",
+"old_city_id": "1263",
+"pinyin": "X"
+},
+{
+"region_code": "420700",
+"region": "鄂州市",
+"parent_code": "420000",
+"r_type": "2",
+"old_city_id": "1268",
+"pinyin": "E"
+},
+{
+"region_code": "420800",
+"region": "荆门市",
+"parent_code": "420000",
+"r_type": "2",
+"old_city_id": "1267",
+"pinyin": "J"
+},
+{
+"region_code": "420900",
+"region": "孝感市",
+"parent_code": "420000",
+"r_type": "2",
+"old_city_id": "1269",
+"pinyin": "X"
+},
+{
+"region_code": "421000",
+"region": "荆州市",
+"parent_code": "420000",
+"r_type": "2",
+"old_city_id": "1265",
+"pinyin": "J"
+},
+{
+"region_code": "421100",
+"region": "黄冈市",
+"parent_code": "420000",
+"r_type": "2",
+"old_city_id": "1270",
+"pinyin": "H"
+},
+{
+"region_code": "421200",
+"region": "咸宁市",
+"parent_code": "420000",
+"r_type": "2",
+"old_city_id": "1271",
+"pinyin": "X"
+},
+{
+"region_code": "421300",
+"region": "随州市",
+"parent_code": "420000",
+"r_type": "2",
+"old_city_id": "1272",
+"pinyin": "S"
+},
+{
+"region_code": "422800",
+"region": "恩施土家族苗族自治州",
+"parent_code": "420000",
+"r_type": "2",
+"old_city_id": "1277",
+"pinyin": "E"
+},
+{
+"region_code": "429000",
+"region": "省直辖县",
+"parent_code": "420000",
+"r_type": "2",
+"old_city_id": "0",
+"pinyin": "S"
+},
+{
+"region_code": "430100",
+"region": "长沙市",
+"parent_code": "430000",
+"r_type": "2",
+"old_city_id": "1278",
+"pinyin": "C"
+},
+{
+"region_code": "430200",
+"region": "株洲市",
+"parent_code": "430000",
+"r_type": "2",
+"old_city_id": "1279",
+"pinyin": "Z"
+},
+{
+"region_code": "430300",
+"region": "湘潭市",
+"parent_code": "430000",
+"r_type": "2",
+"old_city_id": "1280",
+"pinyin": "X"
+},
+{
+"region_code": "430400",
+"region": "衡阳市",
+"parent_code": "430000",
+"r_type": "2",
+"old_city_id": "1281",
+"pinyin": "H"
+},
+{
+"region_code": "430500",
+"region": "邵阳市",
+"parent_code": "430000",
+"r_type": "2",
+"old_city_id": "1282",
+"pinyin": "S"
+},
+{
+"region_code": "430600",
+"region": "岳阳市",
+"parent_code": "430000",
+"r_type": "2",
+"old_city_id": "1283",
+"pinyin": "Y"
+},
+{
+"region_code": "430700",
+"region": "常德市",
+"parent_code": "430000",
+"r_type": "2",
+"old_city_id": "1284",
+"pinyin": "C"
+},
+{
+"region_code": "430800",
+"region": "张家界市",
+"parent_code": "430000",
+"r_type": "2",
+"old_city_id": "1285",
+"pinyin": "Z"
+},
+{
+"region_code": "430900",
+"region": "益阳市",
+"parent_code": "430000",
+"r_type": "2",
+"old_city_id": "1286",
+"pinyin": "Y"
+},
+{
+"region_code": "431000",
+"region": "郴州市",
+"parent_code": "430000",
+"r_type": "2",
+"old_city_id": "1287",
+"pinyin": "C"
+},
+{
+"region_code": "431100",
+"region": "永州市",
+"parent_code": "430000",
+"r_type": "2",
+"old_city_id": "1291",
+"pinyin": "Y"
+},
+{
+"region_code": "431200",
+"region": "怀化市",
+"parent_code": "430000",
+"r_type": "2",
+"old_city_id": "1288",
+"pinyin": "H"
+},
+{
+"region_code": "431300",
+"region": "娄底市",
+"parent_code": "430000",
+"r_type": "2",
+"old_city_id": "1289",
+"pinyin": "L"
+},
+{
+"region_code": "433100",
+"region": "湘西土家族苗族自治州",
+"parent_code": "430000",
+"r_type": "2",
+"old_city_id": "1290",
+"pinyin": "X"
+},
+{
+"region_code": "440100",
+"region": "广州市",
+"parent_code": "440000",
+"r_type": "2",
+"old_city_id": "1292",
+"pinyin": "G"
+},
+{
+"region_code": "440200",
+"region": "韶关市",
+"parent_code": "440000",
+"r_type": "2",
+"old_city_id": "1296",
+"pinyin": "S"
+},
+{
+"region_code": "440300",
+"region": "深圳市",
+"parent_code": "440000",
+"r_type": "2",
+"old_city_id": "1293",
+"pinyin": "S"
+},
+{
+"region_code": "440400",
+"region": "珠海市",
+"parent_code": "440000",
+"r_type": "2",
+"old_city_id": "1294",
+"pinyin": "Z"
+},
+{
+"region_code": "440500",
+"region": "汕头市",
+"parent_code": "440000",
+"r_type": "2",
+"old_city_id": "1295",
+"pinyin": "S"
+},
+{
+"region_code": "440600",
+"region": "佛山市",
+"parent_code": "440000",
+"r_type": "2",
+"old_city_id": "1297",
+"pinyin": "F"
+},
+{
+"region_code": "440700",
+"region": "江门市",
+"parent_code": "440000",
+"r_type": "2",
+"old_city_id": "1298",
+"pinyin": "J"
+},
+{
+"region_code": "440800",
+"region": "湛江市",
+"parent_code": "440000",
+"r_type": "2",
+"old_city_id": "1299",
+"pinyin": "Z"
+},
+{
+"region_code": "440900",
+"region": "茂名市",
+"parent_code": "440000",
+"r_type": "2",
+"old_city_id": "1300",
+"pinyin": "M"
+},
+{
+"region_code": "441200",
+"region": "肇庆市",
+"parent_code": "440000",
+"r_type": "2",
+"old_city_id": "1301",
+"pinyin": "Z"
+},
+{
+"region_code": "441300",
+"region": "惠州市",
+"parent_code": "440000",
+"r_type": "2",
+"old_city_id": "1302",
+"pinyin": "H"
+},
+{
+"region_code": "441400",
+"region": "梅州市",
+"parent_code": "440000",
+"r_type": "2",
+"old_city_id": "1303",
+"pinyin": "M"
+},
+{
+"region_code": "441500",
+"region": "汕尾市",
+"parent_code": "440000",
+"r_type": "2",
+"old_city_id": "1304",
+"pinyin": "S"
+},
+{
+"region_code": "441600",
+"region": "河源市",
+"parent_code": "440000",
+"r_type": "2",
+"old_city_id": "1305",
+"pinyin": "H"
+},
+{
+"region_code": "441700",
+"region": "阳江市",
+"parent_code": "440000",
+"r_type": "2",
+"old_city_id": "1306",
+"pinyin": "Y"
+},
+{
+"region_code": "441800",
+"region": "清远市",
+"parent_code": "440000",
+"r_type": "2",
+"old_city_id": "1307",
+"pinyin": "Q"
+},
+{
+"region_code": "441900",
+"region": "东莞市",
+"parent_code": "440000",
+"r_type": "2",
+"old_city_id": "1308",
+"pinyin": "D"
+},
+{
+"region_code": "442000",
+"region": "中山市",
+"parent_code": "440000",
+"r_type": "2",
+"old_city_id": "1309",
+"pinyin": "Z"
+},
+{
+"region_code": "445100",
+"region": "潮州市",
+"parent_code": "440000",
+"r_type": "2",
+"old_city_id": "1310",
+"pinyin": "C"
+},
+{
+"region_code": "445200",
+"region": "揭阳市",
+"parent_code": "440000",
+"r_type": "2",
+"old_city_id": "1311",
+"pinyin": "J"
+},
+{
+"region_code": "445300",
+"region": "云浮市",
+"parent_code": "440000",
+"r_type": "2",
+"old_city_id": "1312",
+"pinyin": "Y"
+},
+{
+"region_code": "450100",
+"region": "南宁市",
+"parent_code": "450000",
+"r_type": "2",
+"old_city_id": "1313",
+"pinyin": "N"
+},
+{
+"region_code": "450200",
+"region": "柳州市",
+"parent_code": "450000",
+"r_type": "2",
+"old_city_id": "1314",
+"pinyin": "L"
+},
+{
+"region_code": "450300",
+"region": "桂林市",
+"parent_code": "450000",
+"r_type": "2",
+"old_city_id": "1315",
+"pinyin": "G"
+},
+{
+"region_code": "450400",
+"region": "梧州市",
+"parent_code": "450000",
+"r_type": "2",
+"old_city_id": "1316",
+"pinyin": "W"
+},
+{
+"region_code": "450500",
+"region": "北海市",
+"parent_code": "450000",
+"r_type": "2",
+"old_city_id": "1317",
+"pinyin": "B"
+},
+{
+"region_code": "450600",
+"region": "防城港市",
+"parent_code": "450000",
+"r_type": "2",
+"old_city_id": "1318",
+"pinyin": "F"
+},
+{
+"region_code": "450700",
+"region": "钦州市",
+"parent_code": "450000",
+"r_type": "2",
+"old_city_id": "1319",
+"pinyin": "Q"
+},
+{
+"region_code": "450800",
+"region": "贵港市",
+"parent_code": "450000",
+"r_type": "2",
+"old_city_id": "1320",
+"pinyin": "G"
+},
+{
+"region_code": "450900",
+"region": "玉林市",
+"parent_code": "450000",
+"r_type": "2",
+"old_city_id": "1321",
+"pinyin": "Y"
+},
+{
+"region_code": "451000",
+"region": "百色市",
+"parent_code": "450000",
+"r_type": "2",
+"old_city_id": "1322",
+"pinyin": "B"
+},
+{
+"region_code": "451100",
+"region": "贺州市",
+"parent_code": "450000",
+"r_type": "2",
+"old_city_id": "1323",
+"pinyin": "H"
+},
+{
+"region_code": "451200",
+"region": "河池市",
+"parent_code": "450000",
+"r_type": "2",
+"old_city_id": "1324",
+"pinyin": "H"
+},
+{
+"region_code": "451300",
+"region": "来宾市",
+"parent_code": "450000",
+"r_type": "2",
+"old_city_id": "1325",
+"pinyin": "L"
+},
+{
+"region_code": "451400",
+"region": "崇左市",
+"parent_code": "450000",
+"r_type": "2",
+"old_city_id": "1326",
+"pinyin": "C"
+},
+{
+"region_code": "460100",
+"region": "海口市",
+"parent_code": "460000",
+"r_type": "2",
+"old_city_id": "1327",
+"pinyin": "H"
+},
+{
+"region_code": "460200",
+"region": "三亚市",
+"parent_code": "460000",
+"r_type": "2",
+"old_city_id": "1328",
+"pinyin": "S"
+},
+{
+"region_code": "469000",
+"region": "省直辖县",
+"parent_code": "460000",
+"r_type": "2",
+"old_city_id": "0",
+"pinyin": "S"
+},
+{
+"region_code": "500100",
+"region": "重庆市",
+"parent_code": "500000",
+"r_type": "2",
+"old_city_id": "0",
+"pinyin": "Z"
+},
+{
+"region_code": "510100",
+"region": "成都市",
+"parent_code": "510000",
+"r_type": "2",
+"old_city_id": "1348",
+"pinyin": "C"
+},
+{
+"region_code": "510300",
+"region": "自贡市",
+"parent_code": "510000",
+"r_type": "2",
+"old_city_id": "1349",
+"pinyin": "Z"
+},
+{
+"region_code": "510400",
+"region": "攀枝花市",
+"parent_code": "510000",
+"r_type": "2",
+"old_city_id": "1350",
+"pinyin": "P"
+},
+{
+"region_code": "510500",
+"region": "泸州市",
+"parent_code": "510000",
+"r_type": "2",
+"old_city_id": "1351",
+"pinyin": "Z"
+},
+{
+"region_code": "510600",
+"region": "德阳市",
+"parent_code": "510000",
+"r_type": "2",
+"old_city_id": "1352",
+"pinyin": "D"
+},
+{
+"region_code": "510700",
+"region": "绵阳市",
+"parent_code": "510000",
+"r_type": "2",
+"old_city_id": "1353",
+"pinyin": "M"
+},
+{
+"region_code": "510800",
+"region": "广元市",
+"parent_code": "510000",
+"r_type": "2",
+"old_city_id": "1354",
+"pinyin": "G"
+},
+{
+"region_code": "510900",
+"region": "遂宁市",
+"parent_code": "510000",
+"r_type": "2",
+"old_city_id": "1355",
+"pinyin": "S"
+},
+{
+"region_code": "511000",
+"region": "内江市",
+"parent_code": "510000",
+"r_type": "2",
+"old_city_id": "1356",
+"pinyin": "N"
+},
+{
+"region_code": "511100",
+"region": "乐山市",
+"parent_code": "510000",
+"r_type": "2",
+"old_city_id": "1357",
+"pinyin": "L"
+},
+{
+"region_code": "511300",
+"region": "南充市",
+"parent_code": "510000",
+"r_type": "2",
+"old_city_id": "1358",
+"pinyin": "N"
+},
+{
+"region_code": "511400",
+"region": "眉山市",
+"parent_code": "510000",
+"r_type": "2",
+"old_city_id": "1362",
+"pinyin": "M"
+},
+{
+"region_code": "511500",
+"region": "宜宾市",
+"parent_code": "510000",
+"r_type": "2",
+"old_city_id": "1359",
+"pinyin": "Y"
+},
+{
+"region_code": "511600",
+"region": "广安市",
+"parent_code": "510000",
+"r_type": "2",
+"old_city_id": "1360",
+"pinyin": "G"
+},
+{
+"region_code": "511700",
+"region": "达州市",
+"parent_code": "510000",
+"r_type": "2",
+"old_city_id": "1361",
+"pinyin": "D"
+},
+{
+"region_code": "511800",
+"region": "雅安市",
+"parent_code": "510000",
+"r_type": "2",
+"old_city_id": "1363",
+"pinyin": "Y"
+},
+{
+"region_code": "511900",
+"region": "巴中市",
+"parent_code": "510000",
+"r_type": "2",
+"old_city_id": "1364",
+"pinyin": "B"
+},
+{
+"region_code": "512000",
+"region": "资阳市",
+"parent_code": "510000",
+"r_type": "2",
+"old_city_id": "1365",
+"pinyin": "Z"
+},
+{
+"region_code": "513200",
+"region": "阿坝藏族羌族自治州",
+"parent_code": "510000",
+"r_type": "2",
+"old_city_id": "1366",
+"pinyin": "A"
+},
+{
+"region_code": "513300",
+"region": "甘孜藏族自治州",
+"parent_code": "510000",
+"r_type": "2",
+"old_city_id": "1367",
+"pinyin": "G"
+},
+{
+"region_code": "513400",
+"region": "凉山彝族自治州",
+"parent_code": "510000",
+"r_type": "2",
+"old_city_id": "1368",
+"pinyin": "L"
+},
+{
+"region_code": "520100",
+"region": "贵阳市",
+"parent_code": "520000",
+"r_type": "2",
+"old_city_id": "1369",
+"pinyin": "G"
+},
+{
+"region_code": "520200",
+"region": "六盘水市",
+"parent_code": "520000",
+"r_type": "2",
+"old_city_id": "1370",
+"pinyin": "L"
+},
+{
+"region_code": "520300",
+"region": "遵义市",
+"parent_code": "520000",
+"r_type": "2",
+"old_city_id": "1371",
+"pinyin": "Z"
+},
+{
+"region_code": "520400",
+"region": "安顺市",
+"parent_code": "520000",
+"r_type": "2",
+"old_city_id": "1372",
+"pinyin": "A"
+},
+{
+"region_code": "522200",
+"region": "铜仁地区",
+"parent_code": "520000",
+"r_type": "2",
+"old_city_id": "1373",
+"pinyin": "T"
+},
+{
+"region_code": "522300",
+"region": "黔西南布依族苗族自治州",
+"parent_code": "520000",
+"r_type": "2",
+"old_city_id": "1375",
+"pinyin": "Q"
+},
+{
+"region_code": "522400",
+"region": "毕节地区",
+"parent_code": "520000",
+"r_type": "2",
+"old_city_id": "1374",
+"pinyin": "B"
+},
+{
+"region_code": "522600",
+"region": "黔东南苗族侗族自治州",
+"parent_code": "520000",
+"r_type": "2",
+"old_city_id": "1376",
+"pinyin": "Q"
+},
+{
+"region_code": "522700",
+"region": "黔南布依族苗族自治州",
+"parent_code": "520000",
+"r_type": "2",
+"old_city_id": "1377",
+"pinyin": "Q"
+},
+{
+"region_code": "530100",
+"region": "昆明市",
+"parent_code": "530000",
+"r_type": "2",
+"old_city_id": "1378",
+"pinyin": "K"
+},
+{
+"region_code": "530300",
+"region": "曲靖市",
+"parent_code": "530000",
+"r_type": "2",
+"old_city_id": "1379",
+"pinyin": "Q"
+},
+{
+"region_code": "530400",
+"region": "玉溪市",
+"parent_code": "530000",
+"r_type": "2",
+"old_city_id": "1380",
+"pinyin": "Y"
+},
+{
+"region_code": "530500",
+"region": "保山市",
+"parent_code": "530000",
+"r_type": "2",
+"old_city_id": "1381",
+"pinyin": "B"
+},
+{
+"region_code": "530600",
+"region": "昭通市",
+"parent_code": "530000",
+"r_type": "2",
+"old_city_id": "1382",
+"pinyin": "Z"
+},
+{
+"region_code": "530700",
+"region": "丽江市",
+"parent_code": "530000",
+"r_type": "2",
+"old_city_id": "1383",
+"pinyin": "L"
+},
+{
+"region_code": "530800",
+"region": "普洱市",
+"parent_code": "530000",
+"r_type": "2",
+"old_city_id": "1502",
+"pinyin": "P"
+},
+{
+"region_code": "530900",
+"region": "临沧市",
+"parent_code": "530000",
+"r_type": "2",
+"old_city_id": "1385",
+"pinyin": "L"
+},
+{
+"region_code": "532300",
+"region": "楚雄彝族自治州",
+"parent_code": "530000",
+"r_type": "2",
+"old_city_id": "1389",
+"pinyin": "C"
+},
+{
+"region_code": "532500",
+"region": "红河哈尼族彝族自治州",
+"parent_code": "530000",
+"r_type": "2",
+"old_city_id": "1387",
+"pinyin": "H"
+},
+{
+"region_code": "532600",
+"region": "文山壮族苗族自治州",
+"parent_code": "530000",
+"r_type": "2",
+"old_city_id": "1386",
+"pinyin": "W"
+},
+{
+"region_code": "532800",
+"region": "西双版纳傣族自治州",
+"parent_code": "530000",
+"r_type": "2",
+"old_city_id": "1388",
+"pinyin": "X"
+},
+{
+"region_code": "532900",
+"region": "大理白族自治州",
+"parent_code": "530000",
+"r_type": "2",
+"old_city_id": "1390",
+"pinyin": "D"
+},
+{
+"region_code": "533100",
+"region": "德宏傣族景颇族自治州",
+"parent_code": "530000",
+"r_type": "2",
+"old_city_id": "1391",
+"pinyin": "D"
+},
+{
+"region_code": "533300",
+"region": "怒江傈僳族自治州",
+"parent_code": "530000",
+"r_type": "2",
+"old_city_id": "1392",
+"pinyin": "N"
+},
+{
+"region_code": "533400",
+"region": "迪庆藏族自治州",
+"parent_code": "530000",
+"r_type": "2",
+"old_city_id": "1393",
+"pinyin": "D"
+},
+{
+"region_code": "540100",
+"region": "拉萨市",
+"parent_code": "540000",
+"r_type": "2",
+"old_city_id": "1394",
+"pinyin": "L"
+},
+{
+"region_code": "542100",
+"region": "昌都地区",
+"parent_code": "540000",
+"r_type": "2",
+"old_city_id": "1396",
+"pinyin": "C"
+},
+{
+"region_code": "542200",
+"region": "山南地区",
+"parent_code": "540000",
+"r_type": "2",
+"old_city_id": "1397",
+"pinyin": "S"
+},
+{
+"region_code": "542300",
+"region": "日喀则地区",
+"parent_code": "540000",
+"r_type": "2",
+"old_city_id": "1398",
+"pinyin": "R"
+},
+{
+"region_code": "542400",
+"region": "那曲地区",
+"parent_code": "540000",
+"r_type": "2",
+"old_city_id": "1395",
+"pinyin": "N"
+},
+{
+"region_code": "542500",
+"region": "阿里地区",
+"parent_code": "540000",
+"r_type": "2",
+"old_city_id": "1399",
+"pinyin": "A"
+},
+{
+"region_code": "542600",
+"region": "林芝地区",
+"parent_code": "540000",
+"r_type": "2",
+"old_city_id": "1400",
+"pinyin": "L"
+},
+{
+"region_code": "610100",
+"region": "西安市",
+"parent_code": "610000",
+"r_type": "2",
+"old_city_id": "1401",
+"pinyin": "X"
+},
+{
+"region_code": "610200",
+"region": "铜川市",
+"parent_code": "610000",
+"r_type": "2",
+"old_city_id": "1402",
+"pinyin": "T"
+},
+{
+"region_code": "610300",
+"region": "宝鸡市",
+"parent_code": "610000",
+"r_type": "2",
+"old_city_id": "1403",
+"pinyin": "B"
+},
+{
+"region_code": "610400",
+"region": "咸阳市",
+"parent_code": "610000",
+"r_type": "2",
+"old_city_id": "1404",
+"pinyin": "X"
+},
+{
+"region_code": "610500",
+"region": "渭南市",
+"parent_code": "610000",
+"r_type": "2",
+"old_city_id": "1405",
+"pinyin": "W"
+},
+{
+"region_code": "610600",
+"region": "延安市",
+"parent_code": "610000",
+"r_type": "2",
+"old_city_id": "1406",
+"pinyin": "Y"
+},
+{
+"region_code": "610700",
+"region": "汉中市",
+"parent_code": "610000",
+"r_type": "2",
+"old_city_id": "1407",
+"pinyin": "H"
+},
+{
+"region_code": "610800",
+"region": "榆林市",
+"parent_code": "610000",
+"r_type": "2",
+"old_city_id": "1408",
+"pinyin": "Y"
+},
+{
+"region_code": "610900",
+"region": "安康市",
+"parent_code": "610000",
+"r_type": "2",
+"old_city_id": "1409",
+"pinyin": "A"
+},
+{
+"region_code": "611000",
+"region": "商洛市",
+"parent_code": "610000",
+"r_type": "2",
+"old_city_id": "1410",
+"pinyin": "S"
+},
+{
+"region_code": "620100",
+"region": "兰州市",
+"parent_code": "620000",
+"r_type": "2",
+"old_city_id": "1411",
+"pinyin": "L"
+},
+{
+"region_code": "620200",
+"region": "嘉峪关市",
+"parent_code": "620000",
+"r_type": "2",
+"old_city_id": "1415",
+"pinyin": "J"
+},
+{
+"region_code": "620300",
+"region": "金昌市",
+"parent_code": "620000",
+"r_type": "2",
+"old_city_id": "1412",
+"pinyin": "J"
+},
+{
+"region_code": "620400",
+"region": "白银市",
+"parent_code": "620000",
+"r_type": "2",
+"old_city_id": "1413",
+"pinyin": "B"
+},
+{
+"region_code": "620500",
+"region": "天水市",
+"parent_code": "620000",
+"r_type": "2",
+"old_city_id": "1414",
+"pinyin": "T"
+},
+{
+"region_code": "620600",
+"region": "武威市",
+"parent_code": "620000",
+"r_type": "2",
+"old_city_id": "1416",
+"pinyin": "W"
+},
+{
+"region_code": "620700",
+"region": "张掖市",
+"parent_code": "620000",
+"r_type": "2",
+"old_city_id": "1417",
+"pinyin": "Z"
+},
+{
+"region_code": "620800",
+"region": "平凉市",
+"parent_code": "620000",
+"r_type": "2",
+"old_city_id": "1418",
+"pinyin": "P"
+},
+{
+"region_code": "620900",
+"region": "酒泉市",
+"parent_code": "620000",
+"r_type": "2",
+"old_city_id": "1419",
+"pinyin": "J"
+},
+{
+"region_code": "621000",
+"region": "庆阳市",
+"parent_code": "620000",
+"r_type": "2",
+"old_city_id": "1420",
+"pinyin": "Q"
+},
+{
+"region_code": "621100",
+"region": "定西市",
+"parent_code": "620000",
+"r_type": "2",
+"old_city_id": "1421",
+"pinyin": "D"
+},
+{
+"region_code": "621200",
+"region": "陇南市",
+"parent_code": "620000",
+"r_type": "2",
+"old_city_id": "1422",
+"pinyin": "L"
+},
+{
+"region_code": "622900",
+"region": "临夏回族自治州",
+"parent_code": "620000",
+"r_type": "2",
+"old_city_id": "1423",
+"pinyin": "L"
+},
+{
+"region_code": "623000",
+"region": "甘南藏族自治州",
+"parent_code": "620000",
+"r_type": "2",
+"old_city_id": "1424",
+"pinyin": "G"
+},
+{
+"region_code": "630100",
+"region": "西宁市",
+"parent_code": "630000",
+"r_type": "2",
+"old_city_id": "1425",
+"pinyin": "X"
+},
+{
+"region_code": "632100",
+"region": "海东地区",
+"parent_code": "630000",
+"r_type": "2",
+"old_city_id": "1426",
+"pinyin": "H"
+},
+{
+"region_code": "632200",
+"region": "海北藏族自治州",
+"parent_code": "630000",
+"r_type": "2",
+"old_city_id": "1427",
+"pinyin": "H"
+},
+{
+"region_code": "632300",
+"region": "黄南藏族自治州",
+"parent_code": "630000",
+"r_type": "2",
+"old_city_id": "1428",
+"pinyin": "H"
+},
+{
+"region_code": "632500",
+"region": "海南藏族自治州",
+"parent_code": "630000",
+"r_type": "2",
+"old_city_id": "1429",
+"pinyin": "H"
+},
+{
+"region_code": "632600",
+"region": "果洛藏族自治州",
+"parent_code": "630000",
+"r_type": "2",
+"old_city_id": "1430",
+"pinyin": "G"
+},
+{
+"region_code": "632700",
+"region": "玉树藏族自治州",
+"parent_code": "630000",
+"r_type": "2",
+"old_city_id": "1431",
+"pinyin": "Y"
+},
+{
+"region_code": "632800",
+"region": "海西蒙古族藏族自治州",
+"parent_code": "630000",
+"r_type": "2",
+"old_city_id": "1432",
+"pinyin": "H"
+},
+{
+"region_code": "640100",
+"region": "银川市",
+"parent_code": "640000",
+"r_type": "2",
+"old_city_id": "1433",
+"pinyin": "Y"
+},
+{
+"region_code": "640200",
+"region": "石嘴山市",
+"parent_code": "640000",
+"r_type": "2",
+"old_city_id": "1434",
+"pinyin": "S"
+},
+{
+"region_code": "640300",
+"region": "吴忠市",
+"parent_code": "640000",
+"r_type": "2",
+"old_city_id": "1435",
+"pinyin": "W"
+},
+{
+"region_code": "640400",
+"region": "固原市",
+"parent_code": "640000",
+"r_type": "2",
+"old_city_id": "1436",
+"pinyin": "G"
+},
+{
+"region_code": "640500",
+"region": "中卫市",
+"parent_code": "640000",
+"r_type": "2",
+"old_city_id": "1437",
+"pinyin": "Z"
+},
+{
+"region_code": "650100",
+"region": "乌鲁木齐市",
+"parent_code": "650000",
+"r_type": "2",
+"old_city_id": "1438",
+"pinyin": "W"
+},
+{
+"region_code": "650200",
+"region": "克拉玛依市",
+"parent_code": "650000",
+"r_type": "2",
+"old_city_id": "1439",
+"pinyin": "K"
+},
+{
+"region_code": "652100",
+"region": "吐鲁番地区",
+"parent_code": "650000",
+"r_type": "2",
+"old_city_id": "1444",
+"pinyin": "T"
+},
+{
+"region_code": "652200",
+"region": "哈密地区",
+"parent_code": "650000",
+"r_type": "2",
+"old_city_id": "1445",
+"pinyin": "H"
+},
+{
+"region_code": "652300",
+"region": "昌吉回族自治州",
+"parent_code": "650000",
+"r_type": "2",
+"old_city_id": "1451",
+"pinyin": "C"
+},
+{
+"region_code": "652700",
+"region": "博尔塔拉蒙古自治州",
+"parent_code": "650000",
+"r_type": "2",
+"old_city_id": "1452",
+"pinyin": "B"
+},
+{
+"region_code": "652800",
+"region": "巴音郭楞蒙古自治州",
+"parent_code": "650000",
+"r_type": "2",
+"old_city_id": "1450",
+"pinyin": "B"
+},
+{
+"region_code": "652900",
+"region": "阿克苏地区",
+"parent_code": "650000",
+"r_type": "2",
+"old_city_id": "1447",
+"pinyin": "A"
+},
+{
+"region_code": "653000",
+"region": "克孜勒苏柯尔克孜自治州",
+"parent_code": "650000",
+"r_type": "2",
+"old_city_id": "1449",
+"pinyin": "K"
+},
+{
+"region_code": "653100",
+"region": "喀什地区",
+"parent_code": "650000",
+"r_type": "2",
+"old_city_id": "1448",
+"pinyin": "K"
+},
+{
+"region_code": "653200",
+"region": "和田地区",
+"parent_code": "650000",
+"r_type": "2",
+"old_city_id": "1446",
+"pinyin": "H"
+},
+{
+"region_code": "654000",
+"region": "伊犁哈萨克自治州",
+"parent_code": "650000",
+"r_type": "2",
+"old_city_id": "1453",
+"pinyin": "Y"
+},
+{
+"region_code": "654200",
+"region": "塔城地区",
+"parent_code": "650000",
+"r_type": "2",
+"old_city_id": "1454",
+"pinyin": "T"
+},
+{
+"region_code": "654300",
+"region": "阿勒泰地区",
+"parent_code": "650000",
+"r_type": "2",
+"old_city_id": "1455",
+"pinyin": "A"
+},
+{
+"region_code": "659000",
+"region": "自治区直辖县",
+"parent_code": "650000",
+"r_type": "2",
+"old_city_id": "0",
+"pinyin": "Z"
+},
+{
+"region_code": "710100",
+"region": "台湾",
+"parent_code": "710000",
+"r_type": "2",
+"old_city_id": "0",
+"pinyin": "T"
+},
+{
+"region_code": "810100",
+"region": "香港",
+"parent_code": "810000",
+"r_type": "2",
+"old_city_id": "0",
+"pinyin": "X"
+},
+{
+"region_code": "820100",
+"region": "澳门",
+"parent_code": "820000",
+"r_type": "2",
+"old_city_id": "0",
+"pinyin": "A"
+}
+],
+"city_local": {
+"region_code": "110100",
+"region": "北京市",
+"parent_code": "110000",
+"r_type": "2",
+"old_city_id": "0"
+}
+}

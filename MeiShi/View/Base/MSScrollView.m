@@ -46,8 +46,6 @@
 - (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer {
     UIPanGestureRecognizer *pan = (UIPanGestureRecognizer *)gestureRecognizer;
     if ([pan.delegate isMemberOfClass:[MSRecommendTopBanner class]]){
-        MSRecommendTopBanner *topbanner = (MSRecommendTopBanner *)pan.delegate;
-        NSLog(@"%f-%f", topbanner.bounds.size.width, topbanner.bounds.size.height);
         return YES;
     }else if([pan.delegate isMemberOfClass:[MSRecommendScrollView class]]){
         MSRecommendScrollView *recommendScrollView = (MSRecommendScrollView *)pan.delegate;
@@ -55,6 +53,7 @@
         UITableViewCell *cell = [tableview cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
         CGPoint location = [gestureRecognizer locationInView:self];
         CGPoint point = [self convertPoint:location toView:cell];
+        //触摸点在cell里
         if([cell pointInside:point withEvent:nil]) {
             return NO;
         }

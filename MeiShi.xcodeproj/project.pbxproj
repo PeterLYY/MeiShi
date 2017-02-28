@@ -11,6 +11,35 @@
 		E726055C1E63FCB8008F6F10 /* MSScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = E726055B1E63FCB8008F6F10 /* MSScrollView.m */; };
 		E726055F1E640693008F6F10 /* MSRecommendTopBanner.m in Sources */ = {isa = PBXBuildFile; fileRef = E726055E1E640693008F6F10 /* MSRecommendTopBanner.m */; };
 		E72605621E64071B008F6F10 /* MSRecommendScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = E72605611E64071B008F6F10 /* MSRecommendScrollView.m */; };
+		E72605811E6504D0008F6F10 /* category_new in Resources */ = {isa = PBXBuildFile; fileRef = E72605641E6504D0008F6F10 /* category_new */; };
+		E72605821E6504D0008F6F10 /* CategoryList.txt in Resources */ = {isa = PBXBuildFile; fileRef = E72605651E6504D0008F6F10 /* CategoryList.txt */; };
+		E72605831E6504D0008F6F10 /* CategoryList3.txt in Resources */ = {isa = PBXBuildFile; fileRef = E72605661E6504D0008F6F10 /* CategoryList3.txt */; };
+		E72605841E6504D0008F6F10 /* city_list.txt in Resources */ = {isa = PBXBuildFile; fileRef = E72605671E6504D0008F6F10 /* city_list.txt */; };
+		E72605851E6504D0008F6F10 /* EventsList.plist in Resources */ = {isa = PBXBuildFile; fileRef = E72605681E6504D0008F6F10 /* EventsList.plist */; };
+		E72605861E6504D0008F6F10 /* foodMaterialList.txt in Resources */ = {isa = PBXBuildFile; fileRef = E72605691E6504D0008F6F10 /* foodMaterialList.txt */; };
+		E72605871E6504D0008F6F10 /* foryou_citylist.txt in Resources */ = {isa = PBXBuildFile; fileRef = E726056A1E6504D0008F6F10 /* foryou_citylist.txt */; };
+		E72605881E6504D0008F6F10 /* foryou_srdz.txt in Resources */ = {isa = PBXBuildFile; fileRef = E726056B1E6504D0008F6F10 /* foryou_srdz.txt */; };
+		E72605891E6504D0008F6F10 /* HomeBuyCityList.txt in Resources */ = {isa = PBXBuildFile; fileRef = E726056C1E6504D0008F6F10 /* HomeBuyCityList.txt */; };
+		E726058A1E6504D0008F6F10 /* material_detail.txt in Resources */ = {isa = PBXBuildFile; fileRef = E726056D1E6504D0008F6F10 /* material_detail.txt */; };
+		E726058B1E6504D0008F6F10 /* meishijie.db in Resources */ = {isa = PBXBuildFile; fileRef = E726056E1E6504D0008F6F10 /* meishijie.db */; };
+		E726058C1E6504D0008F6F10 /* ms_attribute_gongyi.txt in Resources */ = {isa = PBXBuildFile; fileRef = E726056F1E6504D0008F6F10 /* ms_attribute_gongyi.txt */; };
+		E726058D1E6504D0008F6F10 /* ms_attribute_guige.txt in Resources */ = {isa = PBXBuildFile; fileRef = E72605701E6504D0008F6F10 /* ms_attribute_guige.txt */; };
+		E726058E1E6504D0008F6F10 /* ms_attribute_kouwei.txt in Resources */ = {isa = PBXBuildFile; fileRef = E72605711E6504D0008F6F10 /* ms_attribute_kouwei.txt */; };
+		E726058F1E6504D0008F6F10 /* ms_attribute_name.txt in Resources */ = {isa = PBXBuildFile; fileRef = E72605721E6504D0008F6F10 /* ms_attribute_name.txt */; };
+		E72605901E6504D0008F6F10 /* ms_attribute_nandu.txt in Resources */ = {isa = PBXBuildFile; fileRef = E72605731E6504D0008F6F10 /* ms_attribute_nandu.txt */; };
+		E72605911E6504D0008F6F10 /* ms_attribute_pr_shijian.txt in Resources */ = {isa = PBXBuildFile; fileRef = E72605741E6504D0008F6F10 /* ms_attribute_pr_shijian.txt */; };
+		E72605921E6504D0008F6F10 /* ms_attribute_renshu.txt in Resources */ = {isa = PBXBuildFile; fileRef = E72605751E6504D0008F6F10 /* ms_attribute_renshu.txt */; };
+		E72605931E6504D0008F6F10 /* ms_attribute_zb_shijian.txt in Resources */ = {isa = PBXBuildFile; fileRef = E72605761E6504D0008F6F10 /* ms_attribute_zb_shijian.txt */; };
+		E72605941E6504D0008F6F10 /* ms_city_list.txt in Resources */ = {isa = PBXBuildFile; fileRef = E72605771E6504D0008F6F10 /* ms_city_list.txt */; };
+		E72605951E6504D0008F6F10 /* ms_city_list_buy.txt in Resources */ = {isa = PBXBuildFile; fileRef = E72605781E6504D0008F6F10 /* ms_city_list_buy.txt */; };
+		E72605961E6504D0008F6F10 /* ms_group_info.txt in Resources */ = {isa = PBXBuildFile; fileRef = E72605791E6504D0008F6F10 /* ms_group_info.txt */; };
+		E72605971E6504D0008F6F10 /* MSHomeContentCacheData.txt in Resources */ = {isa = PBXBuildFile; fileRef = E726057A1E6504D0008F6F10 /* MSHomeContentCacheData.txt */; };
+		E72605981E6504D0008F6F10 /* MSSCCategoryTitleId.plist in Resources */ = {isa = PBXBuildFile; fileRef = E726057B1E6504D0008F6F10 /* MSSCCategoryTitleId.plist */; };
+		E72605991E6504D0008F6F10 /* MSUserJob.txt in Resources */ = {isa = PBXBuildFile; fileRef = E726057C1E6504D0008F6F10 /* MSUserJob.txt */; };
+		E726059A1E6504D0008F6F10 /* naozhong.m4r in Resources */ = {isa = PBXBuildFile; fileRef = E726057D1E6504D0008F6F10 /* naozhong.m4r */; };
+		E726059B1E6504D0008F6F10 /* NewShopClassnameList.plist in Resources */ = {isa = PBXBuildFile; fileRef = E726057E1E6504D0008F6F10 /* NewShopClassnameList.plist */; };
+		E726059C1E6504D0008F6F10 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = E726057F1E6504D0008F6F10 /* README.txt */; };
+		E726059D1E6504D0008F6F10 /* WebViewJavascriptBridge.js.txt in Resources */ = {isa = PBXBuildFile; fileRef = E72605801E6504D0008F6F10 /* WebViewJavascriptBridge.js.txt */; };
 		E73AFA6F1E52952E00730DAC /* MSCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E73AFA651E52952E00730DAC /* MSCacheManager.m */; };
 		E73AFA701E52952E00730DAC /* MSNetworkingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E73AFA691E52952E00730DAC /* MSNetworkingManager.m */; };
 		E73AFA711E52952E00730DAC /* MSRefreshManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E73AFA6B1E52952E00730DAC /* MSRefreshManager.m */; };
@@ -63,6 +92,35 @@
 		E726055E1E640693008F6F10 /* MSRecommendTopBanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSRecommendTopBanner.m; sourceTree = "<group>"; };
 		E72605601E64071B008F6F10 /* MSRecommendScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSRecommendScrollView.h; sourceTree = "<group>"; };
 		E72605611E64071B008F6F10 /* MSRecommendScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSRecommendScrollView.m; sourceTree = "<group>"; };
+		E72605641E6504D0008F6F10 /* category_new */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = category_new; sourceTree = "<group>"; };
+		E72605651E6504D0008F6F10 /* CategoryList.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CategoryList.txt; sourceTree = "<group>"; };
+		E72605661E6504D0008F6F10 /* CategoryList3.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CategoryList3.txt; sourceTree = "<group>"; };
+		E72605671E6504D0008F6F10 /* city_list.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = city_list.txt; sourceTree = "<group>"; };
+		E72605681E6504D0008F6F10 /* EventsList.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = EventsList.plist; sourceTree = "<group>"; };
+		E72605691E6504D0008F6F10 /* foodMaterialList.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = foodMaterialList.txt; sourceTree = "<group>"; };
+		E726056A1E6504D0008F6F10 /* foryou_citylist.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = foryou_citylist.txt; sourceTree = "<group>"; };
+		E726056B1E6504D0008F6F10 /* foryou_srdz.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = foryou_srdz.txt; sourceTree = "<group>"; };
+		E726056C1E6504D0008F6F10 /* HomeBuyCityList.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HomeBuyCityList.txt; sourceTree = "<group>"; };
+		E726056D1E6504D0008F6F10 /* material_detail.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = material_detail.txt; sourceTree = "<group>"; };
+		E726056E1E6504D0008F6F10 /* meishijie.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = meishijie.db; sourceTree = "<group>"; };
+		E726056F1E6504D0008F6F10 /* ms_attribute_gongyi.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ms_attribute_gongyi.txt; sourceTree = "<group>"; };
+		E72605701E6504D0008F6F10 /* ms_attribute_guige.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ms_attribute_guige.txt; sourceTree = "<group>"; };
+		E72605711E6504D0008F6F10 /* ms_attribute_kouwei.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ms_attribute_kouwei.txt; sourceTree = "<group>"; };
+		E72605721E6504D0008F6F10 /* ms_attribute_name.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ms_attribute_name.txt; sourceTree = "<group>"; };
+		E72605731E6504D0008F6F10 /* ms_attribute_nandu.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ms_attribute_nandu.txt; sourceTree = "<group>"; };
+		E72605741E6504D0008F6F10 /* ms_attribute_pr_shijian.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ms_attribute_pr_shijian.txt; sourceTree = "<group>"; };
+		E72605751E6504D0008F6F10 /* ms_attribute_renshu.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ms_attribute_renshu.txt; sourceTree = "<group>"; };
+		E72605761E6504D0008F6F10 /* ms_attribute_zb_shijian.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ms_attribute_zb_shijian.txt; sourceTree = "<group>"; };
+		E72605771E6504D0008F6F10 /* ms_city_list.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ms_city_list.txt; sourceTree = "<group>"; };
+		E72605781E6504D0008F6F10 /* ms_city_list_buy.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ms_city_list_buy.txt; sourceTree = "<group>"; };
+		E72605791E6504D0008F6F10 /* ms_group_info.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ms_group_info.txt; sourceTree = "<group>"; };
+		E726057A1E6504D0008F6F10 /* MSHomeContentCacheData.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MSHomeContentCacheData.txt; sourceTree = "<group>"; };
+		E726057B1E6504D0008F6F10 /* MSSCCategoryTitleId.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = MSSCCategoryTitleId.plist; sourceTree = "<group>"; };
+		E726057C1E6504D0008F6F10 /* MSUserJob.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MSUserJob.txt; sourceTree = "<group>"; };
+		E726057D1E6504D0008F6F10 /* naozhong.m4r */ = {isa = PBXFileReference; lastKnownFileType = file; path = naozhong.m4r; sourceTree = "<group>"; };
+		E726057E1E6504D0008F6F10 /* NewShopClassnameList.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = NewShopClassnameList.plist; sourceTree = "<group>"; };
+		E726057F1E6504D0008F6F10 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		E72605801E6504D0008F6F10 /* WebViewJavascriptBridge.js.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = WebViewJavascriptBridge.js.txt; sourceTree = "<group>"; };
 		E73AFA641E52952E00730DAC /* MSCacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCacheManager.h; sourceTree = "<group>"; };
 		E73AFA651E52952E00730DAC /* MSCacheManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSCacheManager.m; sourceTree = "<group>"; };
 		E73AFA661E52952E00730DAC /* MSCommonApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCommonApi.h; sourceTree = "<group>"; };
@@ -173,6 +231,42 @@
 				8BF884C49A4046B82A0B784C /* libPods-MeiShi.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E72605631E6504D0008F6F10 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				E72605641E6504D0008F6F10 /* category_new */,
+				E72605651E6504D0008F6F10 /* CategoryList.txt */,
+				E72605661E6504D0008F6F10 /* CategoryList3.txt */,
+				E72605671E6504D0008F6F10 /* city_list.txt */,
+				E72605681E6504D0008F6F10 /* EventsList.plist */,
+				E72605691E6504D0008F6F10 /* foodMaterialList.txt */,
+				E726056A1E6504D0008F6F10 /* foryou_citylist.txt */,
+				E726056B1E6504D0008F6F10 /* foryou_srdz.txt */,
+				E726056C1E6504D0008F6F10 /* HomeBuyCityList.txt */,
+				E726056D1E6504D0008F6F10 /* material_detail.txt */,
+				E726056E1E6504D0008F6F10 /* meishijie.db */,
+				E726056F1E6504D0008F6F10 /* ms_attribute_gongyi.txt */,
+				E72605701E6504D0008F6F10 /* ms_attribute_guige.txt */,
+				E72605711E6504D0008F6F10 /* ms_attribute_kouwei.txt */,
+				E72605721E6504D0008F6F10 /* ms_attribute_name.txt */,
+				E72605731E6504D0008F6F10 /* ms_attribute_nandu.txt */,
+				E72605741E6504D0008F6F10 /* ms_attribute_pr_shijian.txt */,
+				E72605751E6504D0008F6F10 /* ms_attribute_renshu.txt */,
+				E72605761E6504D0008F6F10 /* ms_attribute_zb_shijian.txt */,
+				E72605771E6504D0008F6F10 /* ms_city_list.txt */,
+				E72605781E6504D0008F6F10 /* ms_city_list_buy.txt */,
+				E72605791E6504D0008F6F10 /* ms_group_info.txt */,
+				E726057A1E6504D0008F6F10 /* MSHomeContentCacheData.txt */,
+				E726057B1E6504D0008F6F10 /* MSSCCategoryTitleId.plist */,
+				E726057C1E6504D0008F6F10 /* MSUserJob.txt */,
+				E726057D1E6504D0008F6F10 /* naozhong.m4r */,
+				E726057E1E6504D0008F6F10 /* NewShopClassnameList.plist */,
+				E726057F1E6504D0008F6F10 /* README.txt */,
+				E72605801E6504D0008F6F10 /* WebViewJavascriptBridge.js.txt */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 		E73AFA611E52952E00730DAC /* Other */ = {
@@ -334,6 +428,7 @@
 				E73AFA901E52953F00730DAC /* ViewModel */,
 				E73AFA921E52954D00730DAC /* Model */,
 				E78E77D01E4C6439009A93F1 /* Supporting Files */,
+				E72605631E6504D0008F6F10 /* Resource */,
 			);
 			path = MeiShi;
 			sourceTree = "<group>";
@@ -453,8 +548,37 @@
 			buildActionMask = 2147483647;
 			files = (
 				E78E77DD1E4C6439009A93F1 /* Assets.xcassets in Resources */,
+				E72605991E6504D0008F6F10 /* MSUserJob.txt in Resources */,
 				E79131191E5D528E0025B704 /* refreshpotgif@2x.gif in Resources */,
+				E72605921E6504D0008F6F10 /* ms_attribute_renshu.txt in Resources */,
+				E72605821E6504D0008F6F10 /* CategoryList.txt in Resources */,
+				E72605851E6504D0008F6F10 /* EventsList.plist in Resources */,
+				E726058F1E6504D0008F6F10 /* ms_attribute_name.txt in Resources */,
 				E7D8EE701E543EC800053B7A /* MSRecommendViewController.xib in Resources */,
+				E72605961E6504D0008F6F10 /* ms_group_info.txt in Resources */,
+				E726059B1E6504D0008F6F10 /* NewShopClassnameList.plist in Resources */,
+				E72605911E6504D0008F6F10 /* ms_attribute_pr_shijian.txt in Resources */,
+				E72605861E6504D0008F6F10 /* foodMaterialList.txt in Resources */,
+				E72605881E6504D0008F6F10 /* foryou_srdz.txt in Resources */,
+				E72605901E6504D0008F6F10 /* ms_attribute_nandu.txt in Resources */,
+				E72605971E6504D0008F6F10 /* MSHomeContentCacheData.txt in Resources */,
+				E726058D1E6504D0008F6F10 /* ms_attribute_guige.txt in Resources */,
+				E72605951E6504D0008F6F10 /* ms_city_list_buy.txt in Resources */,
+				E726058B1E6504D0008F6F10 /* meishijie.db in Resources */,
+				E72605981E6504D0008F6F10 /* MSSCCategoryTitleId.plist in Resources */,
+				E72605831E6504D0008F6F10 /* CategoryList3.txt in Resources */,
+				E726059D1E6504D0008F6F10 /* WebViewJavascriptBridge.js.txt in Resources */,
+				E726059C1E6504D0008F6F10 /* README.txt in Resources */,
+				E72605871E6504D0008F6F10 /* foryou_citylist.txt in Resources */,
+				E72605841E6504D0008F6F10 /* city_list.txt in Resources */,
+				E72605931E6504D0008F6F10 /* ms_attribute_zb_shijian.txt in Resources */,
+				E72605811E6504D0008F6F10 /* category_new in Resources */,
+				E72605941E6504D0008F6F10 /* ms_city_list.txt in Resources */,
+				E726059A1E6504D0008F6F10 /* naozhong.m4r in Resources */,
+				E726058E1E6504D0008F6F10 /* ms_attribute_kouwei.txt in Resources */,
+				E726058C1E6504D0008F6F10 /* ms_attribute_gongyi.txt in Resources */,
+				E72605891E6504D0008F6F10 /* HomeBuyCityList.txt in Resources */,
+				E726058A1E6504D0008F6F10 /* material_detail.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

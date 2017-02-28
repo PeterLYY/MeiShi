@@ -1,0 +1,305 @@
+{
+"title": "生菜",
+"img": "https://images.meishij.net/p/20120921/bb8a61f25d3e3444b676ab4bbc5ac12b.jpg",
+"id": "308",
+"img_small": "https://images.meishij.net/p/20120921/bb8a61f25d3e3444b676ab4bbc5ac12b_small.jpg",
+"data": [
+{
+"title": "适宜人群",
+"content": [
+{
+"tag": "1",
+"title": "",
+"desc": "看叶子：包心生菜的话，叶片越紧密越好；散叶生菜叶片小的更嫩"
+},
+{
+"tag": "1",
+"title": "",
+"desc": "看叶柄：叶柄颜色带白的更新鲜"
+},
+{
+"tag": "1",
+"title": "",
+"desc": "用手掐：用手掐一下生菜叶子，越好的生菜叶子越脆"
+},
+{
+"tag": "1",
+"title": "",
+"desc": "无锈斑：断口或褶皱的地方没有锈斑"
+},
+{
+"tag": "2",
+"desc": "https://images.meishij.net/p/20120904/a98c24464bc998975f60b05eb14d6f21.jpg",
+"width": 280,
+"height": 280
+},
+{
+"tag": "1",
+"title": "",
+"desc": "菜叶子发蔫、有锈斑、病斑、软榻的生菜品质差，不要购买"
+}
+]
+}
+],
+"shiyi": [
+{
+"title": "海带",
+"tag": "0",
+"img": "https://images.meishij.net/p/20140415/42b17f71de9aea6bfb7fc3a04a3c2e09_60x60.jpg",
+"desc": "促进铁的吸收"
+},
+{
+"title": "鸡蛋",
+"tag": "0",
+"img": "https://images.meishij.net/p/20110718/769130e8c9a062a32ed14383c083561f_60x60.jpg",
+"desc": "滋阴润燥清热解毒"
+},
+{
+"title": "豆腐",
+"tag": "1",
+"img": "https://images.meishij.net/p/20140611/bdcbf9b77377430e17006602c2af0da5_60x60.jpg",
+"desc": "减肥健美"
+},
+{
+"title": "猪肝",
+"tag": "1",
+"img": "https://images.meishij.net/p/20110801/bbebc22f6d6bd04062e0f2d860d3278d_60x60.jpg",
+"desc": "补充全面营养"
+},
+{
+"title": "海带丝",
+"tag": "1",
+"img": "https://images.meishij.net/p/20130329/b6bb3e97cf7500830636075d6d48ee0d_60x60.jpg",
+"desc": "补铁"
+}
+],
+"buyi": [
+{
+"title": "海带",
+"tag": "0",
+"img": "https://images.meishij.net/p/20140415/42b17f71de9aea6bfb7fc3a04a3c2e09_60x60.jpg",
+"desc": "促进铁的吸收"
+},
+{
+"title": "鸡蛋",
+"tag": "0",
+"img": "https://images.meishij.net/p/20110718/769130e8c9a062a32ed14383c083561f_60x60.jpg",
+"desc": "滋阴润燥清热解毒"
+},
+{
+"title": "豆腐",
+"tag": "1",
+"img": "https://images.meishij.net/p/20140611/bdcbf9b77377430e17006602c2af0da5_60x60.jpg",
+"desc": "减肥健美"
+},
+{
+"title": "猪肝",
+"tag": "1",
+"img": "https://images.meishij.net/p/20110801/bbebc22f6d6bd04062e0f2d860d3278d_60x60.jpg",
+"desc": "补充全面营养"
+},
+{
+"title": "海带丝",
+"tag": "1",
+"img": "https://images.meishij.net/p/20130329/b6bb3e97cf7500830636075d6d48ee0d_60x60.jpg",
+"desc": "补铁"
+}
+],
+"rel_news_total": "1175",
+"rel_news": [
+{
+"id": "188528",
+"title": "蚝油生菜",
+"titlepic": "https://images.meishij.net/p/20141013/a934bc44587273a13a1e9b5fa202c2ea_150x150.jpg",
+"gongyi": "炒",
+"kouwei": "糊辣味",
+"md": "新手尝试",
+"mt": "<10分钟",
+"step": "6",
+"smalltext": "生菜，别名：叶用莴苣、鹅仔菜、莴仔菜，过去可是西洋菜，国人不",
+"is_recipe": 1
+},
+{
+"id": "195636",
+"title": "呛生菜",
+"titlepic": "https://images.meishij.net/p/20110503/d3f2b5dee40295dddd3e9ba27753cad8_150x150.jpg",
+"gongyi": "炝",
+"kouwei": "香辣味",
+"md": "新手尝试",
+"mt": "<5分钟",
+"step": "3",
+"smalltext": "武汉不知道从什么时候开始流行这道“呛生菜”的呢？？？反正各类",
+"is_recipe": 1
+},
+{
+"id": "205305",
+"title": "蚝油生菜",
+"titlepic": "https://images.meishij.net/p/20111008/645f5fae4b5ca7ec99ae04aefc7649f4_150x150.jpg",
+"gongyi": "灼",
+"kouwei": "咸鲜味",
+"md": "初级入门",
+"mt": "<5分钟",
+"step": "4",
+"smalltext": "其实，我都有点怕这样类似的节啊，假啦的。各种聚会，轰叭，各种",
+"is_recipe": 1
+},
+{
+"id": "506870",
+"title": "蚝油生菜",
+"titlepic": "https://images.meishij.net/p/20120816/75648232108727f8f759420d6b64d053_150x150.jpg",
+"gongyi": "炒",
+"kouwei": "咸鲜味",
+"md": "新手尝试",
+"mt": "<5分钟",
+"step": "3",
+"smalltext": "@1@生菜清洗干净，蒜切末@2@锅中烧开水，水一点盐和几滴油，下生",
+"is_recipe": 1
+}
+],
+"heat": "13",
+"heat_level": 1,
+"heat_word": "较低热量",
+"gongxiao": [
+"消脂肥",
+"镇痛催眠",
+"驱寒利尿泥煤你妹",
+"驱寒",
+"驱寒利尿泥煤你妹",
+"驱",
+"抑制病毒"
+],
+"yyxx": [
+{
+"title": "胡萝卜素(微克)",
+"val": 1790,
+"day_need": "200"
+},
+{
+"title": "维生素A(微克)",
+"val": 298,
+"day_need": "800"
+},
+{
+"title": "钾(毫克)",
+"val": 170,
+"day_need": "2000"
+},
+{
+"title": "钙(毫克)",
+"val": 34,
+"day_need": "800"
+},
+{
+"title": "钠(毫克)",
+"val": 32.8,
+"day_need": "2200"
+},
+{
+"title": "叶酸(微克)",
+"val": 31.6,
+"day_need": "400"
+},
+{
+"title": "磷(毫克)",
+"val": 27,
+"day_need": "700"
+},
+{
+"title": "镁(毫克)",
+"val": 18,
+"day_need": "25"
+},
+{
+"title": "维生素C(毫克)",
+"val": 13,
+"day_need": "100"
+},
+{
+"title": "碳水化合物(克)",
+"val": 2,
+"day_need": "370"
+},
+{
+"title": "蛋白质(克)",
+"val": 1.3,
+"day_need": "86"
+},
+{
+"title": "硒(微克)",
+"val": 1.15,
+"day_need": "50"
+},
+{
+"title": "维生素E(毫克)",
+"val": 1.02,
+"day_need": "14"
+},
+{
+"title": "铁(毫克)",
+"val": 0.9,
+"day_need": "20"
+},
+{
+"title": "膳食纤维(克)",
+"val": 0.7,
+"day_need": "30"
+},
+{
+"title": "烟酸(毫克)",
+"val": 0.4,
+"day_need": "13"
+},
+{
+"title": "脂肪(克)",
+"val": 0.3,
+"day_need": "70"
+},
+{
+"title": "锌(毫克)",
+"val": 0.27,
+"day_need": "20"
+},
+{
+"title": "锰(毫克)",
+"val": 0.13,
+"day_need": "3.5"
+},
+{
+"title": "维生素B2(毫克)",
+"val": 0.06,
+"day_need": "1.2"
+},
+{
+"title": "维生素B6(毫克)",
+"val": 0.05,
+"day_need": "1.2"
+},
+{
+"title": "维生素B1(毫克)",
+"val": 0.03,
+"day_need": "1.3"
+},
+{
+"title": "铜(毫克)",
+"val": 0.03,
+"day_need": "2"
+},
+{
+"title": "胆固醇(毫克)",
+"val": "一",
+"day_need": "200"
+},
+{
+"title": "维生素B12(毫克)",
+"val": "一",
+"day_need": "0.024"
+},
+{
+"title": "碘(微克)",
+"val": "一",
+"day_need": "150"
+}
+],
+"code": "1",
+"msg": "成功"
+}
