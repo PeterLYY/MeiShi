@@ -40,4 +40,26 @@
     }];
 }
 
+//智能组菜
+- (NSDictionary *)foodMaterialList {
+    if (_foodMaterialList == nil) {
+        NSMutableDictionary *foodMaterialList = [NSMutableDictionary new];
+        NSString *filePath = [[[NSBundle mainBundle] bundlePath] stringByAppendingPathComponent:@"foodMaterialList.txt"];
+        NSData *jsonData = [NSData dataWithContentsOfFile:filePath];
+        NSArray *foods = [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingMutableLeaves error:nil];
+        [foods enumerateObjectsUsingBlock:^(NSDictionary *food, NSUInteger idx, BOOL * _Nonnull stop) {
+            NSString *firstLetter = [food objectForKey:@"first_letter"];
+            if ([foodMaterialList objectForKey:firstLetter] == nil) {
+                NSMutableArray *array = [[NSMutableArray alloc] initWithArray:@[food]];
+                [foodMaterialList setObject:array forKey:firstLetter];
+            }else{
+                [[foodMaterialList objectForKey:firstLetter] addObject:food];
+            }
+        }];
+        _foodMaterialList = foodMaterialList;
+        
+    }
+    return _foodMaterialList;
+}
+
 @end

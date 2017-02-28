@@ -40,6 +40,7 @@
 		E726059B1E6504D0008F6F10 /* NewShopClassnameList.plist in Resources */ = {isa = PBXBuildFile; fileRef = E726057E1E6504D0008F6F10 /* NewShopClassnameList.plist */; };
 		E726059C1E6504D0008F6F10 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = E726057F1E6504D0008F6F10 /* README.txt */; };
 		E726059D1E6504D0008F6F10 /* WebViewJavascriptBridge.js.txt in Resources */ = {isa = PBXBuildFile; fileRef = E72605801E6504D0008F6F10 /* WebViewJavascriptBridge.js.txt */; };
+		E72605A11E651837008F6F10 /* MSSmartHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = E72605A01E651837008F6F10 /* MSSmartHeaderView.m */; };
 		E73AFA6F1E52952E00730DAC /* MSCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E73AFA651E52952E00730DAC /* MSCacheManager.m */; };
 		E73AFA701E52952E00730DAC /* MSNetworkingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E73AFA691E52952E00730DAC /* MSNetworkingManager.m */; };
 		E73AFA711E52952E00730DAC /* MSRefreshManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E73AFA6B1E52952E00730DAC /* MSRefreshManager.m */; };
@@ -121,6 +122,8 @@
 		E726057E1E6504D0008F6F10 /* NewShopClassnameList.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = NewShopClassnameList.plist; sourceTree = "<group>"; };
 		E726057F1E6504D0008F6F10 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		E72605801E6504D0008F6F10 /* WebViewJavascriptBridge.js.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = WebViewJavascriptBridge.js.txt; sourceTree = "<group>"; };
+		E726059F1E651837008F6F10 /* MSSmartHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSSmartHeaderView.h; sourceTree = "<group>"; };
+		E72605A01E651837008F6F10 /* MSSmartHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSSmartHeaderView.m; sourceTree = "<group>"; };
 		E73AFA641E52952E00730DAC /* MSCacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCacheManager.h; sourceTree = "<group>"; };
 		E73AFA651E52952E00730DAC /* MSCacheManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSCacheManager.m; sourceTree = "<group>"; };
 		E73AFA661E52952E00730DAC /* MSCommonApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCommonApi.h; sourceTree = "<group>"; };
@@ -481,6 +484,8 @@
 				E77AA7171E5AE99500A85B84 /* MSRecommendTopBannerCell.m */,
 				E726055D1E640693008F6F10 /* MSRecommendTopBanner.h */,
 				E726055E1E640693008F6F10 /* MSRecommendTopBanner.m */,
+				E726059F1E651837008F6F10 /* MSSmartHeaderView.h */,
+				E72605A01E651837008F6F10 /* MSSmartHeaderView.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -652,6 +657,7 @@
 				E73AFA9E1E5296B200730DAC /* MSRecommendViewModel.m in Sources */,
 				E7D8EE841E56E93400053B7A /* MSNavItemView.m in Sources */,
 				E72605621E64071B008F6F10 /* MSRecommendScrollView.m in Sources */,
+				E72605A11E651837008F6F10 /* MSSmartHeaderView.m in Sources */,
 				E7D8EE901E5AB4BE00053B7A /* MSRecipeViewController.m in Sources */,
 				E7D8EE7A1E5563AC00053B7A /* MSHeaderHideButton.m in Sources */,
 				E73AFAA41E5296D000730DAC /* MSMyViewModel.m in Sources */,
