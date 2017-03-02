@@ -12,6 +12,7 @@
 
 @property (nonatomic, strong) UIView *topLine;
 @property (nonatomic, strong) UIView *bottomLine;
+@property (nonatomic, strong) UIView *searchView;
 @property (nonatomic, strong) UITextField *searchText;
 @property (nonatomic, strong) UIButton *cancleButton;
 @property (nonatomic, strong) UIButton *okButton;
@@ -41,11 +42,16 @@
         make.height.mas_equalTo(1);
     }];
     
-    [self.searchText mas_makeConstraints:^(MASConstraintMaker *make) {
+    [self.searchView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.topLine.mas_bottom).mas_offset(12.5);
         make.left.equalTo(superview.mas_left).mas_offset(10);
         make.right.equalTo(superview.mas_right).mas_offset(-10);
         make.height.mas_equalTo(25);
+    }];
+    
+    
+    [self.searchText mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self.searchView).insets(UIEdgeInsetsMake(0, 0, 0, 0));
     }];
     
     [self.cancleButton mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -89,6 +95,18 @@
     return _bottomLine;
 }
 
+//食材栏
+- (UIView *)searchView {
+    if(_searchView == nil) {
+        UIView *searchView = [[UIView alloc] init];
+        searchView.backgroundColor = [UIColor whiteColor];
+        [self addSubview:searchView];
+        _searchView = searchView;
+    }
+    
+    return _searchView;
+}
+
 //搜索栏
 - (UITextField *)searchText {
     if (_searchText == nil) {
@@ -97,7 +115,7 @@
         searchText.placeholder = @"添加食材";
         searchText.font = [UIFont systemFontOfSize:14.0f];
         searchText.textColor = [[UIColor grayColor] colorWithAlphaComponent:0.8];
-        [self addSubview:searchText];
+        [self.searchView addSubview:searchText];
         _searchText = searchText;
     }
     

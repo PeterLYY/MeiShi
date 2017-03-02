@@ -22,6 +22,16 @@
         @strongify(self)
         return [self requestRecommendData];
     }];
+    
+    self.sancanDataCommand = [[RACCommand alloc] initWithSignalBlock:^RACSignal * _Nonnull(id  _Nullable input) {
+        @strongify(self)
+        return [self requestSancanData];
+    }];
+    
+    self.weatherDataCommand = [[RACCommand alloc] initWithSignalBlock:^RACSignal * _Nonnull(id  _Nullable input) {
+        @strongify(self)
+        return [self requestWeatherData];
+    }];
 }
 
 - (RACSignal *)requestRecommendData {
@@ -31,6 +41,38 @@
             NSDictionary *xmlData = [XMLReader dictionaryForXMLData:responseObject error:&error];
             if ([[[[xmlData objectForKey:@"items"] objectForKey:@"msg"] objectForKey:@"text"] isEqualToString:@"成功"]) {
                 self.data = [[xmlData objectForKey:@"items"] objectForKey:@"data"];
+            }
+            [subscriber sendCompleted];
+        } failure:^(NSError *error) {
+            [subscriber sendError:error];
+        }];
+        return nil;
+    }];
+}
+
+- (RACSignal *)requestSancanData {
+    return [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
+        [MSNetworkingManager GET:kMSSancanApi parameters:nil progress:nil success:^(id responseObject) {
+            NSError *error = nil;
+            NSDictionary *xmlData = [XMLReader dictionaryForXMLData:responseObject error:&error];
+            if ([[[[xmlData objectForKey:@"items"] objectForKey:@"msg"] objectForKey:@"text"] isEqualToString:@"成功"]) {
+                self.sancanData = [[xmlData objectForKey:@"items"] objectForKey:@"data"];
+            }
+            [subscriber sendCompleted];
+        } failure:^(NSError *error) {
+            [subscriber sendError:error];
+        }];
+        return nil;
+    }];
+}
+
+- (RACSignal *)requestWeatherData {
+    return [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
+        [MSNetworkingManager GET:kMSWeatherApi parameters:nil progress:nil success:^(id responseObject) {
+            NSError *error = nil;
+            NSDictionary *xmlData = [XMLReader dictionaryForXMLData:responseObject error:&error];
+            if ([[[[xmlData objectForKey:@"items"] objectForKey:@"msg"] objectForKey:@"text"] isEqualToString:@"成功"]) {
+                self.weatherData = [[xmlData objectForKey:@"items"] objectForKey:@"data"];
             }
             [subscriber sendCompleted];
         } failure:^(NSError *error) {

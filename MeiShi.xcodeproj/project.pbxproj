@@ -41,6 +41,8 @@
 		E726059C1E6504D0008F6F10 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = E726057F1E6504D0008F6F10 /* README.txt */; };
 		E726059D1E6504D0008F6F10 /* WebViewJavascriptBridge.js.txt in Resources */ = {isa = PBXBuildFile; fileRef = E72605801E6504D0008F6F10 /* WebViewJavascriptBridge.js.txt */; };
 		E72605A11E651837008F6F10 /* MSSmartHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = E72605A01E651837008F6F10 /* MSSmartHeaderView.m */; };
+		E72605A71E66997B008F6F10 /* MSSmartFoodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E72605A61E66997B008F6F10 /* MSSmartFoodViewController.m */; };
+		E72605AA1E6699CE008F6F10 /* MSSmartViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E72605A91E6699CE008F6F10 /* MSSmartViewModel.m */; };
 		E73AFA6F1E52952E00730DAC /* MSCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E73AFA651E52952E00730DAC /* MSCacheManager.m */; };
 		E73AFA701E52952E00730DAC /* MSNetworkingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E73AFA691E52952E00730DAC /* MSNetworkingManager.m */; };
 		E73AFA711E52952E00730DAC /* MSRefreshManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E73AFA6B1E52952E00730DAC /* MSRefreshManager.m */; };
@@ -124,6 +126,10 @@
 		E72605801E6504D0008F6F10 /* WebViewJavascriptBridge.js.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = WebViewJavascriptBridge.js.txt; sourceTree = "<group>"; };
 		E726059F1E651837008F6F10 /* MSSmartHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSSmartHeaderView.h; sourceTree = "<group>"; };
 		E72605A01E651837008F6F10 /* MSSmartHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSSmartHeaderView.m; sourceTree = "<group>"; };
+		E72605A51E66997B008F6F10 /* MSSmartFoodViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSSmartFoodViewController.h; sourceTree = "<group>"; };
+		E72605A61E66997B008F6F10 /* MSSmartFoodViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSSmartFoodViewController.m; sourceTree = "<group>"; };
+		E72605A81E6699CE008F6F10 /* MSSmartViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSSmartViewModel.h; sourceTree = "<group>"; };
+		E72605A91E6699CE008F6F10 /* MSSmartViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSSmartViewModel.m; sourceTree = "<group>"; };
 		E73AFA641E52952E00730DAC /* MSCacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCacheManager.h; sourceTree = "<group>"; };
 		E73AFA651E52952E00730DAC /* MSCacheManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSCacheManager.m; sourceTree = "<group>"; };
 		E73AFA661E52952E00730DAC /* MSCommonApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCommonApi.h; sourceTree = "<group>"; };
@@ -367,6 +373,8 @@
 				E73AFAA61E5296DE00730DAC /* MSShopViewModel.m */,
 				E73AFAA81E5296F100730DAC /* MSTopicsViewModel.h */,
 				E73AFAA91E5296F100730DAC /* MSTopicsViewModel.m */,
+				E72605A81E6699CE008F6F10 /* MSSmartViewModel.h */,
+				E72605A91E6699CE008F6F10 /* MSSmartViewModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -457,6 +465,8 @@
 				E7D8EE861E5AB39C00053B7A /* MSCommendViewController.m */,
 				E7D8EE881E5AB48100053B7A /* MSSmartViewController.h */,
 				E7D8EE891E5AB48100053B7A /* MSSmartViewController.m */,
+				E72605A51E66997B008F6F10 /* MSSmartFoodViewController.h */,
+				E72605A61E66997B008F6F10 /* MSSmartFoodViewController.m */,
 				E7D8EE8B1E5AB4A200053B7A /* MSThreeMealsViewController.h */,
 				E7D8EE8C1E5AB4A200053B7A /* MSThreeMealsViewController.m */,
 				E7D8EE8E1E5AB4BE00053B7A /* MSRecipeViewController.h */,
@@ -669,9 +679,11 @@
 				E7D8EE871E5AB39C00053B7A /* MSCommendViewController.m in Sources */,
 				E73AFA8A1E52953800730DAC /* MSTableViewController.m in Sources */,
 				E73AFAB71E52EDE800730DAC /* MSAdButton.m in Sources */,
+				E72605AA1E6699CE008F6F10 /* MSSmartViewModel.m in Sources */,
 				E73AFA981E52965F00730DAC /* MSTableViewModel.m in Sources */,
 				E77AA7181E5AE99500A85B84 /* MSRecommendTopBannerCell.m in Sources */,
 				E73AFAAA1E5296F100730DAC /* MSTopicsViewModel.m in Sources */,
+				E72605A71E66997B008F6F10 /* MSSmartFoodViewController.m in Sources */,
 				E77AA7151E5AE95C00A85B84 /* MSTableViewCell.m in Sources */,
 				E73AFAA11E5296C100730DAC /* MSDiscoverViewModel.m in Sources */,
 				E7D8EE8A1E5AB48100053B7A /* MSSmartViewController.m in Sources */,

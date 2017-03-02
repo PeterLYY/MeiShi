@@ -12,6 +12,10 @@
 
 @property (nonatomic, strong) RACCommand *requestDataCommand;
 @property (nonatomic, copy) NSDictionary *data;
+@property (nonatomic, strong) RACCommand *sancanDataCommand;
+@property (nonatomic, copy) NSDictionary *sancanData;
+@property (nonatomic, strong) RACCommand *weatherDataCommand;
+@property (nonatomic, copy) NSDictionary *weatherData;
 @property (nonatomic, copy) NSDictionary *foodMaterialList;
 
 @end

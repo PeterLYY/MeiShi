@@ -35,6 +35,18 @@
     return  UIStatusBarStyleLightContent;
 }
 
+- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
+    if(self.viewControllers.count > 0) {
+        UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithImage:[[UIImage imageNamed:@"ms_back_icon2"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] style:UIBarButtonItemStylePlain target:nil action:NULL];
+        backButton.rac_command = [[RACCommand alloc] initWithSignalBlock:^RACSignal * _Nonnull(id  _Nullable input) {
+            [viewController.navigationController popViewControllerAnimated:YES];
+            return [RACSignal empty];
+        }];
+        viewController.navigationItem.leftBarButtonItem = backButton;
+    }
+    [super pushViewController:viewController animated:animated];
+}
+
 
 
 

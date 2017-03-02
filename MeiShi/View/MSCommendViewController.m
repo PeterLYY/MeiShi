@@ -117,6 +117,7 @@
                 MSWebAdvViewController *webAdVC = [[MSWebAdvViewController alloc] init];
                 webAdVC.adurl = urlString;
                 [self.parentViewController.navigationController pushViewController:webAdVC animated:YES];
+                self.parentViewController.hidesBottomBarWhenPushed = YES;
             };
         }
         return topbannerCell;

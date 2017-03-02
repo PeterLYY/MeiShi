@@ -269,6 +269,18 @@
         CGFloat x = self.recommendScrollView.frame.size.width*num;
         [self.recommendScrollView setContentOffset:CGPointMake(x, 0)];
     }
+    
+    //隐藏helloMsg
+    if (num > 0) {
+        if (self.showHelloMsg) {
+            [self animationHeaderView];
+        }
+    }
+    
+    if(num == 2){
+        [self loadDataForThreeMeals];
+    }
+    
 }
 
 //头部动画
@@ -362,7 +374,21 @@
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
     NSUInteger num = (NSUInteger)(scrollView.contentOffset.x/scrollView.frame.size.width);
     [self scrollNavItemByNum:num Scroll:NO];
+    if(num == 2){
+        [self loadDataForThreeMeals];
+    }
+}
+
+- (void)loadDataForThreeMeals {
+    MSThreeMealsViewController *threeMealsVC = [self.childViewControllers objectAtIndex:2];
+    if (threeMealsVC.viewModel.sancanData == nil) {
+        [threeMealsVC.viewModel.sancanDataCommand execute:nil];
+    }
     
+    if (threeMealsVC.viewModel.weatherData == nil) {
+        [threeMealsVC.viewModel.weatherDataCommand execute:nil];
+    }
+    //监控命令执行
 }
 
 

@@ -7,7 +7,11 @@
 //
 
 #import "MSBaseViewController.h"
+#import "MSRecommendViewModel.h"
 
-@interface MSThreeMealsViewController : MSBaseViewController
+@interface MSThreeMealsViewController : MSBaseViewController <UITableViewDelegate, UITableViewDataSource>
+
+@property (nonatomic, strong) MSRecommendViewModel *viewModel;
+@property (nonatomic, strong) UITableView *tableView;
 
 @end
