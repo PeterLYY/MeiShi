@@ -7,7 +7,10 @@
 //
 
 #import "MSBaseViewController.h"
+#import "MSRecommendViewModel.h"
 
 @interface MSRecipeViewController : MSBaseViewController
+
+@property (nonatomic, strong) MSRecommendViewModel *viewModel;
 
 @end

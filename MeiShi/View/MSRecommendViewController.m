@@ -279,6 +279,8 @@
     
     if(num == 2){
         [self loadDataForThreeMeals];
+    }else if(num == 3){
+        [self loadDataForRecipe];
     }
     
 }
@@ -376,9 +378,12 @@
     [self scrollNavItemByNum:num Scroll:NO];
     if(num == 2){
         [self loadDataForThreeMeals];
+    }else if(num == 3){
+        [self loadDataForRecipe];
     }
 }
 
+//每日三餐
 - (void)loadDataForThreeMeals {
     MSThreeMealsViewController *threeMealsVC = [self.childViewControllers objectAtIndex:2];
     if (threeMealsVC.viewModel.sancanData == nil) {
@@ -388,6 +393,16 @@
     if (threeMealsVC.viewModel.weatherData == nil) {
         [threeMealsVC.viewModel.weatherDataCommand execute:nil];
     }
+    //监控命令执行
+}
+
+//菜谱分类
+- (void)loadDataForRecipe{
+    MSRecipeViewController *recipeVC = [self.childViewControllers objectAtIndex:3];
+    if (recipeVC.viewModel.recipeData == nil) {
+        [recipeVC.viewModel.recipeDataCommand execute:nil];
+    }
+    
     //监控命令执行
 }
 

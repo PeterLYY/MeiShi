@@ -17,5 +17,7 @@
 @property (nonatomic, strong) RACCommand *weatherDataCommand;
 @property (nonatomic, copy) NSDictionary *weatherData;
 @property (nonatomic, copy) NSDictionary *foodMaterialList;
+@property (nonatomic, strong) RACCommand *recipeDataCommand;
+@property (nonatomic, copy) NSArray *recipeData;
 
 @end

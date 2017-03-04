@@ -13,5 +13,6 @@
 #define kMSRecommendApi             @"http://api.meishi.cc/v6/home_recommend.php"
 #define kMSSancanApi                @"http://api.meishi.cc/v6/sancanlist.php"
 #define kMSWeatherApi               @"http://api.meishi.cc/v6/weatherinfo.php"
+#define kMSRecipeApi                @"http://api.meishi.cc/v6/categorylist.php"
 
 #endif /* MSCommonApi_h */

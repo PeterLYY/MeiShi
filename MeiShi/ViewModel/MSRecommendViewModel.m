@@ -32,6 +32,11 @@
         @strongify(self)
         return [self requestWeatherData];
     }];
+    
+    self.recipeDataCommand = [[RACCommand alloc] initWithSignalBlock:^RACSignal * _Nonnull(id  _Nullable input) {
+        @strongify(self)
+        return [self requestRecipeData];
+    }];
 }
 
 - (RACSignal *)requestRecommendData {
@@ -73,6 +78,21 @@
             NSDictionary *xmlData = [XMLReader dictionaryForXMLData:responseObject error:&error];
             if ([[[[xmlData objectForKey:@"items"] objectForKey:@"msg"] objectForKey:@"text"] isEqualToString:@"成功"]) {
                 self.weatherData = [[xmlData objectForKey:@"items"] objectForKey:@"data"];
+            }
+            [subscriber sendCompleted];
+        } failure:^(NSError *error) {
+            [subscriber sendError:error];
+        }];
+        return nil;
+    }];
+}
+
+- (RACSignal *)requestRecipeData {
+    return [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
+        [MSNetworkingManager GET:kMSRecipeApi parameters:nil progress:nil success:^(id responseObject) {
+            NSDictionary *jsonData = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableContainers error:nil];
+            if ([[jsonData objectForKey:@"msg"] isEqualToString:@"请求成功"]) {
+                self.recipeData = [jsonData objectForKey:@"data"];
             }
             [subscriber sendCompleted];
         } failure:^(NSError *error) {
