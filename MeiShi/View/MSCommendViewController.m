@@ -15,6 +15,7 @@
 #import "MSWebAdvViewController.h"
 #import "MSTableViewCell.h"
 #import "MSRefreshManager.h"
+#import "MSStarView.h"
 
 #define kTopBannersCellId   @"topBannersCell"
 
@@ -183,9 +184,8 @@
                 titleLable.font = [UIFont systemFontOfSize:14];
                 [rightView addSubview:titleLable];
                 
-                UIImageView *levelView = [[UIImageView alloc] init];
-                levelView.image = [UIImage imageNamed:@"ms_caipu_level"];
-                levelView.contentMode = UIViewContentModeLeft;
+                MSStarView *levelView = [[MSStarView alloc] init];
+                levelView.backgroundColor = [UIColor clearColor];
                 [rightView addSubview:levelView];
                 
                
@@ -207,7 +207,7 @@
                 [levelView mas_makeConstraints:^(MASConstraintMaker *make) {
                     make.top.mas_equalTo(titleLable.mas_bottom).offset(5);
                     make.leading.mas_equalTo(titleLable).offset(0);
-                    make.width.mas_equalTo(@110);
+                    make.width.mas_equalTo(@130);
                     make.height.mas_equalTo(@25);
                 }];
                 
@@ -235,6 +235,10 @@
                 NSString *titleLableText = [[[[[self.sancan objectForKey:@"items"] objectForKey:@"item"] objectAtIndex:(indexPath.row-1)] objectForKey:@"title"] objectForKey:@"text"];
                 UILabel *titleLable = (UILabel *)[rightView.subviews objectAtIndex:0];
                 titleLable.text = titleLableText;
+                
+                MSStarView *levelView = [rightView.subviews objectAtIndex:1];
+                NSString *rateText = [[[[[self.sancan objectForKey:@"items"] objectForKey:@"item"] objectAtIndex:(indexPath.row-1)] objectForKey:@"rate"] objectForKey:@"text"];
+                levelView.num = rateText.integerValue;
                 
                 NSString *descLabelText = [[[[[self.sancan objectForKey:@"items"] objectForKey:@"item"] objectAtIndex:(indexPath.row-1)] objectForKey:@"recommend_msg"] objectForKey:@"text"];
                 NSMutableParagraphStyle *mutableParagraphStyle = [NSMutableParagraphStyle new];

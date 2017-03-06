@@ -84,6 +84,7 @@
 		E7D8EE901E5AB4BE00053B7A /* MSRecipeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7D8EE8F1E5AB4BE00053B7A /* MSRecipeViewController.m */; };
 		E7E235771E53003A0033AAAC /* MSWebAdvViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E235761E53003A0033AAAC /* MSWebAdvViewController.m */; };
 		E7E4B6A01E690552003C8A68 /* MSRecipeLeftButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E4B69F1E690552003C8A68 /* MSRecipeLeftButton.m */; };
+		E7E4B6A31E6D2C5A003C8A68 /* MSStarView.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E4B6A21E6D2C5A003C8A68 /* MSStarView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -214,6 +215,8 @@
 		E7E235761E53003A0033AAAC /* MSWebAdvViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSWebAdvViewController.m; sourceTree = "<group>"; };
 		E7E4B69E1E690552003C8A68 /* MSRecipeLeftButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSRecipeLeftButton.h; sourceTree = "<group>"; };
 		E7E4B69F1E690552003C8A68 /* MSRecipeLeftButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSRecipeLeftButton.m; sourceTree = "<group>"; };
+		E7E4B6A11E6D2C5A003C8A68 /* MSStarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSStarView.h; sourceTree = "<group>"; };
+		E7E4B6A21E6D2C5A003C8A68 /* MSStarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSStarView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -358,6 +361,8 @@
 				E77AA7141E5AE95C00A85B84 /* MSTableViewCell.m */,
 				E726055A1E63FCB8008F6F10 /* MSScrollView.h */,
 				E726055B1E63FCB8008F6F10 /* MSScrollView.m */,
+				E7E4B6A11E6D2C5A003C8A68 /* MSStarView.h */,
+				E7E4B6A21E6D2C5A003C8A68 /* MSStarView.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -683,6 +688,7 @@
 				E7E235771E53003A0033AAAC /* MSWebAdvViewController.m in Sources */,
 				E78E77D21E4C6439009A93F1 /* main.m in Sources */,
 				E7D8EE871E5AB39C00053B7A /* MSCommendViewController.m in Sources */,
+				E7E4B6A31E6D2C5A003C8A68 /* MSStarView.m in Sources */,
 				E73AFA8A1E52953800730DAC /* MSTableViewController.m in Sources */,
 				E73AFAB71E52EDE800730DAC /* MSAdButton.m in Sources */,
 				E72605AA1E6699CE008F6F10 /* MSSmartViewModel.m in Sources */,

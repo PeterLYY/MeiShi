@@ -53,6 +53,19 @@
         UIButton *thisBtn = [self.leftView viewWithTag:1000+idx];
         thisBtn.selected = YES;
         
+#if 0
+        UIView *backView = [self.leftView.subviews objectAtIndex:idx];
+        if (backView.frame.origin.y - self.leftView.contentOffset.y > self.leftView.bounds.size.height/2) {
+            //向上滚动视图
+            [self.leftView setContentOffset:CGPointMake(0, backView.frame.origin.y - (backView.frame.origin.y - self.leftView.contentOffset.y - self.leftView.bounds.size.height/2))  animated:YES];
+        }
+        
+        
+        if (backView.frame.origin.y - self.leftView.contentOffset.y < self.leftView.bounds.size.height/2) {
+            //向右滚动视图
+            [self.leftView setContentOffset:CGPointMake(0, backView.frame.origin.y+(backView.frame.origin.y - self.leftView.contentOffset.y - self.leftView.bounds.size.height/2))  animated:YES];
+        }
+#endif
     }];
 }
 

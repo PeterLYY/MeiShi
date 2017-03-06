@@ -8,6 +8,7 @@
 
 #import "MSThreeMealsViewController.h"
 #import "MSTableViewCell.h"
+#import "MSStarView.h"
 
 @interface MSThreeMealsViewController ()
 
@@ -225,10 +226,8 @@
             titleLabel.textColor = [UIColor blackColor];
             [cell.contentView addSubview:titleLabel];
             
-            UIImageView *starView = [[UIImageView alloc] init];
-            starView.image = [UIImage imageNamed:@"ms_caipu_level"];
-            starView.contentMode = UIViewContentModeLeft;
-            starView.clipsToBounds = YES;
+            MSStarView *starView = [[MSStarView alloc] init];
+            starView.backgroundColor = [UIColor clearColor];
             [cell.contentView addSubview:starView];
             
             UILabel *foodsLabel = [UILabel new];
@@ -274,6 +273,8 @@
                     [imageView sd_setImageWithURL:[NSURL URLWithString:[[foodDict objectForKey:@"img"] objectForKey:@"text"]]];
                     UILabel *titleLabel = [cell.contentView.subviews objectAtIndex:1];
                     titleLabel.text = [[foodDict objectForKey:@"title"] objectForKey:@"text"];
+                    MSStarView *starView = [cell.contentView.subviews objectAtIndex:2];
+                    starView.num = [[[foodDict objectForKey:@"rate"] objectForKey:@"text"] integerValue];
                     UILabel *foodsLabel = [cell.contentView.subviews objectAtIndex:3];
                     foodsLabel.text = [[foodDict objectForKey:@"foods"] objectForKey:@"text"];
                 }
