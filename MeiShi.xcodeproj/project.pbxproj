@@ -85,6 +85,8 @@
 		E7E235771E53003A0033AAAC /* MSWebAdvViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E235761E53003A0033AAAC /* MSWebAdvViewController.m */; };
 		E7E4B6A01E690552003C8A68 /* MSRecipeLeftButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E4B69F1E690552003C8A68 /* MSRecipeLeftButton.m */; };
 		E7E4B6A31E6D2C5A003C8A68 /* MSStarView.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E4B6A21E6D2C5A003C8A68 /* MSStarView.m */; };
+		E7E4B6A61E6E5778003C8A68 /* MSRecipeDetailNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E4B6A51E6E5778003C8A68 /* MSRecipeDetailNewViewController.m */; };
+		E7E4B6A91E6E5CDD003C8A68 /* MSRecipeDetailNewViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E4B6A81E6E5CDD003C8A68 /* MSRecipeDetailNewViewModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -217,6 +219,10 @@
 		E7E4B69F1E690552003C8A68 /* MSRecipeLeftButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSRecipeLeftButton.m; sourceTree = "<group>"; };
 		E7E4B6A11E6D2C5A003C8A68 /* MSStarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSStarView.h; sourceTree = "<group>"; };
 		E7E4B6A21E6D2C5A003C8A68 /* MSStarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSStarView.m; sourceTree = "<group>"; };
+		E7E4B6A41E6E5778003C8A68 /* MSRecipeDetailNewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSRecipeDetailNewViewController.h; sourceTree = "<group>"; };
+		E7E4B6A51E6E5778003C8A68 /* MSRecipeDetailNewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSRecipeDetailNewViewController.m; sourceTree = "<group>"; };
+		E7E4B6A71E6E5CDD003C8A68 /* MSRecipeDetailNewViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSRecipeDetailNewViewModel.h; sourceTree = "<group>"; };
+		E7E4B6A81E6E5CDD003C8A68 /* MSRecipeDetailNewViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSRecipeDetailNewViewModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -340,6 +346,10 @@
 				E73AFA841E52953800730DAC /* MSShopViewController.m */,
 				E73AFA851E52953800730DAC /* MSTopicsViewController.h */,
 				E73AFA861E52953800730DAC /* MSTopicsViewController.m */,
+				E72605A51E66997B008F6F10 /* MSSmartFoodViewController.h */,
+				E72605A61E66997B008F6F10 /* MSSmartFoodViewController.m */,
+				E7E4B6A41E6E5778003C8A68 /* MSRecipeDetailNewViewController.h */,
+				E7E4B6A51E6E5778003C8A68 /* MSRecipeDetailNewViewController.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -383,6 +393,8 @@
 				E73AFAA91E5296F100730DAC /* MSTopicsViewModel.m */,
 				E72605A81E6699CE008F6F10 /* MSSmartViewModel.h */,
 				E72605A91E6699CE008F6F10 /* MSSmartViewModel.m */,
+				E7E4B6A71E6E5CDD003C8A68 /* MSRecipeDetailNewViewModel.h */,
+				E7E4B6A81E6E5CDD003C8A68 /* MSRecipeDetailNewViewModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -473,8 +485,6 @@
 				E7D8EE861E5AB39C00053B7A /* MSCommendViewController.m */,
 				E7D8EE881E5AB48100053B7A /* MSSmartViewController.h */,
 				E7D8EE891E5AB48100053B7A /* MSSmartViewController.m */,
-				E72605A51E66997B008F6F10 /* MSSmartFoodViewController.h */,
-				E72605A61E66997B008F6F10 /* MSSmartFoodViewController.m */,
 				E7D8EE8B1E5AB4A200053B7A /* MSThreeMealsViewController.h */,
 				E7D8EE8C1E5AB4A200053B7A /* MSThreeMealsViewController.m */,
 				E7D8EE8E1E5AB4BE00053B7A /* MSRecipeViewController.h */,
@@ -667,6 +677,7 @@
 				E791311C1E5D7F500025B704 /* UIColor+Hex.m in Sources */,
 				E73AFAB11E52B05700730DAC /* MSGuidePageView.m in Sources */,
 				E73AFA8D1E52953800730DAC /* MSRecommendViewController.m in Sources */,
+				E7E4B6A91E6E5CDD003C8A68 /* MSRecipeDetailNewViewModel.m in Sources */,
 				E73AFA871E52953800730DAC /* MSBaseViewController.m in Sources */,
 				E7E4B6A01E690552003C8A68 /* MSRecipeLeftButton.m in Sources */,
 				E73AFA951E5295D100730DAC /* MSViewModel.m in Sources */,
@@ -700,6 +711,7 @@
 				E73AFAA11E5296C100730DAC /* MSDiscoverViewModel.m in Sources */,
 				E7D8EE8A1E5AB48100053B7A /* MSSmartViewController.m in Sources */,
 				E73AFA881E52953800730DAC /* MSNavgationController.m in Sources */,
+				E7E4B6A61E6E5778003C8A68 /* MSRecipeDetailNewViewController.m in Sources */,
 				E73AFA8C1E52953800730DAC /* MSMyViewController.m in Sources */,
 				E73AFA8F1E52953800730DAC /* MSTopicsViewController.m in Sources */,
 				E726055F1E640693008F6F10 /* MSRecommendTopBanner.m in Sources */,

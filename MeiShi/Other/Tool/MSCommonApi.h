@@ -15,4 +15,13 @@
 #define kMSWeatherApi               @"http://api.meishi.cc/v6/weatherinfo.php"
 #define kMSRecipeApi                @"http://api.meishi.cc/v6/categorylist.php"
 
+#define kMSSearchCategoryElastic    @"http://api.meishi.cc/v6search_category_elastic.php"
+
+#define kMSRecipeDetailNew          @"http://api.meishi.cc/v6/recipe_detail_new.php"
+#define kMSADInfo                   @"http://api.meishi.cc/v6/ad_info.php"
+#define kMSPLListNew2               @"http://api.meishi.cc/v6/pl_list_new2.php"
+#define kMSRecipeRecommend          @"http://api.meishi.cc/v6/recipe_recommend.php"
+#define kMSGoodsRecommend           @"http://api.meishi.cc/v6/goods_recommend.php"
+#define kMSQuestionList             @"http://api.meishi.cc/v6/question_list.php"
+
 #endif /* MSCommonApi_h */

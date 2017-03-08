@@ -11,19 +11,13 @@
 @interface MSUtils : NSObject
 
 + (NSString *)getDeviceTag;
-
 + (NSString *)getCurrentDeviceModel;
-
-/**
- *  转化时间 时间戳转时间
- */
 + (NSString *)datestrFromDate:(NSDate *)date
                withDateFormat:(NSString *)format;
-
-/**
- *  转化时间
- *  几天前，几分钟前
- */
 + (NSString *)updateTimeForTimeInterval:(NSInteger)timeInterval;
++ (UIImage *)createImageWithColor:(UIColor *)color Rect:(CGRect)rect;
+
++ (UIImage*)clipImageWithImage:(UIImage*)image inRect:(CGRect)rect;
++ (UIImage*)imageCompressImage:(UIImage *)sourceImage targetWidth:(CGFloat)defineWidth;
 
 @end

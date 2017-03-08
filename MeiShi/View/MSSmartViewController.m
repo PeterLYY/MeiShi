@@ -225,8 +225,8 @@
             
             MSSmartViewModel *viewModel = [[MSSmartViewModel alloc] init];
             MSSmartFoodViewController *smartFoodVC = [[MSSmartFoodViewController alloc] initWithViewModel:viewModel];
-            [self.parentViewController.navigationController pushViewController:smartFoodVC animated:YES];
-            self.parentViewController.hidesBottomBarWhenPushed = YES;
+            smartFoodVC.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:smartFoodVC animated:YES];
         }];
     }
     //显示

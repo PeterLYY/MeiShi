@@ -18,6 +18,7 @@
 #import "MSTopicsViewController.h"
 #import "MSMyViewModel.h"
 #import "MSMyViewController.h"
+#import "MSUtils.h"
 
 @interface MSTabBarController ()
 
@@ -31,6 +32,7 @@
     [UITabBar appearance].translucent = NO;
     [UITabBar appearance].barTintColor = kRGBColor(255, 255, 255);
     [UITabBar appearance].tintColor = kRGBColor(255, 77, 130);
+    [UITabBar appearance].backgroundColor = [UIColor whiteColor];
     
     NSDictionary *normalAttr = @{NSForegroundColorAttributeName:kRGBColor(180, 180, 180), NSFontAttributeName:[UIFont systemFontOfSize:9.0f]};
     [[UITabBarItem appearance] setTitleTextAttributes:normalAttr forState:UIControlStateNormal];

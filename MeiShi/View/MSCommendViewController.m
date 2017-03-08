@@ -16,6 +16,8 @@
 #import "MSTableViewCell.h"
 #import "MSRefreshManager.h"
 #import "MSStarView.h"
+#import "MSRecipeDetailNewViewController.h"
+#import "MSRecipeDetailNewViewModel.h"
 
 #define kTopBannersCellId   @"topBannersCell"
 
@@ -117,8 +119,8 @@
             topbannerCell.tapGetureHandle = ^(NSString *urlString) {
                 MSWebAdvViewController *webAdVC = [[MSWebAdvViewController alloc] init];
                 webAdVC.adurl = urlString;
-                [self.parentViewController.navigationController pushViewController:webAdVC animated:YES];
-                self.parentViewController.hidesBottomBarWhenPushed = YES;
+                webAdVC.hidesBottomBarWhenPushed = YES;
+                [self.navigationController pushViewController:webAdVC animated:YES];
             };
         }
         return topbannerCell;
@@ -142,6 +144,10 @@
                 [moreButton setTitleColor:kRGBColor(170, 170, 170) forState:UIControlStateNormal];
                 moreButton.titleLabel.font = [UIFont systemFontOfSize:14];
                 [moreButton setBackgroundColor:[UIColor whiteColor]];
+                [[moreButton rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
+                    MSRecommendViewController *recommendVC = (MSRecommendViewController *)self.parentViewController;
+                    [recommendVC scrollNavItemByNum:2 Scroll:YES];
+                }];
                 [myCell.contentView addSubview:moreButton];
                 [moreButton mas_makeConstraints:^(MASConstraintMaker *make) {
                     make.right.mas_equalTo(myCell.mas_right).offset(-10);
@@ -675,6 +681,16 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
+    if (indexPath.section == 1 && indexPath.row != 0) {
+        if(self.sancan != nil) {
+            NSString *recipeId = [[[[[self.sancan objectForKey:@"items"] objectForKey:@"item"] objectAtIndex:(indexPath.row-1)] objectForKey:@"id"] objectForKey:@"text"];
+            MSRecipeDetailNewViewModel *viewModel = [[MSRecipeDetailNewViewModel alloc] init];
+            viewModel.recipeId = recipeId;
+            MSRecipeDetailNewViewController *recipeDetailNewVC = [[MSRecipeDetailNewViewController alloc] initWithViewModel:viewModel];
+            recipeDetailNewVC.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:recipeDetailNewVC animated:YES];
+        }
+    }
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {

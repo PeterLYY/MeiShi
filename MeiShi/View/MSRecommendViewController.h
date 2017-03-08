@@ -14,5 +14,6 @@
 @property (nonatomic, assign) BOOL showHelloMsg;
 - (void)animationHeaderView;;
 - (void)animationHeaderHideView;
+- (void)scrollNavItemByNum: (NSUInteger)num Scroll:(BOOL)scroll;
 
 @end

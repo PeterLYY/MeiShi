@@ -22,16 +22,6 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     [self.navigationController setNavigationBarHidden:NO animated:YES];
-    [self.tabBarController.tabBar setHidden:YES];
-}
-
-- (void)viewWillDisappear:(BOOL)animated {
-    [self.tabBarController.tabBar setHidden:NO];
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 
