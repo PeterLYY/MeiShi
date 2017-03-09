@@ -16,7 +16,7 @@
 #import "MSTableViewCell.h"
 #import "MSRefreshManager.h"
 #import "MSStarView.h"
-#import "MSRecipeDetailNewViewController.h"
+#import "MSRecipeDetailViewController.h"
 #import "MSRecipeDetailNewViewModel.h"
 
 #define kTopBannersCellId   @"topBannersCell"
@@ -686,7 +686,7 @@
             NSString *recipeId = [[[[[self.sancan objectForKey:@"items"] objectForKey:@"item"] objectAtIndex:(indexPath.row-1)] objectForKey:@"id"] objectForKey:@"text"];
             MSRecipeDetailNewViewModel *viewModel = [[MSRecipeDetailNewViewModel alloc] init];
             viewModel.recipeId = recipeId;
-            MSRecipeDetailNewViewController *recipeDetailNewVC = [[MSRecipeDetailNewViewController alloc] initWithViewModel:viewModel];
+            MSRecipeDetailViewController *recipeDetailNewVC = [[MSRecipeDetailViewController alloc] initWithViewModel:viewModel];
             recipeDetailNewVC.hidesBottomBarWhenPushed = YES;
             [self.navigationController pushViewController:recipeDetailNewVC animated:YES];
         }

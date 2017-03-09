@@ -73,6 +73,7 @@
 		E78E77DD1E4C6439009A93F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E78E77DC1E4C6439009A93F1 /* Assets.xcassets */; };
 		E79131191E5D528E0025B704 /* refreshpotgif@2x.gif in Resources */ = {isa = PBXBuildFile; fileRef = E79131181E5D528E0025B704 /* refreshpotgif@2x.gif */; };
 		E791311C1E5D7F500025B704 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = E791311B1E5D7F500025B704 /* UIColor+Hex.m */; };
+		E7ABFB091E70FC2B00D2482A /* MSRecipeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7ABFB081E70FC2B00D2482A /* MSRecipeDetailViewController.m */; };
 		E7D8EE701E543EC800053B7A /* MSRecommendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7D8EE6F1E543EC800053B7A /* MSRecommendViewController.xib */; };
 		E7D8EE7A1E5563AC00053B7A /* MSHeaderHideButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E7D8EE791E5563AC00053B7A /* MSHeaderHideButton.m */; };
 		E7D8EE7D1E55679E00053B7A /* MSHeaderHideView.m in Sources */ = {isa = PBXBuildFile; fileRef = E7D8EE7C1E55679E00053B7A /* MSHeaderHideView.m */; };
@@ -196,6 +197,8 @@
 		E79131181E5D528E0025B704 /* refreshpotgif@2x.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "refreshpotgif@2x.gif"; sourceTree = "<group>"; };
 		E791311A1E5D7F500025B704 /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
 		E791311B1E5D7F500025B704 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
+		E7ABFB071E70FC2B00D2482A /* MSRecipeDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSRecipeDetailViewController.h; sourceTree = "<group>"; };
+		E7ABFB081E70FC2B00D2482A /* MSRecipeDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSRecipeDetailViewController.m; sourceTree = "<group>"; };
 		E7D8EE6F1E543EC800053B7A /* MSRecommendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSRecommendViewController.xib; sourceTree = "<group>"; };
 		E7D8EE781E5563AC00053B7A /* MSHeaderHideButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSHeaderHideButton.h; sourceTree = "<group>"; };
 		E7D8EE791E5563AC00053B7A /* MSHeaderHideButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSHeaderHideButton.m; sourceTree = "<group>"; };
@@ -348,6 +351,8 @@
 				E73AFA861E52953800730DAC /* MSTopicsViewController.m */,
 				E72605A51E66997B008F6F10 /* MSSmartFoodViewController.h */,
 				E72605A61E66997B008F6F10 /* MSSmartFoodViewController.m */,
+				E7ABFB071E70FC2B00D2482A /* MSRecipeDetailViewController.h */,
+				E7ABFB081E70FC2B00D2482A /* MSRecipeDetailViewController.m */,
 				E7E4B6A41E6E5778003C8A68 /* MSRecipeDetailNewViewController.h */,
 				E7E4B6A51E6E5778003C8A68 /* MSRecipeDetailNewViewController.m */,
 			);
@@ -707,6 +712,7 @@
 				E77AA7181E5AE99500A85B84 /* MSRecommendTopBannerCell.m in Sources */,
 				E73AFAAA1E5296F100730DAC /* MSTopicsViewModel.m in Sources */,
 				E72605A71E66997B008F6F10 /* MSSmartFoodViewController.m in Sources */,
+				E7ABFB091E70FC2B00D2482A /* MSRecipeDetailViewController.m in Sources */,
 				E77AA7151E5AE95C00A85B84 /* MSTableViewCell.m in Sources */,
 				E73AFAA11E5296C100730DAC /* MSDiscoverViewModel.m in Sources */,
 				E7D8EE8A1E5AB48100053B7A /* MSSmartViewController.m in Sources */,
