@@ -44,8 +44,7 @@
     }];
     
     [[RACSignal combineLatest:@[recipeSignal, plSignal, questionSignal, goodsRecommendSignal, recipeRecommendSignal]] subscribeNext:^(RACTuple *tuple) {
-        [self.headerView sd_setImageWithURL:[NSURL URLWithString:[[_data objectForKey:@"cover_img"] objectForKey:@"big"]]];
-        //[self.tableView reloadData];
+        [self.headerView sd_setImageWithURL:[NSURL URLWithString:[[_data objectForKey:@"cover_img"] objectForKey:@"big"]] placeholderImage:nil options:SDWebImageLowPriority];
     }];
 
     
@@ -69,6 +68,52 @@
     headerView.clipsToBounds = YES;
     [self.tableView addSubview:headerView];
     self.headerView = headerView;
+    
+    //底部toolbar
+    UIView *bottomView = [[UIView alloc] initWithFrame:CGRectMake(0, kScreenHeight-40, kScreenWidth, 40)];
+    [self.view addSubview:bottomView];
+//    UIButton *topBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+//    [topBtn setImage:[UIImage imageNamed:@"detail_top"] forState:UIControlStateNormal];
+//    [bottomView addSubview:topBtn];
+    UIView *bottomLine = [UIView new];
+    bottomLine.backgroundColor = [[UIColor lightGrayColor] colorWithAlphaComponent:0.5];
+    [bottomView addSubview:bottomLine];
+    [bottomLine mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.left.right.equalTo(bottomView).mas_offset(0);
+        make.height.mas_equalTo(1);
+    }];
+    UIButton *favtorBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [favtorBtn setImage:[UIImage imageNamed:@"detail_shoucang"] forState:UIControlStateNormal];
+    [favtorBtn setImage:[UIImage imageNamed:@"detail_shoucang"] forState:UIControlStateHighlighted];
+    //favtorBtn.tintColor = [UIColor redColor];
+    [bottomView addSubview:favtorBtn];
+    [favtorBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.equalTo(bottomView.mas_centerX).mas_offset(0);
+        make.centerY.equalTo(bottomView.mas_centerY).mas_offset(0);
+        make.size.mas_equalTo(CGSizeMake(40, 40));
+    }];
+    
+    UIButton *commentBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [commentBtn setImage:[UIImage imageNamed:@"detail_recomment"] forState:UIControlStateNormal];
+    [commentBtn setImage:[UIImage imageNamed:@"detail_recomment"] forState:UIControlStateHighlighted];
+    //favtorBtn.tintColor = [UIColor redColor];
+    [bottomView addSubview:commentBtn];
+    [commentBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.equalTo(bottomView.mas_centerX).mas_offset(-105);
+        make.centerY.equalTo(bottomView.mas_centerY).mas_offset(0);
+        make.size.mas_equalTo(CGSizeMake(40, 40));
+    }];
+    
+    UIButton *shareBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [shareBtn setImage:[UIImage imageNamed:@"detail_share"] forState:UIControlStateNormal];
+    [shareBtn setImage:[UIImage imageNamed:@"detail_share"] forState:UIControlStateHighlighted];
+    //favtorBtn.tintColor = [UIColor redColor];
+    [bottomView addSubview:shareBtn];
+    [shareBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.equalTo(bottomView.mas_centerX).mas_offset(105);
+        make.centerY.equalTo(bottomView.mas_centerY).mas_offset(0);
+        make.size.mas_equalTo(CGSizeMake(40, 40));
+    }];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -78,32 +123,45 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
     NSInteger steps = [[_data objectForKey:@"cook_steps"] count];
+    //标题
     if (section == 0) {
         return 1;
+    //作者
     }else if (section == 1) {
         return 3;
+    //主料
     }else if (section == 2) {
         return [[_data objectForKey:@"main_ingredient"] count]+1;
+    //辅料
     }else if (section == 3) {
         return [[_data objectForKey:@"secondary_ingredient"] count]+1;
+    //工具
     }else if (section == 4) {
         return 1;
+    //评论
     }else if (section == steps+5){
         return 5;
+    //问答
     }else if (section == steps+6){
+        if ([[_questionData objectForKey:@"items"] count] == 0) {
+            return 4;
+        }
         return 6;
+    //商品推荐
     }else if (section == steps+7){
-        return 2;
+        return 1;
+    //菜谱推荐
     }else if (section == steps+8){
-        return 3;
+        return 2;
     }
-    
+    //步骤
     return 1;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     NSInteger section = indexPath.section;
     NSInteger row = indexPath.row;
+#pragma mark - 标题
     if(section == 0){
         MSTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"titleCell"];
         if (cell == nil) {
@@ -144,7 +202,11 @@
                                     NSFontAttributeName:[UIFont boldSystemFontOfSize:12],
                                     NSForegroundColorAttributeName:kRGBColor(93, 95, 97)
                                     };
-        NSString *favorString = [[_data objectForKey:@"favor_amount"] stringByAppendingString:@"人收藏"];
+        id favorAmount = [_data objectForKey:@"favor_amount"];
+        if ([favorAmount isKindOfClass:[NSNumber class]]) {
+            favorAmount = [favorAmount stringValue];
+        }
+        NSString *favorString = [favorAmount stringByAppendingString:@"人收藏"];
         UILabel *favorLabel = [cell.contentView.subviews objectAtIndex:1];
         NSAttributedString *favorAttributedString = [[NSAttributedString alloc]
                                                      initWithString:favorString
@@ -175,7 +237,9 @@
         }];
         
         return cell;
+#pragma mark - 作者
     }else if(section == 1){
+        //作者
         if (row == 0) {
             MSTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"authorCell"];
             if (cell == nil) {
@@ -236,7 +300,7 @@
             
             
             UIImageView *avatarView = [cell.contentView.subviews objectAtIndex:0];
-            [avatarView sd_setImageWithURL:[NSURL URLWithString:[[_data objectForKey:@"author"] objectForKey:@"avatar_url"]]];
+            [avatarView sd_setImageWithURL:[NSURL URLWithString:[[_data objectForKey:@"author"] objectForKey:@"avatar_url"]] placeholderImage:nil options:SDWebImageLowPriority];
             if ([[[_data objectForKey:@"author"] objectForKey:@"if_v"] isEqualToString:@"1"]) {
                 UIImageView *vView = [[UIImageView alloc] init];
                 vView.contentMode = UIViewContentModeScaleAspectFill;
@@ -274,6 +338,7 @@
             recipeNumLabel.attributedText = recipenumAttrString;
         
             return cell;
+        //介绍
         }else if(row == 1){
             MSTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"descCell"];
             if (cell == nil) {
@@ -301,6 +366,7 @@
             self.storyContentHeight = size.height+20;
             
             return cell;
+        //评分、标签
         }else if(row == 2){
             MSTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"pingfenCell"];
             if (cell == nil) {
@@ -445,7 +511,7 @@
             
             return cell;
         }
-    
+#pragma mark - 主料
     }else if(section == 2) {
         
         if (row == 0) {
@@ -511,7 +577,7 @@
             
             return cell;
         }
-        
+#pragma mark - 辅料
     }else if(section == 3) {
         
         if (row == 0) {
@@ -563,7 +629,7 @@
             
             return cell;
         }
-        
+#pragma mark - 工具
     }else if(section == 4) {
         MSTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"toolCell"];
         if (cell == nil) {
@@ -572,6 +638,7 @@
         return cell;
     }
     
+#pragma mark - 步骤
     NSInteger steps = [[_data objectForKey:@"cook_steps"] count];
     if (section >= 5 && section <= steps+4) {
         MSTableViewCell *cell = [[MSTableViewCell alloc] init];
@@ -588,7 +655,7 @@
             UIImageView *imageView = [UIImageView new];
             imageView.contentMode = UIViewContentModeScaleAspectFill;
             [cell.contentView addSubview:imageView];
-            [imageView sd_setImageWithURL:[NSURL URLWithString:big]];
+            [imageView sd_setImageWithURL:[NSURL URLWithString:big] placeholderImage:nil options:SDWebImageLowPriority];
             [imageView mas_makeConstraints:^(MASConstraintMaker *make) {
                 make.left.right.top.equalTo(cell.contentView).mas_offset(0);
                 make.height.mas_offset(cHeight);
@@ -627,7 +694,7 @@
         
         return cell;
     }
-    
+#pragma mark - 评论
     if (section == steps+5){
         MSTableViewCell *cell = [[MSTableViewCell alloc] init];
         if (row == 0) {
@@ -685,7 +752,7 @@
             NSDictionary *item = [[_plData objectForKey:@"items"] objectAtIndex:row-2];
             NSString *avatarUrl = [[item objectForKey:@"author"] objectForKey:@"avatar_url"];
             UIImageView *avatar = [UIImageView new];
-            [avatar sd_setImageWithURL:[NSURL URLWithString:avatarUrl]];
+            [avatar sd_setImageWithURL:[NSURL URLWithString:avatarUrl] placeholderImage:nil options:SDWebImageLowPriority];
             avatar.contentMode = UIViewContentModeScaleAspectFill;
             avatar.layer.cornerRadius = 20;
             avatar.clipsToBounds = YES;
@@ -750,23 +817,367 @@
                 make.height.mas_equalTo(size.height+20);
             }];
             
-            
+            if (row == 2) {
+                UIView *separateLine = [UIView new];
+                separateLine.backgroundColor = [[UIColor lightGrayColor] colorWithAlphaComponent:0.3];
+                [cell.contentView addSubview:separateLine];
+                [separateLine mas_makeConstraints:^(MASConstraintMaker *make) {
+                    make.leading.equalTo(avatar.mas_leading).mas_offset(0);
+                    make.trailing.equalTo(rightBtn.mas_trailing).mas_offset(0);
+                    make.bottom.equalTo(superview.mas_bottom).mas_offset(-1);
+                    make.height.mas_offset(1);
+                }];
+            }
         }
         return cell;
+#pragma mark -  问答
     }else if (section == steps+6){
         MSTableViewCell *cell = [[MSTableViewCell alloc] init];
+        NSInteger total = [tableView numberOfRowsInSection:section];
+        if (row == 0) {
+            UIView *line = [UIView new];
+            line.backgroundColor = kRGBColor(240, 240, 240);
+            [cell.contentView addSubview:line];
+            [line mas_makeConstraints:^(MASConstraintMaker *make) {
+                make.edges.equalTo(cell.contentView).insets(UIEdgeInsetsMake(0, 0, 0, 0));
+            }];
+        }else if(row == 1) {
+            UILabel *label = [UILabel new];
+            label.text = @"厨房问答";
+            label.textColor = [UIColor blackColor];
+            label.font = [UIFont systemFontOfSize:18];
+            [cell.contentView addSubview:label];
+            [label mas_makeConstraints:^(MASConstraintMaker *make) {
+                make.left.equalTo(cell.contentView.mas_left).mas_offset(15);
+                make.top.equalTo(cell.contentView.mas_top).mas_offset(25);
+                make.size.mas_equalTo(CGSizeMake(80, 25));
+            }];
+        }else if(row == total-1){
+            UIButton *moreBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+            moreBtn.layer.cornerRadius = 20;
+            moreBtn.layer.borderColor = [UIColor lightGrayColor].CGColor;
+            moreBtn.layer.borderWidth = 1;
+            
+            CGFloat commentBtnCenterXOffset = 75;
+            
+            NSString *totalAmount = [_questionData objectForKey:@"total"];
+            if(totalAmount.integerValue > 2) {
+                NSString *moreBtnString = [NSString stringWithFormat:@"更多回答(%@)", totalAmount];
+                [moreBtn setTitle:moreBtnString forState:UIControlStateNormal];
+                [moreBtn setTitleColor:[[UIColor blackColor] colorWithAlphaComponent:0.8] forState:UIControlStateNormal];
+                moreBtn.titleLabel.font = [UIFont systemFontOfSize:14];
+                
+                [cell.contentView addSubview:moreBtn];
+                [moreBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+                    make.right.equalTo(cell.contentView.mas_centerX).mas_offset(-10);
+                    make.top.equalTo(cell.contentView.mas_top).mas_offset(0);
+                    make.size.mas_equalTo(CGSizeMake(130, 40));
+                }];
+            }else{
+                commentBtnCenterXOffset = 0;
+            }
+            UIButton *commentBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+            commentBtn.layer.cornerRadius = 20;
+            commentBtn.layer.borderColor = [UIColor lightGrayColor].CGColor;
+            commentBtn.layer.borderWidth = 1;
+            NSString *commentBtnString = @"我要提问";
+            [commentBtn setTitle:commentBtnString forState:UIControlStateNormal];
+            [commentBtn setTitleColor:[[UIColor blackColor] colorWithAlphaComponent:0.8] forState:UIControlStateNormal];
+            commentBtn.titleLabel.font = [UIFont systemFontOfSize:14];
+            [cell.contentView addSubview:commentBtn];
+            [commentBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+                make.centerX.equalTo(cell.contentView.mas_centerX).mas_offset(commentBtnCenterXOffset);
+                make.top.equalTo(cell.contentView.mas_top).mas_offset(0);
+                make.size.mas_equalTo(CGSizeMake(130, 40));
+            }];
+        }else{
+            NSArray *items = [_questionData objectForKey:@"items"];
+            if (items.count == 0) {
+                UILabel *noAsk = [UILabel new];
+                noAsk.text = @"暂无问答";
+                noAsk.textAlignment = NSTextAlignmentCenter;
+                noAsk.font = [UIFont systemFontOfSize:12];
+                noAsk.textColor = [[UIColor grayColor] colorWithAlphaComponent:0.6];
+                [cell.contentView addSubview:noAsk];
+                [noAsk mas_makeConstraints:^(MASConstraintMaker *make) {
+                    make.edges.equalTo(cell.contentView).insets(UIEdgeInsetsMake(0, 0, 0, 0));
+                }];
+            }else{
+                UIView *superview = cell.contentView;
+                NSDictionary *item = [items objectAtIndex:row-2];
+                UILabel *askIcon = [UILabel new];
+                askIcon.text = @"问";
+                askIcon.textAlignment = NSTextAlignmentCenter;
+                askIcon.backgroundColor = [UIColor redColor];
+                askIcon.textColor = [UIColor whiteColor];
+                askIcon.font = [UIFont systemFontOfSize:14];
+                askIcon.layer.cornerRadius = 10;
+                askIcon.clipsToBounds = YES;
+                [cell.contentView addSubview:askIcon];
+                [askIcon mas_makeConstraints:^(MASConstraintMaker *make) {
+                    make.left.equalTo(superview.mas_left).mas_offset(15);
+                    make.top.equalTo(superview.mas_top).mas_offset(20);
+                    make.size.mas_equalTo(CGSizeMake(20, 20));
+                }];
+                
+                UILabel *askText = [UILabel new];
+                askText.text = [item objectForKey:@"title"];
+                askText.numberOfLines = 1;
+                askText.textColor = [UIColor blackColor];
+                askText.font = [UIFont systemFontOfSize:16];
+                [cell.contentView addSubview:askText];
+                [askText mas_makeConstraints:^(MASConstraintMaker *make) {
+                    make.left.equalTo(askIcon.mas_right).mas_offset(10);
+                    make.top.equalTo(askIcon.mas_top).mas_offset(0);
+                    make.right.equalTo(superview.mas_right).mas_offset(-15);
+                    make.width.mas_equalTo(20);
+                }];
+
+                UILabel *answerIcon = [UILabel new];
+                answerIcon.text = @"答";
+                answerIcon.textAlignment = NSTextAlignmentCenter;
+                answerIcon.backgroundColor = [UIColor orangeColor];
+                answerIcon.textColor = [UIColor whiteColor];
+                answerIcon.font = [UIFont systemFontOfSize:14];
+                answerIcon.layer.cornerRadius = 10;
+                answerIcon.clipsToBounds = YES;
+                [cell.contentView addSubview:answerIcon];
+                [answerIcon mas_makeConstraints:^(MASConstraintMaker *make) {
+                    make.leading.equalTo(askIcon.mas_leading).mas_offset(0);
+                    make.top.equalTo(askIcon.mas_bottom).mas_offset(15);
+                    make.size.mas_equalTo(CGSizeMake(20, 20));
+                }];
+                UILabel *answerText = [UILabel new];
+                NSString *replyObjContent = [[item objectForKey:@"reply_obj"] objectForKey:@"content"];
+                if (replyObjContent == nil) {
+                    answerText.text = @"暂无回答";
+                    answerText.textColor = [[UIColor lightGrayColor] colorWithAlphaComponent:0.5];
+                }else{
+                    answerText.text = [[item objectForKey:@"reply_obj"] objectForKey:@"content"];
+                    answerText.textColor = [UIColor blackColor];
+                }
+                answerText.font = [UIFont systemFontOfSize:16];
+                [cell.contentView addSubview:answerText];
+                [answerText mas_makeConstraints:^(MASConstraintMaker *make) {
+                    make.left.equalTo(answerIcon.mas_right).mas_offset(10);
+                    make.top.equalTo(answerIcon.mas_top).mas_offset(0);
+                    make.right.equalTo(superview.mas_right).mas_offset(-15);
+                    make.width.mas_equalTo(20);
+                }];
+                
+                UIView *zanView = [UIView new];
+                [cell.contentView addSubview:zanView];
+                [zanView mas_makeConstraints:^(MASConstraintMaker *make) {
+                    make.leading.equalTo(answerIcon.mas_leading).mas_offset(0);
+                    make.top.equalTo(answerIcon.mas_bottom).mas_offset(25);
+                    make.size.mas_equalTo(CGSizeMake(150, 20));
+                }];
+                UIImageView *zanIcon = [UIImageView new];
+                zanIcon.image = [UIImage imageNamed:@"ms_recipe_comment_unding"];
+                zanIcon.contentMode = UIViewContentModeScaleAspectFill;
+                [zanView addSubview:zanIcon];
+                [zanIcon mas_makeConstraints:^(MASConstraintMaker *make) {
+                    make.left.top.bottom.equalTo(zanView).mas_offset(0);
+                    make.height.mas_equalTo(20);
+                }];
+                UILabel *zanText = [UILabel new];
+                NSString *usefulNum = [[item objectForKey:@"reply_obj"] objectForKey:@"useful_num"];
+                if (usefulNum == nil) {
+                    usefulNum = @"0";
+                }
+                NSString *zanString = [NSString stringWithFormat:@"%@人觉得很有用", usefulNum];
+                zanText.text = zanString;
+                zanText.font = [UIFont systemFontOfSize:12];
+                zanText.textColor = [UIColor lightGrayColor];
+                [zanView addSubview:zanText];
+                [zanText mas_makeConstraints:^(MASConstraintMaker *make) {
+                    make.top.bottom.right.equalTo(zanView).mas_offset(0);
+                    make.left.equalTo(zanIcon).mas_offset(10);
+                }];
+                
+                UILabel *moreAnswer = [UILabel new];
+                NSString *moreString = [NSString stringWithFormat:@"查看%@个回答", [item objectForKey:@"total_reply_amount"]];
+                moreAnswer.text = moreString;
+                moreAnswer.font = [UIFont systemFontOfSize:12];
+                moreAnswer.textColor = [[UIColor lightGrayColor] colorWithAlphaComponent:0.7];
+                moreAnswer.textAlignment = NSTextAlignmentRight;
+                [cell.contentView addSubview:moreAnswer];
+                [moreAnswer mas_makeConstraints:^(MASConstraintMaker *make) {
+                    make.right.equalTo(superview.mas_right).mas_offset(-15);
+                    make.top.equalTo(answerIcon.mas_bottom).mas_offset(25);
+                    make.size.mas_equalTo(CGSizeMake(100, 20));
+                }];
+                if (row != 4) {
+                    UIView *separateLine = [UIView new];
+                    separateLine.backgroundColor = [[UIColor lightGrayColor] colorWithAlphaComponent:0.3];
+                    [cell.contentView addSubview:separateLine];
+                    [separateLine mas_makeConstraints:^(MASConstraintMaker *make) {
+                        make.leading.equalTo(zanView.mas_leading).mas_offset(0);
+                        make.trailing.equalTo(moreAnswer.mas_trailing).mas_offset(0);
+                        make.bottom.equalTo(superview.mas_bottom).mas_offset(-1);
+                        make.height.mas_offset(1);
+                    }];
+                }
+            }
+        }
         return cell;
+#pragma mark - 推荐商品
     }else if (section == steps+7){
         MSTableViewCell *cell = [[MSTableViewCell alloc] init];
+        UIView *superview = cell.contentView;
+        UIView *separateView = [UIView new];
+        separateView.backgroundColor = kRGBColor(240, 240, 240);
+        [cell.contentView addSubview:separateView];
+        [separateView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.right.top.equalTo(superview).mas_offset(0);
+            make.height.mas_offset(20);
+        }];
+        
+        UILabel *title = [UILabel new];
+        title.font = [UIFont systemFontOfSize:16];
+        title.text = [_goodsRecommendData objectForKey:@"title"];
+        [cell.contentView addSubview:title];
+        [title mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.equalTo(superview.mas_left).mas_offset(15);
+            make.right.equalTo(superview.mas_right).mas_offset(-15);
+            make.top.equalTo(separateView.mas_bottom).mas_offset(15);
+            make.height.mas_equalTo(20);
+        }];
+        
+        NSDictionary *item = [[_goodsRecommendData objectForKey:@"items"] objectAtIndex:0];
+        if (item != nil) {
+            UIImageView *imageView = [UIImageView new];
+            imageView.contentMode = UIViewContentModeScaleAspectFill;
+            imageView.clipsToBounds = YES;
+            [imageView sd_setImageWithURL:[NSURL URLWithString:[item objectForKey:@"cover_img"]] placeholderImage:nil options:SDWebImageLowPriority];
+            [cell.contentView addSubview:imageView];
+            [imageView mas_makeConstraints:^(MASConstraintMaker *make) {
+                make.left.right.equalTo(superview).mas_offset(0);
+                make.top.equalTo(title.mas_bottom).mas_offset(15);
+                make.height.mas_equalTo(180);
+            }];
+            
+            UILabel *goodsName = [UILabel new];
+            goodsName.font = [UIFont systemFontOfSize:16];
+            goodsName.text = [item objectForKey:@"title"];
+            [cell.contentView addSubview:goodsName];
+            [goodsName mas_makeConstraints:^(MASConstraintMaker *make) {
+                make.left.equalTo(superview.mas_left).mas_offset(15);
+                make.right.equalTo(superview.mas_right).mas_offset(-15);
+                make.top.equalTo(imageView.mas_bottom).mas_offset(15);
+                make.height.mas_equalTo(20);
+            }];
+            
+            UILabel *price = [UILabel new];
+            price.text = [NSString stringWithFormat:@"¥%@", [item objectForKey:@"price"]];
+            price.textColor = [UIColor redColor];
+            price.font = [UIFont systemFontOfSize:16];
+            [cell.contentView addSubview:price];
+            [price mas_makeConstraints:^(MASConstraintMaker *make) {
+                make.left.equalTo(superview.mas_left).mas_offset(15);
+                make.top.equalTo(goodsName.mas_bottom).mas_offset(20);
+                make.width.mas_equalTo(120);
+                make.height.mas_equalTo(20);
+            }];
+            
+            UIButton *cart = [UIButton buttonWithType:UIButtonTypeCustom];
+            [cart setImage:[UIImage imageNamed:@"detail_cart"] forState:UIControlStateNormal];
+            [cell.contentView addSubview:cart];
+            [cart mas_makeConstraints:^(MASConstraintMaker *make) {
+                make.top.equalTo(goodsName.mas_bottom).offset(10);
+                make.right.equalTo(superview.mas_right).offset(-15);
+                make.size.mas_equalTo(CGSizeMake(40, 40));
+            }];
+        }
+        
+
         return cell;
+#pragma mark - 推荐菜谱
     }else if (section == steps+8){
         MSTableViewCell *cell = [[MSTableViewCell alloc] init];
+        if (row == 0) {
+            UIView *superview = cell.contentView;
+            UIView *separateView = [UIView new];
+            separateView.backgroundColor = kRGBColor(240, 240, 240);
+            [cell.contentView addSubview:separateView];
+            [separateView mas_makeConstraints:^(MASConstraintMaker *make) {
+                make.left.right.top.equalTo(superview).mas_offset(0);
+                make.height.mas_offset(20);
+            }];
+            
+            UILabel *title = [UILabel new];
+            title.font = [UIFont systemFontOfSize:16];
+            title.text = [_recipeRecommendData objectForKey:@"title"];
+            [cell.contentView addSubview:title];
+            [title mas_makeConstraints:^(MASConstraintMaker *make) {
+                make.left.equalTo(superview.mas_left).mas_offset(15);
+                make.right.equalTo(superview.mas_right).mas_offset(-15);
+                make.top.equalTo(separateView.mas_bottom).mas_offset(15);
+                make.height.mas_equalTo(20);
+            }];
+        }else{
+            //cell.backgroundColor = kRGBColor(255, 246, 247);
+            UIScrollView *scrollView = [UIScrollView new];
+            scrollView.showsVerticalScrollIndicator = NO;
+            scrollView.showsHorizontalScrollIndicator = NO;
+            scrollView.backgroundColor = kRGBColor(255, 246, 247);
+            [cell.contentView addSubview:scrollView];
+            
+            [scrollView mas_makeConstraints:^(MASConstraintMaker *make) {
+                make.edges.equalTo(cell.contentView).insets(UIEdgeInsetsMake(0, 0, 10, 0));
+            }];
+            
+            NSArray *recipes = [_recipeRecommendData objectForKey:@"items"];
+            if (recipes.count != 0) {
+                NSInteger num = recipes.count;
+                scrollView.contentSize = CGSizeMake(150*num+10, 245);
+                
+                [recipes enumerateObjectsUsingBlock:^(NSDictionary *dict, NSUInteger idx, BOOL * _Nonnull stop) {
+                    UIView *bgView = [[UIView alloc] initWithFrame:CGRectMake(10+idx*150, 20, 140, 215)];
+                    bgView.backgroundColor = [UIColor whiteColor];
+                    [scrollView addSubview:bgView];
+                    UIImageView *imageView = [UIImageView new];
+                    imageView.contentMode = UIViewContentModeScaleAspectFill;
+                    [imageView sd_setImageWithURL:[NSURL URLWithString:[dict objectForKey:@"img"]] placeholderImage:nil options:SDWebImageLowPriority];
+                    [bgView addSubview:imageView];
+                    [imageView mas_makeConstraints:^(MASConstraintMaker *make) {
+                        make.left.right.top.equalTo(bgView).mas_offset(0);
+                        make.height.mas_equalTo(140);
+                    }];
+                    
+                    UILabel *title = [UILabel new];
+                    title.text = [dict objectForKey:@"title"];
+                    title.textAlignment = NSTextAlignmentCenter;
+                    title.font = [UIFont systemFontOfSize:16];
+                    [bgView addSubview:title];
+                    [title mas_makeConstraints:^(MASConstraintMaker *make) {
+                        make.left.right.equalTo(bgView).mas_offset(0);
+                        make.top.equalTo(imageView.mas_bottom).mas_offset(20);
+                        make.height.mas_equalTo(15);
+                    }];
+                    
+                    MSStarView *star = [MSStarView new];
+                    star.backgroundColor = [UIColor clearColor];
+                    star.num = [[dict objectForKey:@"rate"] integerValue];
+                    [bgView addSubview:star];
+                    [star mas_makeConstraints:^(MASConstraintMaker *make) {
+                        make.top.equalTo(title.mas_bottom).mas_offset(10);
+                        make.centerX.equalTo(bgView.mas_centerX).mas_offset(0);
+                        make.width.mas_equalTo(120);
+                        make.height.mas_equalTo(15);
+                    }];
+                }];
+            }
+            
+        }
+        
         return cell;
     }
     
     return nil;
 }
 
+//header view
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
     
     NSInteger steps = [[_data objectForKey:@"cook_steps"] count];
@@ -785,6 +1196,7 @@
     return nil;
 }
 
+//header height
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
     NSInteger steps = [[_data objectForKey:@"cook_steps"] count];
     if (section >= 5 && section <= steps+4) {
@@ -793,6 +1205,7 @@
     return 0;
 }
 
+//行高
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     NSInteger section = indexPath.section;
     NSInteger row = indexPath.row;
@@ -831,16 +1244,33 @@
             return 20;
         }else if(row == 1){
             return 50;
+        }else if(row == 4){
+            return 70;
         }else{
             return 125;
         }
         return 50;
     }else if (section == steps+6){
-        return 100;
+        if (row == 0) {
+            return 20;
+        }else if(row == 1){
+            return 50;
+        }else if(row == 5){
+            return 70;
+        }else{
+            if ([[_questionData objectForKey:@"items"] count] != 0) {
+                return 145;
+            }
+        }
+        return 50;
     }else if (section == steps+7){
-         return 100;
+         return 345;
     }else if (section == steps+8){
-         return 100;
+        if (row == 0) {
+            return 70;
+        }else{
+            return 255;
+        }
     }
     
     return 10;
